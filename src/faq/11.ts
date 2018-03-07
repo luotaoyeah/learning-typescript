@@ -8,7 +8,7 @@ function createLog(source: string, message?: string): number {
   return 18;
 }
 
-createLog('tom');
-createLog('tom', 'cat');
+createLog("tom");
+createLog("tom", "cat");
 
 export {};
