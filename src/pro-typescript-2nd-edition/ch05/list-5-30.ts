@@ -2,12 +2,13 @@
  * Listing 5-30. Event listeners
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class ClickLogger {
-
   constructor() {
-    document.addEventListener('click', this.listener);
+    document.addEventListener("click", this.listener);
   }
 
   listener(e: Event) {
@@ -21,5 +22,7 @@ class ClickLogger {
 
 const clickLogger = new ClickLogger();
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

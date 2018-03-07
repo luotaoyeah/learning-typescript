@@ -10,8 +10,7 @@ class Student {
   score: number;
 }
 
-interface PersonAndStudent extends Person, Student {
-}
+interface PersonAndStudent extends Person, Student {}
 
 function genericConstraintExample<T extends PersonAndStudent>(t: T): void {
   console.log(t.name); // tslint:disable-line
@@ -24,12 +23,12 @@ function genericConstraintExample02<T extends Person & Student>(t: T): void {
 }
 
 genericConstraintExample({
-  name: 'tom',
+  name: "tom",
   score: 99
 });
 
 genericConstraintExample02({
-  name: 'cat',
+  name: "cat",
   score: 100
 });
 

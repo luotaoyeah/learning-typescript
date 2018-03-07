@@ -6,7 +6,7 @@ function log(title: string) {
   return (target: Function, key: string, descriptor: PropertyDescriptor) => {
     const fn = descriptor.value;
 
-    descriptor.value = function (...args: any[]) {
+    descriptor.value = function(...args: any[]) {
       console.log(`${title}.${key}'s args: ${JSON.stringify(args)}`); // tslint:disable-line
       return fn.apply(this, args);
     };
@@ -16,7 +16,7 @@ function log(title: string) {
 }
 
 class Calculator {
-  @log('Calculator')
+  @log("Calculator")
   static square(x: number): number {
     return x * x;
   }

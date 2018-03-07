@@ -2,7 +2,9 @@
  * Listing 4-10. Segregated interfaces
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class Document {
   public name: string;
@@ -31,13 +33,14 @@ class SuperPrinter implements Printer, Stapler, Copier {
     return doc.name;
   }
 
-  staple(doc: Document): void {
-  }
+  staple(doc: Document): void {}
 
   copy(src: Document, dest: Document): boolean {
     return false;
   }
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

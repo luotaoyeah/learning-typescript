@@ -13,9 +13,9 @@ num = 8;
 num = 7;
 */
 
-type HybridLiteralType = 'tom' | 18 | false;
+type HybridLiteralType = "tom" | 18 | false;
 
-let foo: HybridLiteralType = 'tom';
+let foo: HybridLiteralType = "tom";
 foo = 18;
 foo = false;
 

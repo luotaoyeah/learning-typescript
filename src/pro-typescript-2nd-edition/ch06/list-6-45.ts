@@ -21,7 +21,7 @@ function start() {
 
 self.onmessage = (e: any) => {
   debugger; // eslint-disable-line
-  if (e.data === 'start') {
+  if (e.data === "start") {
     start();
   } else {
     console.log(e.data); // tslint:disable-line

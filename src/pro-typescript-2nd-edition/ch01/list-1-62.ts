@@ -4,6 +4,6 @@
 
 const f = (x: string) => ({ name: x });
 
-console.log(f('tom')); // tslint:disable-line
+console.log(f("tom")); // tslint:disable-line
 
 export {};

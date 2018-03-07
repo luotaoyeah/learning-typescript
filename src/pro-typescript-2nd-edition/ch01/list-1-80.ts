@@ -8,7 +8,7 @@ class Counter {
   count() {
     this._count++;
     console.log(this._count); // tslint:disable-line
-  };
+  }
 }
 
 const counter = new Counter();

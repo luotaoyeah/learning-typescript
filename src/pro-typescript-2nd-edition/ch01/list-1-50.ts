@@ -3,7 +3,7 @@
  */
 
 function tupleAndDestructureExamp(): [string, number] {
-  return ['tom', 18];
+  return ["tom", 18];
 }
 
 /* destructure tupes into named variables */

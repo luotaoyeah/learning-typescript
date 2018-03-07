@@ -2,11 +2,11 @@
  * Listing 4-9. Printer interface
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
-class Document {
-
-}
+class Document {}
 
 interface Printer {
   copy(src: Document, dest: Document): boolean;
@@ -14,5 +14,7 @@ interface Printer {
   print(doc: Document): string;
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

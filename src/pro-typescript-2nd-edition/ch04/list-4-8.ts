@@ -2,7 +2,9 @@
  * Listing 4-8. Error classes
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class ApplicationError extends Error {
   private errorCode: string;
@@ -14,8 +16,10 @@ class ApplicationError extends Error {
 }
 
 if (Math.random() > 0.5) {
-  throw new ApplicationError('An error has occurred', 'CODE-001');
+  throw new ApplicationError("An error has occurred", "CODE-001");
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

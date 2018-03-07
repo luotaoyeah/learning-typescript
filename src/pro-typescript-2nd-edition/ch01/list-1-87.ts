@@ -13,9 +13,8 @@ interface Repository<T, TID> {
   persist(model: T): TID;
 }
 
-class PersonRepository implements Repository <Person, string> {
-  constructor(private persons: Person[]) {
-  }
+class PersonRepository implements Repository<Person, string> {
+  constructor(private persons: Person[]) {}
 
   get(id: string): Person {
     return this.persons[id];

@@ -3,13 +3,13 @@
  */
 
 const loseScopeExample = {
-  name: 'tom',
+  name: "tom",
   hello() {
-    setTimeout(function (this: any) {
+    setTimeout(function(this: any) {
       /* 'name: ' */
-      console.log('name:', this.name); // tslint:disable-line
+      console.log("name:", this.name); // tslint:disable-line
       /* this refers to Window */
-      console.log('this', this); // tslint:disable-line
+      console.log("this", this); // tslint:disable-line
     }, 1000);
   }
 };
@@ -17,12 +17,12 @@ const loseScopeExample = {
 loseScopeExample.hello();
 
 const preserveScopeExample = {
-  name: 'cat',
+  name: "cat",
   hello() {
     setTimeout(() => {
       /* 'name: cat' */
-      console.log('name:', this.name); // tslint:disable-line
-      console.log('this', this); // tslint:disable-line
+      console.log("name:", this.name); // tslint:disable-line
+      console.log("this", this); // tslint:disable-line
     }, 1000);
   }
 };

@@ -13,7 +13,7 @@ class Student {
 const person = new Person();
 const student = new Student();
 
-console.log('Person:', typeof person); // tslint:disable-line
-console.log('Student:', (student.constructor as any).name); // tslint:disable-line
+console.log("Person:", typeof person); // tslint:disable-line
+console.log("Student:", (student.constructor as any).name); // tslint:disable-line
 
 export {};

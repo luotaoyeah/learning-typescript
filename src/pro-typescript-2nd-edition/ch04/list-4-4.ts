@@ -2,7 +2,9 @@
  * Listing 4-4. Polymorphism
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 interface Vehicle {
   moveTo(x: number, y: number): void;
@@ -15,8 +17,7 @@ class Car implements Vehicle {
   }
 }
 
-class SportCar extends Car {
-}
+class SportCar extends Car {}
 
 class Airplane {
   moveTo(x: number, y: number): void {
@@ -38,5 +39,7 @@ nagivate(new SportCar());
 nagivate(new Airplane());
 nagivate(new Satellite());
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

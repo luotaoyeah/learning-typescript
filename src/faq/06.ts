@@ -8,7 +8,7 @@ class Animal {
 
 class Dog extends Animal {
   shout(): void {
-    console.log('wangwang'); // tslint:disable-line
+    console.log("wangwang"); // tslint:disable-line
   }
 }
 

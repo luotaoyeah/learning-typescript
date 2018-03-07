@@ -13,7 +13,7 @@ interface SomeOtherInterface {
 
 /* user defined type guard */
 function isSomeInterface(x: any): x is SomeInterface {
-  return typeof x.name === 'string' && typeof x.length === 'number';
+  return typeof x.name === "string" && typeof x.length === "number";
 }
 
 function f(x: SomeInterface | SomeOtherInterface) {
@@ -24,6 +24,6 @@ function f(x: SomeInterface | SomeOtherInterface) {
   }
 }
 
-f({ name: 'tom', length: 18 });
+f({ name: "tom", length: 18 });
 
 export {};

@@ -2,7 +2,9 @@
  * Listing 4-5. Single responsibility principle (SRP) violation
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class Database {
   movies: Movie[] = [];
@@ -12,7 +14,7 @@ class Database {
   }
 
   save() {
-    console.log('Database.save()'); // tslint:disable-line
+    console.log("Database.save()"); // tslint:disable-line
   }
 }
 
@@ -24,7 +26,7 @@ class Movie {
   constructor(title: string, year: number, db: Database) {
     this.title = title;
     this.year = year;
-    this.db = Database.connect('username:password@mydb', ['movies']);
+    this.db = Database.connect("username:password@mydb", ["movies"]);
   }
 
   save() {
@@ -32,5 +34,7 @@ class Movie {
   }
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

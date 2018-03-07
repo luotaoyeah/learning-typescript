@@ -3,11 +3,11 @@
  */
 
 /* intersection type */
-type URL = string & { 'url': {} };
-type URI = string & { 'uri': {} };
+type URL = string & { url: {} };
+type URI = string & { uri: {} };
 
-let url: URL = 'http://www.baidu.com' as URL;
-let uri: URI = 'http://www.google.com' as URI;
+let url: URL = "http://www.baidu.com" as URL;
+let uri: URI = "http://www.google.com" as URI;
 
 /*
 url = uri;

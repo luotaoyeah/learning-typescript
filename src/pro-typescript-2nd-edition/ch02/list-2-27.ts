@@ -2,18 +2,20 @@
  * Listing 2-27. Property decorators
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 function log(target: any, key: string) {
   let value = target[key];
 
-  const getter = function () {
-    console.log('getter:', value); // tslint:disable-line
+  const getter = function() {
+    console.log("getter:", value); // tslint:disable-line
     return value;
   };
 
-  const setter = function (newValue: any) {
-    console.log('setter:', newValue); // tslint:disable-line
+  const setter = function(newValue: any) {
+    console.log("setter:", newValue); // tslint:disable-line
     value = newValue;
   };
 
@@ -28,21 +30,22 @@ function log(target: any, key: string) {
 }
 
 class Calculator {
-  @log
-  name: string;
+  @log name: string;
 
   hello() {
-    console.log('Calculator.name:', this.name); // tslint:disable-line
+    console.log("Calculator.name:", this.name); // tslint:disable-line
   }
 }
 
 const calculator = new Calculator();
 
-calculator.name = 'tom';
+calculator.name = "tom";
 calculator.hello();
 
-calculator.name = 'cat';
+calculator.name = "cat";
 calculator.hello();
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

@@ -2,7 +2,7 @@
  * Listing 1-6. Constants
  */
 
-const name = 'Foo';
+const name = "Foo";
 
 /*
 /!* TS2540: Cannot assign to 'name' because it is a constant or a read-only property. *!/

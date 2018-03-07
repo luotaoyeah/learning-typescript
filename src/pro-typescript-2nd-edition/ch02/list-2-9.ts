@@ -2,7 +2,7 @@
  * Listing 2-9. Importing named module members
  */
 
-import { Person } from './list-2-7';
+import { Person } from "./list-2-7";
 
 class Student extends Person {
   score: number;
@@ -13,7 +13,7 @@ class Student extends Person {
   }
 }
 
-const student = new Student('tom', 100);
+const student = new Student("tom", 100);
 
 console.log(student); // tslint:disable-line
 

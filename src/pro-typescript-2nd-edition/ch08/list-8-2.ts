@@ -3,7 +3,7 @@
  */
 
 class ApplicationError implements Error {
-  public name: string = 'ApplicationError';
+  public name: string = "ApplicationError";
   message: string;
 
   constructor(message: string) {
@@ -16,4 +16,3 @@ class ApplicationError implements Error {
 }
 
 export { ApplicationError };
-

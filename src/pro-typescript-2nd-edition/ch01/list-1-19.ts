@@ -10,21 +10,21 @@ interface IMonument {
 const monuments: IMonument[] = [];
 
 monuments.push({
-  name: 'A',
+  name: "A",
   height: 18
 });
 
 monuments.push({
-  name: 'B',
+  name: "B",
   height: 19
 });
 
 monuments.push({
-  name: 'C',
+  name: "C",
   height: 17
 });
 
-monuments.sort((a: IMonument, b: IMonument) => (b.height - a.height));
+monuments.sort((a: IMonument, b: IMonument) => b.height - a.height);
 
 const heightestMonument: IMonument = monuments[0];
 console.log(JSON.stringify(heightestMonument)); // tslint:disable-line

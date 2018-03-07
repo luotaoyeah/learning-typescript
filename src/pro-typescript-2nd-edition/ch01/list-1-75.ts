@@ -21,11 +21,11 @@ class Person implements IPerson {
 
   /* method can has fewer parameters than the interface specifies */
   hello(): void {
-    console.log('hello() in Person'); // tslint:disable-line
+    console.log("hello() in Person"); // tslint:disable-line
   }
 }
 
-const person = new Person('tom');
+const person = new Person("tom");
 console.log(person.name); // tslint:disable-line
 person.hello();
 
@@ -41,11 +41,11 @@ class SeniorStudent extends Person implements IStudent {
 
   /* method override */
   hello() {
-    console.log('hello() in SeniorStudent'); // tslint:disable-line
+    console.log("hello() in SeniorStudent"); // tslint:disable-line
   }
 }
 
-const seniorStudent = new SeniorStudent('cat', 99, 17);
+const seniorStudent = new SeniorStudent("cat", 99, 17);
 seniorStudent.hello();
 
 export {};

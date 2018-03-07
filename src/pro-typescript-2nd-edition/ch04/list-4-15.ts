@@ -5,14 +5,16 @@ import {
   BasicWheelCleaning,
   ExecutiveWheelCleaning,
   WheelCleaning
-} from './list-4-13';
+} from "./list-4-13";
 import {
   BasicBodyCleaning,
   BodyCleaning,
   ExecutiveBodyCleaning
-} from './list-4-14';
+} from "./list-4-14";
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class CarWashProgram {
   private level: number;
@@ -37,7 +39,7 @@ class CarWashProgram {
         wheelWash = new BasicWheelCleaning();
         wheelWash.cleanWheel();
 
-        bodyWash = new ExecutiveBodyCleaning(); 
+        bodyWash = new ExecutiveBodyCleaning();
         bodyWash.cleanBody();
         break;
       case 3:
@@ -55,5 +57,7 @@ class CarWashProgram {
 
 new CarWashProgram(3).wash();
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

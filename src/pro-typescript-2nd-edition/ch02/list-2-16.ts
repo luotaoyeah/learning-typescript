@@ -4,14 +4,13 @@
 
 declare function require(module: string): any;
 
-import { Person } from './list-2-7';
+import { Person } from "./list-2-7";
 
 let condition: boolean = true;
 
 if (condition) {
-  const MyPerson: typeof Person = require('./list-2-7');
-  const myPerson = new MyPerson('tom');
+  const MyPerson: typeof Person = require("./list-2-7");
+  const myPerson = new MyPerson("tom");
 
   console.log(myPerson.name); // tslint:disable-line
 }
-

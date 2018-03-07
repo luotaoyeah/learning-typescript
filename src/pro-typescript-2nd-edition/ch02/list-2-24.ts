@@ -5,8 +5,8 @@
 function log(target: Function, key: string, descriptor: PropertyDescriptor) {
   const fn = descriptor.value;
 
-  descriptor.value = function (...args: any[]) {
-    console.log('args:', JSON.stringify(args)); // tslint:disable-line
+  descriptor.value = function(...args: any[]) {
+    console.log("args:", JSON.stringify(args)); // tslint:disable-line
     return fn.apply(this, args);
   };
 

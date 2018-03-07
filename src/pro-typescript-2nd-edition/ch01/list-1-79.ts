@@ -8,19 +8,19 @@ class Counter {
   count(id: string) {
     this._count++;
     console.log(this._count); // tslint:disable-line
-  };
+  }
 }
 
 const counter = new Counter();
 
 /* 1 */
-counter.count('1');
+counter.count("1");
 
 const copyCount = (id: string) => {
   counter.count(id);
 };
 
 /* 2 */
-copyCount('2');
+copyCount("2");
 
 export {};

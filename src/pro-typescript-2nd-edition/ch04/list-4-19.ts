@@ -2,7 +2,9 @@
  * Listing 4-19. Mixin enabler function
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 function applyMixins(derivedCtor: any, baseCtors: any[]) {
   baseCtors.forEach((baseCtor: any) => {
@@ -12,7 +14,7 @@ function applyMixins(derivedCtor: any, baseCtors: any[]) {
   });
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
-export {
-  applyMixins
-};
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
+export { applyMixins };

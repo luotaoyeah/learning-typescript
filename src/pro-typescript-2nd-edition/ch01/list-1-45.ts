@@ -2,7 +2,7 @@
  * Listing 1-45. Object destructuring
  */
 
-const person = { name: 'tom', age: 18 };
+const person = { name: "tom", age: 18 };
 
 /* {[pattern]: [variable]} */
 const { name: n, age: a } = person;

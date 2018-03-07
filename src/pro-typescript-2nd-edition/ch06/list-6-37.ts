@@ -2,7 +2,9 @@
  * Listing 6-37. Type definitions for battery status
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 interface BatteryManager {
   charging: boolean;
@@ -21,4 +23,6 @@ interface Navigator {
   webkitBattery: BatteryManager;
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line

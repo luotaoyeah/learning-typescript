@@ -4,7 +4,7 @@
 
 class Car {
   log() {
-    console.log('Car.log()'); // tslint:disable-line
+    console.log("Car.log()"); // tslint:disable-line
   }
 }
 
@@ -12,12 +12,11 @@ class Car {
 namespace Car {
   export class Engine {
     log() {
-      console.log('Car.Engine.log()'); // tslint:disable-line
+      console.log("Car.Engine.log()"); // tslint:disable-line
     }
   }
 
-  export class Wheel {
-  }
+  export class Wheel {}
 }
 
 const car = new Car();

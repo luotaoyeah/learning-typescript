@@ -2,15 +2,17 @@
  * Listing 4-11. High-level dependency on low-level class
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class Light {
   switchOn() {
-    console.log('Light.switchOn()'); // tslint:disable-line
+    console.log("Light.switchOn()"); // tslint:disable-line
   }
 
   switchOff() {
-    console.log('Light.switchOff()'); // tslint:disable-line
+    console.log("Light.switchOff()"); // tslint:disable-line
   }
 }
 
@@ -34,5 +36,7 @@ class LightSwitch {
   }
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

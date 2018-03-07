@@ -2,10 +2,8 @@
  * Why do these empty classes behave strangely?
  */
 
-class Empty {
-}
+class Empty {}
 
 const empty: Empty = window;
 
 export {};
-

@@ -13,18 +13,18 @@ interface IPersonDict {
 
 let personDict: IPersonDict = {};
 
-personDict['a'] = {
-  name: 'toma',
+personDict["a"] = {
+  name: "toma",
   age: 28
 };
 
 personDict[0] = {
-  name: 'tom0',
+  name: "tom0",
   age: 18
 };
 
 personDict[5] = {
-  name: 'tom5',
+  name: "tom5",
   age: 18
 };
 

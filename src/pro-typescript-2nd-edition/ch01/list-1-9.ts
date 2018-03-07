@@ -10,7 +10,7 @@ interface IPerson {
 }
 
 const person: IPerson = {
-  name: 'tom',
+  name: "tom",
   age: 18
 };
 
@@ -21,7 +21,7 @@ type PersonType = {
 };
 
 const person2: PersonType = {
-  name: 'tom',
+  name: "tom",
   age: 18
 };
 

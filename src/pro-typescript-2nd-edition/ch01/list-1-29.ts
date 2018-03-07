@@ -3,12 +3,12 @@
  */
 
 interface IStudent {
-  kind: 'student';
+  kind: "student";
   score: number;
 }
 
 interface ITeacher {
-  kind: 'teacher';
+  kind: "teacher";
   age: number;
 }
 
@@ -17,9 +17,9 @@ type Person = IStudent | ITeacher;
 function discriminatedUnionExample(person: Person): number {
   /* type guard */
   switch (person.kind) {
-    case 'student':
+    case "student":
       return person.score;
-    case 'teacher':
+    case "teacher":
       return person.age;
     default:
       assertNever(person);
@@ -34,7 +34,7 @@ function assertNever(arg: never): never {
 }
 
 discriminatedUnionExample({
-  kind: 'student',
+  kind: "student",
   score: 99
 });
 

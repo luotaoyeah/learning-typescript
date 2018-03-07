@@ -3,8 +3,7 @@
  */
 
 class DomainId<T> {
-  constructor(private id: T) {
-  }
+  constructor(private id: T) {}
 }
 
 class OrderId extends DomainId<number> {
@@ -27,12 +26,11 @@ function acceptDomainId(id: DomainId<any>) {
   console.log(id); // tslint:disable-line
 }
 
-const personId = new PersonId('tom');
+const personId = new PersonId("tom");
 const orderId = new OrderId(18);
 
 acceptDomainId(personId);
 acceptDomainId(orderId);
-
 
 acceptPersonId(personId);
 

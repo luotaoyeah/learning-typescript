@@ -8,17 +8,11 @@ interface IPerson {
 }
 
 /* Mapped types */
-type Readonly<T> = {
-  readonly [K in keyof T] :T[K];
-  };
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
 
-type Optional<T> = {
-  [K in keyof T]?:T[K];
-  };
+type Optional<T> = { [K in keyof T]?: T[K] };
 
-type Nullable<T> = {
-  [K in keyof T]: T[K] | null;
-  };
+type Nullable<T> = { [K in keyof T]: T[K] | null };
 
 type ReadonlyPerson = Readonly<IPerson>;
 type OptionalPerson = Optional<IPerson>;

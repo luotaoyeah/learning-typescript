@@ -3,7 +3,7 @@
  */
 
 class Person {
-  private _name: string = 'cat';
+  private _name: string = "cat";
 
   get name(): string {
     console.log(`get name: ${this._name}`); // eslint-disable-line
@@ -19,7 +19,7 @@ class Person {
 const person = new Person();
 
 console.log(person.name); // tslint:disable-line
-person.name = 'tom';
+person.name = "tom";
 console.log(person.name); // tslint:disable-line
 
 export {};

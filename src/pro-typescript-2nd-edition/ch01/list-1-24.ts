@@ -10,11 +10,11 @@ interface IPerson {
 /* 4 builtin mapped types */
 type ReadonlyPerson = Readonly<IPerson>;
 type OptionalPerson = Partial<IPerson>;
-type PickPerson = Pick<IPerson, 'name'>;
-type RecordPerson = Record<'teacher' | 'student', IPerson>;
+type PickPerson = Pick<IPerson, "name">;
+type RecordPerson = Record<"teacher" | "student", IPerson>;
 
 let readonlyPerson: ReadonlyPerson = {
-  name: 'tom',
+  name: "tom",
   age: 18
 };
 
@@ -24,7 +24,7 @@ readonlyPerson.name = 'cat';
 */
 
 let optionalPerson: OptionalPerson = {
-  name: 'tom'
+  name: "tom"
 };
 
 /*
@@ -38,7 +38,7 @@ let pickPerson: PickPerson = {
 let recordPerson: RecordPerson = {
   student: readonlyPerson,
   teacher: {
-    name: 'cat',
+    name: "cat",
     age: 19
   }
 };

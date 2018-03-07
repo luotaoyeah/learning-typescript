@@ -14,7 +14,7 @@ interface IStudent {
 
 function getSomebody(): IPerson | IStudent {
   return {
-    name: 'tom',
+    name: "tom",
     score: 100
   };
 }

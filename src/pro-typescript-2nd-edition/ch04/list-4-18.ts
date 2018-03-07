@@ -1,9 +1,11 @@
 /**
  * Listing 4-18. Abstract factory pattern in use
  */
-import { ValetFactory } from './list-4-16';
+import { ValetFactory } from "./list-4-16";
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class CarWashProgram {
   private valetFactory: ValetFactory;
@@ -18,5 +20,7 @@ class CarWashProgram {
   }
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

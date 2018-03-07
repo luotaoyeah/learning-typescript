@@ -5,15 +5,17 @@ import {
   BasicWheelCleaning,
   ExecutiveWheelCleaning,
   WheelCleaning
-} from './list-4-13';
+} from "./list-4-13";
 import {
   BasicBodyCleaning,
   BodyCleaning,
   ExecutiveBodyCleaning
-} from './list-4-14';
-import { ValetFactory } from './list-4-16';
+} from "./list-4-14";
+import { ValetFactory } from "./list-4-16";
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class OneWashFactory implements ValetFactory {
   getWheelCleaning(): WheelCleaning {
@@ -45,9 +47,7 @@ class ThreeWashFactory implements ValetFactory {
   }
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
-export {
-  OneWashFactory,
-  TwoWashFactory,
-  ThreeWashFactory
-};
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
+export { OneWashFactory, TwoWashFactory, ThreeWashFactory };

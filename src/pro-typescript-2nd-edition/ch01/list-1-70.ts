@@ -9,12 +9,12 @@ interface IPerson {
 }
 
 const getPerson = (): IPerson => {
-  let person = function (name: string) {
+  let person = function(name: string) {
     return `as a function: ${name}`;
   } as IPerson;
 
   person.hello = (name: string) => {
-    console.log('as an object:', name); // tslint:disable-line
+    console.log("as an object:", name); // tslint:disable-line
   };
 
   return person;
@@ -22,7 +22,7 @@ const getPerson = (): IPerson => {
 
 const person = getPerson();
 
-console.log(person('tom')); // tslint:disable-line;
-person.hello('cat');
+console.log(person("tom")); // tslint:disable-line;
+person.hello("cat");
 
 export {};

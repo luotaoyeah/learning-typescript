@@ -30,9 +30,9 @@ logger = new Logger();
 */
 
 logger = new ConsoleLogger();
-logger.log('console logger');
+logger.log("console logger");
 
 logger = new AlertLogger();
-logger.log('alert logger');
+logger.log("alert logger");
 
 export {};

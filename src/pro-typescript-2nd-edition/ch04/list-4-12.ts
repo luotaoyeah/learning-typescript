@@ -2,7 +2,9 @@
  * Listing 4-12. Implementing the dependency inversion principle (DIP)
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 interface LightSource {
   switchOn(): void;
@@ -12,11 +14,11 @@ interface LightSource {
 
 class Light implements LightSource {
   switchOn() {
-    console.log('Light.switchOn()'); // tslint:disable-line
+    console.log("Light.switchOn()"); // tslint:disable-line
   }
 
   switchOff() {
-    console.log('Light.switchOff()'); // tslint:disable-line
+    console.log("Light.switchOff()"); // tslint:disable-line
   }
 }
 
@@ -40,5 +42,7 @@ class LightSwitch {
   }
 }
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

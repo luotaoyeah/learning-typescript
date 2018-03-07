@@ -5,7 +5,7 @@
 namespace FirstNamespace {
   export class Example {
     log() {
-      console.log('FirstNamespace.Example.log()'); // tslint:disable-line
+      console.log("FirstNamespace.Example.log()"); // tslint:disable-line
     }
   }
 }
@@ -13,7 +13,7 @@ namespace FirstNamespace {
 namespace SecondNamespace {
   export class Example {
     log() {
-      console.log('SecondNamespaace.Example.log()'); // eslint-disable-line
+      console.log("SecondNamespaace.Example.log()"); // eslint-disable-line
     }
   }
 }

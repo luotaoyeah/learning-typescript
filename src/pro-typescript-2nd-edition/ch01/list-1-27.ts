@@ -10,12 +10,11 @@ function typeGuardExample(stringOrNumber: string | number) {
     const b = stringOrNumber.toFixed();
   */
 
-  if (typeof stringOrNumber === 'string') {
+  if (typeof stringOrNumber === "string") {
     console.log(stringOrNumber.length); // tslint:disable-line
   } else {
     console.log(stringOrNumber.toFixed(2)); // tslint:disable-line
   }
-
 }
 
 export {};

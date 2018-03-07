@@ -3,7 +3,7 @@
  */
 
 /* '0' is a truthy value */
-const str: string = '0';
+const str: string = "0";
 
 /* false */
 console.log(!str); // tslint:disable-line

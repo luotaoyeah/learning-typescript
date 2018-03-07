@@ -4,7 +4,7 @@
 
 class Foo {
   get bar() {
-    return 'bar';
+    return "bar";
   }
 }
 

@@ -4,14 +4,14 @@
 
 class FizzBuzz {
   generate(input: number): number | string {
-    let output: string = '';
+    let output: string = "";
 
     if (input % 3 === 0) {
-      output += 'fizz';
+      output += "fizz";
     }
 
     if (input % 5 === 0) {
-      output += 'buzz';
+      output += "buzz";
     }
 
     return output || input;
@@ -19,4 +19,3 @@ class FizzBuzz {
 }
 
 export { FizzBuzz };
-

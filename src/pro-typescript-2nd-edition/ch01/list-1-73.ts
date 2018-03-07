@@ -3,20 +3,18 @@
  */
 
 class Song {
-  constructor(private artist: string, private title: string) {
-  }
+  constructor(private artist: string, private title: string) {}
 }
 
 class PlayList {
   private songs: Song[] = [];
   public static readonly maxCount: number = 3;
 
-  constructor(public name: string) {
-  }
+  constructor(public name: string) {}
 
   add(song: Song): Song {
     if (this.songs.length >= PlayList.maxCount) {
-      throw new Error('Playlist is full.');
+      throw new Error("Playlist is full.");
     }
 
     this.songs.push(song);
@@ -34,14 +32,14 @@ class PlayList {
   }
 }
 
-const playList = new PlayList('my playlist 01');
+const playList = new PlayList("my playlist 01");
 
-playList.add(new Song('周杰伦', '等你下课'));
-playList.add(new Song('林俊杰', '江南'));
-playList.add(new Song('潘玮柏', '我的麦克风'));
+playList.add(new Song("周杰伦", "等你下课"));
+playList.add(new Song("林俊杰", "江南"));
+playList.add(new Song("潘玮柏", "我的麦克风"));
 
-console.log('playList.name:', playList.name); // tslint:disable-line
-console.log('PlayList.maxCount:', PlayList.maxCount); // tslint:disable-line
+console.log("playList.name:", playList.name); // tslint:disable-line
+console.log("PlayList.maxCount:", PlayList.maxCount); // tslint:disable-line
 
 /*
 /!* TS2540: Cannot assign to 'maxCount' because it is a constant or a read-only property. *!/

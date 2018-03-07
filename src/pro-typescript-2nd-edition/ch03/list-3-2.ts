@@ -2,23 +2,25 @@
  * Listing 3-2. Using and avoiding equivalence
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 type DomainId<T extends string> = {
-  type: T,
-  value: number
+  type: T;
+  value: number;
 };
 
-type CustomerId = DomainId<'CustomerId'>;
-type ProductId = DomainId<'ProductId'>;
+type CustomerId = DomainId<"CustomerId">;
+type ProductId = DomainId<"ProductId">;
 
 const getCustomerId = (value: number): CustomerId => ({
-  type: 'CustomerId',
+  type: "CustomerId",
   value
 });
 
 const getProductId = (value: number) => ({
-  type: 'ProductId',
+  type: "ProductId",
   value
 });
 
@@ -27,11 +29,11 @@ const productId = getProductId(2);
 
 class Example {
   static avoidAccidentalEquivallence(id: CustomerId) {
-    console.log('type:', typeof id); // tslint:disable-line
+    console.log("type:", typeof id); // tslint:disable-line
   }
 
   static useEquivallence(id: number) {
-    console.log('type:', typeof id); // tslint:disable-line
+    console.log("type:", typeof id); // tslint:disable-line
   }
 }
 
@@ -45,5 +47,7 @@ Example.avoidAccidentalEquivallence(productId);
 Example.useEquivallence(customerId.value);
 Example.useEquivallence(productId.value);
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

@@ -30,19 +30,19 @@ namespace PersonNS {
     }
   }
 
-  export const defaultName = 'tom';
+  export const defaultName = "tom";
 
   export namespace InnerNS {
     export class InnerPerson {
       static log() {
         /* non exported member can be accessed from within nested namespace */
-        console.log('PersonNS.InnerNS.InnerPerson.log()', defaultAge); // tslint:disable-line
+        console.log("PersonNS.InnerNS.InnerPerson.log()", defaultAge); // tslint:disable-line
       }
     }
   }
 }
 
-const person = new PersonNS.Person(19, 'tom');
+const person = new PersonNS.Person(19, "tom");
 
 /* 'tom' */
 console.log(person.name); // tslint:disable-line

@@ -14,8 +14,7 @@ class PrintCoordinate {
   y: number;
 }
 
-function sendToPrinter(coordinate: PrintCoordinate) {
-}
+function sendToPrinter(coordinate: PrintCoordinate) {}
 
 function getScreenCoordinate(): ScreenCooidinate {
   return { x: 1, y: 1 } as ScreenCooidinate;

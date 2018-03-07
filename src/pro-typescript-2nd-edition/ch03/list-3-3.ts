@@ -2,13 +2,14 @@
  * Listing 3-3. TypeScript ordered array class
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class OrderArray<T> {
   private items: T[] = [];
 
-  constructor(private comparer?: (x: T, y: T) => number) {
-  }
+  constructor(private comparer?: (x: T, y: T) => number) {}
 
   add(item: T) {
     this.items.push(item);
@@ -31,5 +32,7 @@ orderArray.add(2);
 
 console.log(orderArray.getItem(1)); // tslint:disable-line
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

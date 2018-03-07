@@ -2,10 +2,12 @@
  * Improved handling of structurally identical classes and instanceof expressions
  */
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 
 class A {
-  name: string = 'tom';
+  name: string = "tom";
 }
 
 class B extends A {
@@ -42,8 +44,10 @@ test(new C(20));
 
 /*  */
 test({
-  name: 'cat'
+  name: "cat"
 });
 
-console.log('----------------------------------------------------------------------------------------------------'); // tslint:disable-line
+console.log(
+  "----------------------------------------------------------------------------------------------------"
+); // tslint:disable-line
 export {};

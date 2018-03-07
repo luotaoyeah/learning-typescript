@@ -14,11 +14,11 @@ type IntersectionType = IPerson & IStudent;
 
 let person: IntersectionType = {
   f1() {
-    console.log('from IPerson'); // tslint:disable-line
+    console.log("from IPerson"); // tslint:disable-line
   },
   f2() {
-    console.log('from IStudent'); // tslint:disable-line
-    return '';
+    console.log("from IStudent"); // tslint:disable-line
+    return "";
   }
 };
 

@@ -2,7 +2,7 @@
  * Listing 2-10. Imported members with an alias
  */
 
-import { Person as MyPerson } from './list-2-7';
+import { Person as MyPerson } from "./list-2-7";
 
 class Student extends MyPerson {
   score: number;
@@ -13,7 +13,7 @@ class Student extends MyPerson {
   }
 }
 
-const student = new Student('tom', 100);
+const student = new Student("tom", 100);
 
 console.log(student); // tslint:disable-line
 

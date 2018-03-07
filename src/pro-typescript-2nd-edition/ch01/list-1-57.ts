@@ -4,7 +4,7 @@
 
 function f(...args: number[]) {
   let sum = 0;
-  args.forEach(x => sum += x);
+  args.forEach(x => (sum += x));
   return sum;
 }
 

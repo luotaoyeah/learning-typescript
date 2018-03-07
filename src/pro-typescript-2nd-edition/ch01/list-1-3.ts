@@ -22,5 +22,4 @@ let globalScope = 1;
 
     let nestedBlockScope = 3;
   }
-
 }
