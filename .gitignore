@@ -1,0 +1,8 @@
+.idea
+.vs
+.DS_Store
+node_modules
+dist/
+out/
+built/
+pro-typescript-2nd-edition-code.iml
