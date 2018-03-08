@@ -6,7 +6,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "build": "rimraf ./dist && webpack",
-    "demo": "rimraf ./dist && webpack && node ./dist/index.js"
+    "dev": "rimraf ./dist && webpack && node ./dist/index.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",

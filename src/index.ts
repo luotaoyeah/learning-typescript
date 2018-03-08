@@ -1,1 +1,1 @@
-import "./faq/why-do-these-empty-classes-behave-strangely";
+import "./faq/classes/what-does-it-mean-for-an-interface-to-extend-a-class";
