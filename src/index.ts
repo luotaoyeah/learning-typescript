@@ -1,1 +1,1 @@
-import "./faq/generics/why-cant-i-write-typeof-t-new-t-or-instanceof-t-in-my-generic-function";
+import "./faq/why-cant-i-access-arbitrary-properties-on-a-type-with-a-string-indexer";
