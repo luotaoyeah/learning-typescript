@@ -1,1 +1,1 @@
-import "./faq/classes/what-does-it-mean-for-an-interface-to-extend-a-class";
+import "./faq/generics/why-cant-i-write-typeof-t-new-t-or-instanceof-t-in-my-generic-function";
