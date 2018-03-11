@@ -1,2 +1,3 @@
-# typescript-practice
-The practice of learning TypeScript
+# learning-typescript
+
+Learning TypeScript
