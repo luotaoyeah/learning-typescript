@@ -1,1 +1,1 @@
-import "./handbook/mixins/mixin-sample";
+import "./ts2.8/conditional-types";
