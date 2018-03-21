@@ -1,5 +1,3 @@
 {
-  "extends": [
-    "tslint:lastest"
-  ]
+  "extends": ["tslint:latest", "tslint-config-prettier"]
 }
