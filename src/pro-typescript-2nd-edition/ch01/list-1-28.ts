@@ -17,13 +17,13 @@ function isStudent(person: IStudent | any): person is IStudent {
 function customTypeGuardExample(person: IStudent | ITeacher) {
   /*
     /!* TS2339: Property 'score' does not exist on type 'IStudent | ITeacher'.  *!/
-    console.log(person.score); // tslint:disable-line
+    console.log(person.score);
   */
 
   if (isStudent(person)) {
-    console.log(person.score); // tslint:disable-line
+    console.log(person.score);
   } else {
-    console.log(person.students); // tslint:disable-line
+    console.log(person.students);
   }
 }
 

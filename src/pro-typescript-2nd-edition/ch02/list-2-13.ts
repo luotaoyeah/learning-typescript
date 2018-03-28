@@ -18,6 +18,6 @@ myPerson.name = "tom";
 
 const person = new PersonModule.Person("tom");
 
-console.log(person.name); // tslint:disable-line
+console.log(person.name);
 
 export {};

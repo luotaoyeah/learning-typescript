@@ -2,9 +2,7 @@
  * Listing 6-10. Using insertBefore
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 const contentElement: HTMLDivElement = document.querySelector(
   "#content"
@@ -20,7 +18,5 @@ childElement02.textContent = "child02";
 contentElement.insertBefore(childElement01, contentElement.firstChild);
 contentElement.appendChild(childElement02);
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

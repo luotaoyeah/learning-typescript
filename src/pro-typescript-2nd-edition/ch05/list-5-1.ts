@@ -2,9 +2,7 @@
  * Listing 5-1. Queued timer
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 function test() {
   console.time("time:");
@@ -16,7 +14,5 @@ function test() {
 
 test();
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

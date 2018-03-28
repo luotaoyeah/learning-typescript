@@ -2,9 +2,7 @@
  * Listing 6-21. Product.ts
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class Product {
   public id: number;
@@ -16,7 +14,5 @@ class Product {
   }
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export { Product };

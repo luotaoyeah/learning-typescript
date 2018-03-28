@@ -2,9 +2,7 @@
  * Listing 5-37. Turning an extension into a polyfill
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 interface Array<T> {
   myForEach(callback: (item: number) => any): void;
@@ -18,6 +16,4 @@ if (!Array.prototype.myForEach) {
   };
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");

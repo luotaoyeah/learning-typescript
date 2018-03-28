@@ -2,9 +2,7 @@
  * definite assignment assertion
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 /* not suppoerted by IDEA yet */
 /*
@@ -20,7 +18,5 @@ class A {
 }
 */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

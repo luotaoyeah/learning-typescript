@@ -2,9 +2,7 @@
  * Listing 3-11. Checking a parameter
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 enum Size {
   L,
@@ -12,7 +10,7 @@ enum Size {
 }
 
 function f(x: number) {
-  console.log(x); // tslint:disable-line
+  console.log(x);
 }
 
 f(1);
@@ -23,7 +21,5 @@ f(Size.XL);
 f(null);
 */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

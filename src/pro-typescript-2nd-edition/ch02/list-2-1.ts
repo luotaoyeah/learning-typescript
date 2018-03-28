@@ -5,7 +5,7 @@
 namespace FirstNamespace {
   export class Example {
     log() {
-      console.log("FirstNamespace.Example.log()"); // tslint:disable-line
+      console.log("FirstNamespace.Example.log()");
     }
   }
 }

@@ -8,5 +8,5 @@ import Person = require('./list-2-14');
 
 const person = new Person('tom');
 
-console.log(person.name); // tslint:disable-line
+console.log(person.name);
 */

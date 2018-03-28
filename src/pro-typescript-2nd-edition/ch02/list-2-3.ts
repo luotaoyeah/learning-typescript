@@ -36,7 +36,7 @@ namespace PersonNS {
     export class InnerPerson {
       static log() {
         /* non exported member can be accessed from within nested namespace */
-        console.log("PersonNS.InnerNS.InnerPerson.log()", defaultAge); // tslint:disable-line
+        console.log("PersonNS.InnerNS.InnerPerson.log()", defaultAge);
       }
     }
   }
@@ -45,10 +45,10 @@ namespace PersonNS {
 const person = new PersonNS.Person(19, "tom");
 
 /* 'tom' */
-console.log(person.name); // tslint:disable-line
+console.log(person.name);
 
 /* 'tom' */
-console.log(PersonNS.defaultName); // tslint:disable-line
+console.log(PersonNS.defaultName);
 
 /* 'PersonNS.InnerNS.InnerPerson.log()' 18 */
 PersonNS.InnerNS.InnerPerson.log();
@@ -58,7 +58,7 @@ PersonNS.InnerNS.InnerPerson.log();
 const privatePerson = new PersonNS.PrivatePerson();
 
 /!* TS2339: Property 'defaultAge' does not exist on type 'typeof PersonNS'. *!/
-console.log(PersonNS.defaultAge); // tslint:disable-line
+console.log(PersonNS.defaultAge);
 */
 
 export {};

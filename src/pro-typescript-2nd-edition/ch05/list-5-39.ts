@@ -2,9 +2,7 @@
  * Listing 5-39. Sealing an instance
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class Person {
   constructor(public name: string) {}
@@ -16,13 +14,11 @@ Object.seal(person);
 
 // @ts-ignore:
 person.age = 18;
-console.log("person is sealed:", Object.isSealed(person)); // tslint:disable-line
+console.log("person is sealed:", Object.isSealed(person));
 
 /* {"name":"tom"} */
-console.log(JSON.stringify(person)); // tslint:disable-line
+console.log(JSON.stringify(person));
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 export {};

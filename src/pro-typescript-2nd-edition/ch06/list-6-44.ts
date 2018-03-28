@@ -5,5 +5,5 @@
 const worker: Worker = new Worker("./out/ch06/list-6-43.js");
 
 worker.addEventListener("message", (e: any) => {
-  console.log(JSON.stringify(e.data, null, 2)); // tslint:disable-line
+  console.log(JSON.stringify(e.data, null, 2));
 });

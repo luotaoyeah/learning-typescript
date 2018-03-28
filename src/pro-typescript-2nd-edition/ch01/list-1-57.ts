@@ -9,9 +9,9 @@ function f(...args: number[]) {
 }
 
 /* 3 */
-console.log(f(1, 2)); // tslint:disable-line
+console.log(f(1, 2));
 
 /* 6 */
-console.log(f(1, 2, 3)); // tslint:disable-line
+console.log(f(1, 2, 3));
 
 export {};

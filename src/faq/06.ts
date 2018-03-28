@@ -8,12 +8,12 @@ class Animal {
 
 class Dog extends Animal {
   shout(): void {
-    console.log("wangwang"); // tslint:disable-line
+    console.log("wangwang");
   }
 }
 
 function test(animals: Animal[]): void {
-  console.log(animals); // tslint:disable-line
+  console.log(animals);
 }
 
 test([new Dog(), new Dog()]);

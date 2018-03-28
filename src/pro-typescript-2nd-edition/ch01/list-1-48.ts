@@ -7,6 +7,6 @@ const array = [1, 2, 3];
 const [first, second, third, fourth] = array;
 
 /* undefined */
-console.log(fourth); // tslint:disable-line
+console.log(fourth);
 
 export {};

@@ -3,7 +3,7 @@
  */
 
 const log = (source: string) => (message: string) =>
-  console.log(source, message); // tslint:disable-line;
+  console.log(source, message);
 
 const logger = log("tom:");
 

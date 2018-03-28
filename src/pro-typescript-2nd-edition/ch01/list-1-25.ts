@@ -22,9 +22,9 @@ function getSomebody(): IPerson | IStudent {
 const somebody = getSomebody();
 
 /* both have a name property */
-console.log(somebody.name); // tslint:disable-line
+console.log(somebody.name);
 
 /* type assertion */
-console.log((somebody as IStudent).score); // tslint:disable-line
+console.log((somebody as IStudent).score);
 
 export {};

@@ -15,6 +15,6 @@ class Student extends PersonModule.Person {
 
 const student = new Student("tom", 18);
 
-console.log(student); // tslint:disable-line
+console.log(student);
 
 export {};

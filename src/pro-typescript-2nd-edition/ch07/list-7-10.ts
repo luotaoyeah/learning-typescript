@@ -8,12 +8,12 @@ import { NextFunction, Request, Response } from "express-serve-static-core";
 const app = express();
 
 app.use(function(req: Request, res: Response, next: NextFunction) {
-  console.log("middleware01"); // tslint:disable-line
+  console.log("middleware01");
   res.end();
 });
 
 app.use(function(req: Request, res: Response, next: NextFunction) {
-  console.log("middleware02"); // tslint:disable-line
+  console.log("middleware02");
   next();
 });
 
@@ -23,10 +23,10 @@ app.get("/", (request: Request, response: Response) => {
 });
 
 app.listen(8080, "localhost", () => {
-  console.log("listening at http://localhost:8080"); // tslint:disable-line
+  console.log("listening at http://localhost:8080");
 });
 
 app.use(function(err: any, req: Request, res: Response, next: NextFunction) {
-  console.error(err); // tslint:disable-line
+  console.error(err);
   res.status(500).send("an error occured");
 });

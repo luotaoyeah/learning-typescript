@@ -7,8 +7,8 @@ interface StringMap {
 }
 
 function f(obj: StringMap) {
-  console.log(obj.foo); // tslint:disable-line
-  console.log(obj["foo"]); // tslint:disable-line
+  console.log(obj.foo);
+  console.log(obj["foo"]);
 }
 
 f({});

@@ -24,6 +24,6 @@ self.onmessage = (e: any) => {
   if (e.data === "start") {
     start();
   } else {
-    console.log(e.data); // tslint:disable-line
+    console.log(e.data);
   }
 };

@@ -20,5 +20,5 @@ app.get("/two/", (request: Request, response: Response) => {
 });
 
 app.listen(8080, "localhost", () => {
-  console.log("listening at http://localhost:8080"); // tslint:disable-line
+  console.log("listening at http://localhost:8080");
 });

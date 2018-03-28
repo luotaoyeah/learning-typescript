@@ -7,9 +7,9 @@ const array = [1, 2, 3];
 const [first, second, third = -1, fourth = -2] = array;
 
 /* 3 */
-console.log(third); // tslint:disable-line
+console.log(third);
 
 /* -2 */
-console.log(fourth); // tslint:disable-line
+console.log(fourth);
 
 export {};

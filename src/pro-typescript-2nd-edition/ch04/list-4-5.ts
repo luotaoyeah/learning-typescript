@@ -2,9 +2,7 @@
  * Listing 4-5. Single responsibility principle (SRP) violation
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class Database {
   movies: Movie[] = [];
@@ -14,7 +12,7 @@ class Database {
   }
 
   save() {
-    console.log("Database.save()"); // tslint:disable-line
+    console.log("Database.save()");
   }
 }
 
@@ -34,7 +32,5 @@ class Movie {
   }
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

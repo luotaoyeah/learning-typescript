@@ -5,9 +5,7 @@ import { ProductDatabase } from "./list-6-23";
 import { addEvent } from "./list-6-11";
 import { Product } from "./list-6-21";
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 const version = 1;
 const productDatabase = new ProductDatabase("db-test", version);
 
@@ -41,7 +39,5 @@ addEvent(document.getElementById("btnDeleteProduct")!, "click", function(
   }
 });
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

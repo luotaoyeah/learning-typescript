@@ -18,9 +18,9 @@ function isSomeInterface(x: any): x is SomeInterface {
 
 function f(x: SomeInterface | SomeOtherInterface) {
   if (isSomeInterface(x)) {
-    console.log(x.name); // tslint:disable-line
+    console.log(x.name);
   } else {
-    console.log(x.questions); // tslint:disable-line
+    console.log(x.questions);
   }
 }
 

@@ -7,6 +7,6 @@ const person = { name: "tom", age: 18, score: 100 };
 const { name, ...restProperties } = person;
 
 /* {age: 18, score: 100} */
-console.log(restProperties); // tslint:disable-line
+console.log(restProperties);
 
 export {};

@@ -14,7 +14,7 @@ const getPerson = (): IPerson => {
   } as IPerson;
 
   person.hello = (name: string) => {
-    console.log("as an object:", name); // tslint:disable-line
+    console.log("as an object:", name);
   };
 
   return person;
@@ -22,7 +22,7 @@ const getPerson = (): IPerson => {
 
 const person = getPerson();
 
-console.log(person("tom")); // tslint:disable-line;
+console.log(person("tom"));
 person.hello("cat");
 
 export {};

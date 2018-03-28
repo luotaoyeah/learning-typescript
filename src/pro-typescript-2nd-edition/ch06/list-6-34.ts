@@ -2,20 +2,16 @@
  * Listing 6-34. Geolocation watchPosition
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 const watch = navigator.geolocation.watchPosition(
   (position: Position) => {
-    console.log(position); // tslint:disable-line
+    console.log(position);
   },
   (error: PositionError) => {
-    console.log(error); // tslint:disable-line
+    console.log(error);
   }
 );
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

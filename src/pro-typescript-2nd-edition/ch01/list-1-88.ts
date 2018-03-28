@@ -19,11 +19,11 @@ class PersonId extends DomainId<string> {
 }
 
 function acceptPersonId(id: PersonId) {
-  console.log(id); // tslint:disable-line
+  console.log(id);
 }
 
 function acceptDomainId(id: DomainId<any>) {
-  console.log(id); // tslint:disable-line
+  console.log(id);
 }
 
 const personId = new PersonId("tom");

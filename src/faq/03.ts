@@ -3,7 +3,7 @@
  */
 
 function doSomething(name: string): string {
-  console.log(name); // tslint:disable-line
+  console.log(name);
   return name;
 }
 

@@ -31,6 +31,6 @@ personDict[5] = {
 /* remove an item */
 delete personDict[0];
 
-console.log(personDict); // tslint:disable-line
+console.log(personDict);
 
 export {};

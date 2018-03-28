@@ -7,7 +7,7 @@ class Foo {
 
   increment(): number {
     this.x++;
-    console.log("x", this.x); // tslint:disable-line
+    console.log("x", this.x);
     return this.x;
   }
 }

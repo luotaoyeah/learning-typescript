@@ -2,9 +2,7 @@
  * Const-named properties
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 let Foo = "Foo";
 const Bar = "Bar";
@@ -15,12 +13,10 @@ const x = {
 };
 
 /* 'string */
-console.log(typeof x[Foo]); // tslint:disable-line
+console.log(typeof x[Foo]);
 
 /* 'number */
-console.log(typeof x[Bar]); // tslint:disable-line
+console.log(typeof x[Bar]);
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

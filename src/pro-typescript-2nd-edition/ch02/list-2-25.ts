@@ -7,7 +7,7 @@ function log(title: string) {
     const fn = descriptor.value;
 
     descriptor.value = function(...args: any[]) {
-      console.log(`${title}.${key}'s args: ${JSON.stringify(args)}`); // tslint:disable-line
+      console.log(`${title}.${key}'s args: ${JSON.stringify(args)}`);
       return fn.apply(this, args);
     };
 

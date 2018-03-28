@@ -16,6 +16,6 @@ const age: number = (name as any) as number;
 const age02: number = <number>(<any>name);
 
 /* age's value now is 'tom' */
-console.log("age: ", age); // tslint:disable-line
+console.log("age: ", age);
 
 export {};

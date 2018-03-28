@@ -2,9 +2,7 @@
  * Listing 4-6. Separate reasons for change
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class Database {
   movies: Movie[] = [];
@@ -14,7 +12,7 @@ class Database {
   }
 
   save(t: any) {
-    console.log("Database.save()", t); // tslint:disable-line
+    console.log("Database.save()", t);
   }
 }
 
@@ -53,7 +51,5 @@ movieRepository.save(movie01);
 /* Database.save() [ { title: 'tom', year: 2017 }, { title: 'tom', year: 2018 } ] */
 movieRepository.save([movie02, movie03]);
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

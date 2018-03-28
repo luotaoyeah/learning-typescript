@@ -11,9 +11,9 @@ function typeGuardExample(stringOrNumber: string | number) {
   */
 
   if (typeof stringOrNumber === "string") {
-    console.log(stringOrNumber.length); // tslint:disable-line
+    console.log(stringOrNumber.length);
   } else {
-    console.log(stringOrNumber.toFixed(2)); // tslint:disable-line
+    console.log(stringOrNumber.toFixed(2));
   }
 }
 

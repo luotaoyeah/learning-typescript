@@ -11,8 +11,8 @@ function f(x: any, y: any): string {
   return `total:${total}`;
 }
 
-console.log(f("1", "2")); // tslint:disable-line
-console.log(f(3, 4)); // tslint:disable-line
-console.log(f(5, "6")); // tslint:disable-line
+console.log(f("1", "2"));
+console.log(f(3, 4));
+console.log(f(5, "6"));
 
 export {};

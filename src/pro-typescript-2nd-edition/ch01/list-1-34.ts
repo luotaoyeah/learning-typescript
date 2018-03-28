@@ -6,8 +6,8 @@
 const str: string = "0";
 
 /* false */
-console.log(!str); // tslint:disable-line
+console.log(!str);
 /* true */
-console.log(!!str); // tslint:disable-line
+console.log(!!str);
 
 export {};

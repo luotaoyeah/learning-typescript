@@ -2,9 +2,7 @@
  * Listing 3-3. TypeScript ordered array class
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class OrderArray<T> {
   private items: T[] = [];
@@ -30,9 +28,7 @@ orderArray.add(5);
 orderArray.add(1);
 orderArray.add(2);
 
-console.log(orderArray.getItem(1)); // tslint:disable-line
+console.log(orderArray.getItem(1));
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

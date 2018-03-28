@@ -2,9 +2,7 @@
  * Listing 3-12. Compatible types
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class C1 {
   name: string;
@@ -43,10 +41,8 @@ const array: C1[] = [
 ];
 
 for (let i = 0; i < array.length; i++) {
-  console.log(array[i].show()); // tslint:disable-line;
+  console.log(array[i].show());
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

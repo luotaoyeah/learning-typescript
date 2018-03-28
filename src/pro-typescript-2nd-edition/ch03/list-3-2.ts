@@ -2,9 +2,7 @@
  * Listing 3-2. Using and avoiding equivalence
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 type DomainId<T extends string> = {
   type: T;
@@ -29,11 +27,11 @@ const productId = getProductId(2);
 
 class Example {
   static avoidAccidentalEquivallence(id: CustomerId) {
-    console.log("type:", typeof id); // tslint:disable-line
+    console.log("type:", typeof id);
   }
 
   static useEquivallence(id: number) {
-    console.log("type:", typeof id); // tslint:disable-line
+    console.log("type:", typeof id);
   }
 }
 
@@ -47,7 +45,5 @@ Example.avoidAccidentalEquivallence(productId);
 Example.useEquivallence(customerId.value);
 Example.useEquivallence(productId.value);
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

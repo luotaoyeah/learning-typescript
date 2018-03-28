@@ -3,9 +3,7 @@
  */
 import { Product } from "./list-6-21";
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class ProductDatabase {
   public name: string;
@@ -91,17 +89,15 @@ class ProductDatabase {
 
       const idbRequest = idbObjectStore.delete(productId);
       idbRequest.onsuccess = () => {
-        console.log("delete success"); // tslint:disable-line
+        console.log("delete success");
       };
 
       idbRequest.onerror = () => {
-        console.log("delete error"); // tslint:disable-line
+        console.log("delete error");
       };
     };
   }
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export { ProductDatabase };

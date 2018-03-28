@@ -9,12 +9,12 @@ class MyClass {
   x: number = 18;
 
   someCallback() {
-    console.log("x:", this.x); // tslint:disable-line
+    console.log("x:", this.x);
     this.someMethod();
   }
 
   someMethod() {
-    console.log("x:", this.x); // tslint:disable-line
+    console.log("x:", this.x);
   }
 }
 

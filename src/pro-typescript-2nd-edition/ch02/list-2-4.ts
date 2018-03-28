@@ -27,6 +27,6 @@ namespace BNS {
 
 const b = new BNS.B([new ANS.A("tom"), new ANS.A("cat")]);
 
-console.log(b.as); // tslint:disable-line
+console.log(b.as);
 
 export {};

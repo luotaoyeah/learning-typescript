@@ -12,9 +12,7 @@ import {
   ExecutiveBodyCleaning
 } from "./list-4-14";
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class CarWashProgram {
   private level: number;
@@ -57,7 +55,5 @@ class CarWashProgram {
 
 new CarWashProgram(3).wash();
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

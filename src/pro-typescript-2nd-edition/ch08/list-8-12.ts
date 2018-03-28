@@ -25,6 +25,6 @@ function test() {
 }
 
 const result = Performance.run(test, 10000);
-console.log(`${result.time} ms`); // tslint:disable-line
+console.log(`${result.time} ms`);
 
 export {};

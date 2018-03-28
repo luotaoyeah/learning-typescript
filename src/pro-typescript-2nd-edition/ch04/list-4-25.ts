@@ -2,9 +2,7 @@
  * Listing 4-25. Real mixins
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 type Constructor<T = {}> = new (...args: any[]) => T;
 
@@ -13,7 +11,7 @@ function Acting<T extends Constructor>(BassClass: T) {
     message: string = "tom";
 
     act() {
-      console.log("I am acting, message is", this.message); // tslint:disable-line
+      console.log("I am acting, message is", this.message);
     }
   };
 }
@@ -32,9 +30,7 @@ const actor = new Actor("cat");
 
 actor.act();
 
-console.log("actor.name:", actor.name); // tslint:disable-line
+console.log("actor.name:", actor.name);
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

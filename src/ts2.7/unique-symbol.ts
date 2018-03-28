@@ -2,16 +2,12 @@
  * unique symbol
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 /*
 /!* not supported by IDEA yet *!/
 declare const Foo: unique symbol;
 */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

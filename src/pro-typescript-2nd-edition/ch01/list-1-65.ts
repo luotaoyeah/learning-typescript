@@ -12,9 +12,9 @@ function multiply(a: number, b?: number): any {
 }
 
 /* 30 */
-console.log(multiply(5, 6)); // tslint:disable-line
+console.log(multiply(5, 6));
 
 /* 30 */
-console.log(multiply(5)(6)); // tslint:disable-line
+console.log(multiply(5)(6));
 
 export {};

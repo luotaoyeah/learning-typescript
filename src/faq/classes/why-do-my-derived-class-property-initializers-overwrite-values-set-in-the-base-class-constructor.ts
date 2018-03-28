@@ -9,7 +9,7 @@ class Base {
   public myVar: string = "Base";
 
   constructor() {
-    console.log(this.myVar); // tslint:disable-line
+    console.log(this.myVar);
   }
 }
 
@@ -29,7 +29,7 @@ class Base02 {
 
   constructor(myVar: string = "Base") {
     this.myVar = myVar;
-    console.log(this.myVar); // tslint:disable-line
+    console.log(this.myVar);
   }
 }
 

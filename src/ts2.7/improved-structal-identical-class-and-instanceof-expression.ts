@@ -2,9 +2,7 @@
  * Improved handling of structurally identical classes and instanceof expressions
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class A {
   name: string = "tom";
@@ -30,11 +28,11 @@ class C extends A {
 
 function test(x: A) {
   if (x instanceof B) {
-    console.log(x.foo); // tslint:disable-line
+    console.log(x.foo);
   } else if (x instanceof C) {
-    console.log(x.bar); // tslint:disable-line
+    console.log(x.bar);
   } else if (x instanceof A) {
-    console.log(x.name); // tslint:disable-line
+    console.log(x.name);
   }
 }
 
@@ -47,7 +45,5 @@ test({
   name: "cat"
 });
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

@@ -10,9 +10,9 @@ function tupleAndDestructureExamp(): [string, number] {
 const [name, age] = tupleAndDestructureExamp();
 
 /* 'tom' */
-console.log(name); // tslint:disable-line
+console.log(name);
 
 /* 18 */
-console.log(age); // tslint:disable-line
+console.log(age);
 
 export {};

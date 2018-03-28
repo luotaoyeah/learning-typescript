@@ -9,6 +9,6 @@ const a: string = "a";
 /* b is only defined if a is defined */
 const b = a && "b";
 
-console.log(b); // tslint:disable-line
+console.log(b);
 
 export {};

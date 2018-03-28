@@ -2,19 +2,15 @@
  * Listing 3-10. Extending the DeviceMotionEvent
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 interface DeviceMotionEvent {
   motionDescription: string;
 }
 
 function f(e: DeviceMotionEvent) {
-  console.log(e.acceleration); // tslint:disable-line
-  console.log(e.motionDescription); // tslint:disable-line
+  console.log(e.acceleration);
+  console.log(e.motionDescription);
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");

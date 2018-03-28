@@ -12,5 +12,5 @@ if (condition) {
   const MyPerson: typeof Person = require("./list-2-7");
   const myPerson = new MyPerson("tom");
 
-  console.log(myPerson.name); // tslint:disable-line
+  console.log(myPerson.name);
 }

@@ -5,7 +5,7 @@
 const worker02: Worker = new Worker("./out/ch06/list-6-45.js");
 
 worker02.addEventListener("message", (e: any) => {
-  console.log(JSON.stringify(e.data, null, 2)); // tslint:disable-line
+  console.log(JSON.stringify(e.data, null, 2));
 });
 
 worker02.postMessage("waiting");

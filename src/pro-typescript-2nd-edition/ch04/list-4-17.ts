@@ -13,9 +13,7 @@ import {
 } from "./list-4-14";
 import { ValetFactory } from "./list-4-16";
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class OneWashFactory implements ValetFactory {
   getWheelCleaning(): WheelCleaning {
@@ -47,7 +45,5 @@ class ThreeWashFactory implements ValetFactory {
   }
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export { OneWashFactory, TwoWashFactory, ThreeWashFactory };

@@ -12,13 +12,13 @@ abstract class Logger {
 
 class ConsoleLogger extends Logger {
   log(message: string): void {
-    console.log(this.getMessage(message)); // tslint:disable-line
+    console.log(this.getMessage(message));
   }
 }
 
 class AlertLogger extends Logger {
   log(message: string): void {
-    alert(this.getMessage(message)); // tslint:disable-line
+    alert(this.getMessage(message));
   }
 }
 

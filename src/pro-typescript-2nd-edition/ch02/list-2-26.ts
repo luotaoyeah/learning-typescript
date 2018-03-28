@@ -2,15 +2,13 @@
  * Listing 2-26. Class decorators
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 function log(target: any) {
   const originalConstructor = target;
 
   const newConstructor: any = (...args: any[]) => {
-    console.log(`new instance: ${JSON.stringify(args)}`); // tslint:disable-line
+    console.log(`new instance: ${JSON.stringify(args)}`);
 
     const ctor: any = () => {
       return originalConstructor.apply(null, args);
@@ -35,7 +33,7 @@ class Calculator {
   }
 
   hello() {
-    console.log("this.name:", this.name); // tslint:disable-line
+    console.log("this.name:", this.name);
   }
 }
 
@@ -46,10 +44,8 @@ const calculator02 = new Calculator("cat");
 calculator01.hello();
 calculator02.hello();
 
-console.log(calculator01.name); // tslint:disable-line
-console.log(calculator02.name); // tslint:disable-line
+console.log(calculator01.name);
+console.log(calculator02.name);
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

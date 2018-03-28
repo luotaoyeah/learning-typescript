@@ -12,13 +12,13 @@ class FooError extends Error {
   }
 
   hello() {
-    console.log("hello ", this.message); // tslint:disable-line
+    console.log("hello ", this.message);
   }
 }
 
 const fooError = new FooError("FooError");
 fooError.hello();
 
-console.log(new FooError("FooError02") instanceof FooError); // tslint:disable-line
+console.log(new FooError("FooError02") instanceof FooError);
 
 export {};

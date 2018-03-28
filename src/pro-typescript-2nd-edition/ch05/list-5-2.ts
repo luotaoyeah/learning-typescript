@@ -2,9 +2,7 @@
  * Listing 5-2. Queued timer, delayed, waiting for the test method to finish
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 function test() {
   console.time("time:");
@@ -22,7 +20,5 @@ function test() {
 
 test();
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

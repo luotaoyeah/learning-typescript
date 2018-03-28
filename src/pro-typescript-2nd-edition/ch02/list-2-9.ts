@@ -15,6 +15,6 @@ class Student extends Person {
 
 const student = new Student("tom", 100);
 
-console.log(student); // tslint:disable-line
+console.log(student);
 
 export {};

@@ -2,9 +2,7 @@
  * Listing 3-8. Widened types
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 function f() {
   return null;
@@ -13,7 +11,5 @@ function f() {
 /* inferred type of x is any */
 const x = f();
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

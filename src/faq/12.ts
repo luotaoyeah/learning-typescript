@@ -4,16 +4,16 @@
 
 /*
 function f({ x: number }) {
-  console.log(x); // tslint:disable-line
+  console.log(x);
 }
 */
 
 function f({ x }: { x: number }) {
-  console.log(x); // tslint:disable-line
+  console.log(x);
 }
 
 function f02({ x: x }: { x: number }) {
-  console.log(x); // tslint:disable-line
+  console.log(x);
 }
 
 export {};

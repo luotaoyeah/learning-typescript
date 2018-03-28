@@ -29,9 +29,9 @@ function f(name: string): Person {
 }
 
 /* 100 */
-console.log(f("tom").score); // tslint:disable-line
+console.log(f("tom").score);
 
 /* 'class 01' */
-console.log(f("cat").class); // tslint:disable-line
+console.log(f("cat").class);
 
 export {};

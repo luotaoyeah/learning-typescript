@@ -2,9 +2,7 @@
  * Listing 5-33. Custom events
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 enum EventType {
   MyCustomEvent
@@ -27,8 +25,8 @@ class Listener {
   }
 
   listener(e: Event) {
-    console.log("event type:", EventType[EventType.MyCustomEvent]); // tslint:disable-line
-    console.log("event detaill:", (e as any).detail); // tslint:disable-line
+    console.log("event type:", EventType[EventType.MyCustomEvent]);
+    console.log("event detaill:", (e as any).detail);
   }
 }
 
@@ -41,7 +39,5 @@ Trigger.customEvent(EventType[EventType.MyCustomEvent], {
   }
 });
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

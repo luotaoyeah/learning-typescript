@@ -21,12 +21,12 @@ const person = new Person();
 const student = new Student();
 
 /* true */
-console.log(human instanceof Human); // tslint:disable-line
+console.log(human instanceof Human);
 
 /* true */
-console.log(person instanceof Human); // tslint:disable-line
+console.log(person instanceof Human);
 
 /* false */
-console.log(student instanceof Human); // tslint:disable-line
+console.log(student instanceof Human);
 
 export {};

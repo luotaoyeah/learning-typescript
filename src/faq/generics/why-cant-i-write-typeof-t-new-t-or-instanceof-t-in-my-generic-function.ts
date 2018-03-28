@@ -12,7 +12,7 @@ function doSomething<T>(x: T) {
   */
   /*
     /!* TS2359: The right-hand side of an 'instanceof' expression must be of type 'any' or of a type assignable to the 'Function' interface type. *!/
-    console.log(new Date() instanceof typeof T); // tslint:disable-line
+    console.log(new Date() instanceof typeof T);
   */
   /*
     /!* TS2693: 'T' only refers to a type, but is being used as a value here. *!/
@@ -38,7 +38,7 @@ function isReallyInstanceOf<T>(ctor: { new (): T }, obj: T) {
 }
 
 const person = getInstance(Person);
-console.log(person); // tslint:disable-line
-console.log(isReallyInstanceOf(Person, person)); // tslint:disable-line
+console.log(person);
+console.log(isReallyInstanceOf(Person, person));
 
 export {};

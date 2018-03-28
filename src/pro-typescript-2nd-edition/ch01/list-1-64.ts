@@ -12,9 +12,9 @@ const hundred = start(ten);
 const thousand = start(hundred);
 
 /* 10 100 1000 */
-console.log(ten, hundred, thousand); // tslint:disable-line
+console.log(ten, hundred, thousand);
 
 /* 100 */
-console.log(multiply(10)(10)); // tslint:disable-line
+console.log(multiply(10)(10));
 
 export {};

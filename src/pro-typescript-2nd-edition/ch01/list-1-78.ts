@@ -7,7 +7,7 @@ class Counter {
 
   count = () => {
     this._count++;
-    console.log(this._count); // tslint:disable-line
+    console.log(this._count);
   };
 }
 

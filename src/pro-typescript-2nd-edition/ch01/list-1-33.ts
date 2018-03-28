@@ -5,8 +5,8 @@
 const str: string = "-5";
 
 /* -5(number) */
-console.log(+str); // tslint:disable-line
+console.log(+str);
 /* 5(number) */
-console.log(-str); // tslint:disable-line
+console.log(-str);
 
 export {};

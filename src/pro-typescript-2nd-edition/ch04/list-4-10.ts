@@ -2,9 +2,7 @@
  * Listing 4-10. Segregated interfaces
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class Document {
   public name: string;
@@ -40,7 +38,5 @@ class SuperPrinter implements Printer, Stapler, Copier {
   }
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

@@ -2,9 +2,7 @@
  * Listing 5-13. Simple observer
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 interface Subscriber {
   (message: string): void;
@@ -27,20 +25,18 @@ class Publisher {
 const publisher = new Publisher();
 
 publisher.addSubscriber((message: string) => {
-  console.log("A:", message); // tslint:disable-line
+  console.log("A:", message);
 });
 
 publisher.addSubscriber((message: string) => {
-  console.log("B:", message); // tslint:disable-line
+  console.log("B:", message);
 });
 
 publisher.addSubscriber((message: string) => {
-  console.log("C:", message); // tslint:disable-line
+  console.log("C:", message);
 });
 
 publisher.notify("tom");
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

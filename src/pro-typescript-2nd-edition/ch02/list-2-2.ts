@@ -6,7 +6,7 @@ namespace FirstLevel {
   export namespace SecondLevel {
     export class Example {
       log() {
-        console.log("FirstLevel.SecondLevel.Example.log()"); // tslint:disable-line
+        console.log("FirstLevel.SecondLevel.Example.log()");
       }
     }
   }
@@ -15,7 +15,7 @@ namespace FirstLevel {
 namespace FirstLevel.SecondLevel.ThirdLevel {
   export class Example {
     log() {
-      console.log("FirstLevel.SecondLevel.ThirdLevel.Example.log()"); // tslint:disable-line
+      console.log("FirstLevel.SecondLevel.ThirdLevel.Example.log()");
     }
   }
 }

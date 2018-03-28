@@ -24,8 +24,8 @@ class SmartObject implements Disposable, Activatable {
 
   constructor() {
     setInterval(() => {
-      console.log("isActive:", this.isActive); // tslint:disable-line
-      console.log("isDisposed:", this.isDisposed); // tslint:disable-line
+      console.log("isActive:", this.isActive);
+      console.log("isDisposed:", this.isDisposed);
     }, 500);
   }
 

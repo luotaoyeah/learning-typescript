@@ -8,9 +8,9 @@ const person = { name: "tom", age: 18 };
 const { name: n, age: a } = person;
 
 /* 'tom' */
-console.log(n); // tslint:disable-line
+console.log(n);
 
 /* 18 */
-console.log(a); // tslint:disable-line
+console.log(a);
 
 export {};

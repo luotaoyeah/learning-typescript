@@ -2,9 +2,7 @@
  * Type guards inferred from in operator
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 interface A {
   x: string;
@@ -26,12 +24,12 @@ interface C {
 function test(t: A | B | C) {
   if ("x" in t) {
     if ("a" in t) {
-      console.log(t.name); // tslint:disable-line
+      console.log(t.name);
     } else {
-      console.log(t.score); // tslint:disable-line
+      console.log(t.score);
     }
   } else {
-    console.log(t.foo); // tslint:disable-line
+    console.log(t.foo);
   }
 }
 
@@ -46,7 +44,5 @@ test({
   foo: "foo"
 });
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

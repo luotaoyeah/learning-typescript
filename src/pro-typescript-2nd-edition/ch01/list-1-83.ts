@@ -6,7 +6,7 @@ class Human {
   age: number;
 
   run() {
-    console.log("run()"); // tslint:disable-line
+    console.log("run()");
   }
 }
 
@@ -18,7 +18,7 @@ class Student {
   score: number;
 
   play() {
-    console.log("play()"); // tslint:disable-line
+    console.log("play()");
   }
 }
 
@@ -30,12 +30,12 @@ const student = new Student();
 
 /* uninitialized property will not appear in compiled javascript code  */
 /* false */
-console.log("age" in human); // tslint:disable-line
+console.log("age" in human);
 
 /* false */
-console.log("age" in person); // tslint:disable-line
+console.log("age" in person);
 
 /* false */
-console.log("age" in student); // tslint:disable-line
+console.log("age" in student);
 
 export {};

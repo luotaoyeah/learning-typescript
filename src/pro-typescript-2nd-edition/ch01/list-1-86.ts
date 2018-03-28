@@ -15,9 +15,9 @@ function reverseArray<T>(list: T[]): T[] {
 const numbers: number[] = [1, 2, 3, 4];
 const strings: string[] = ["a", "b", "c", "d"];
 
-console.log(reverseArray<number>(numbers)); // tslint:disable-line
+console.log(reverseArray<number>(numbers));
 
 /* type parameter can be omited */
-console.log(reverseArray(strings)); // tslint:disable-line
+console.log(reverseArray(strings));
 
 export {};

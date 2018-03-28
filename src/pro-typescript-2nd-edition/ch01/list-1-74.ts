@@ -11,15 +11,15 @@ class Person {
   }
 
   set name(value: string) {
-    console.log(`set name: ${value}`); // tslint:disable-line
+    console.log(`set name: ${value}`);
     this._name = value;
   }
 }
 
 const person = new Person();
 
-console.log(person.name); // tslint:disable-line
+console.log(person.name);
 person.name = "tom";
-console.log(person.name); // tslint:disable-line
+console.log(person.name);
 
 export {};

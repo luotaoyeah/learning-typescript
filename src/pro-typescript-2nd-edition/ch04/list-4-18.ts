@@ -3,9 +3,7 @@
  */
 import { ValetFactory } from "./list-4-16";
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class CarWashProgram {
   private valetFactory: ValetFactory;
@@ -20,7 +18,5 @@ class CarWashProgram {
   }
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

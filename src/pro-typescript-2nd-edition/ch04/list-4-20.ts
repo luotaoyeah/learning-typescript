@@ -2,15 +2,13 @@
  * Listing 4-20. Reusable classes
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class Sings {
   public name: string = "tom";
 
   sing() {
-    console.log("I am singing, my name is ", this.name); // tslint:disable-line
+    console.log("I am singing, my name is ", this.name);
   }
 }
 
@@ -18,17 +16,15 @@ class Dances {
   public static message: string = "cat";
 
   dance() {
-    console.log("I am dancing, message is ", Dances.message); // tslint:disable-line
+    console.log("I am dancing, message is ", Dances.message);
   }
 }
 
 class Acts {
   act() {
-    console.log("I am acting"); // tslint:disable-line
+    console.log("I am acting");
   }
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export { Sings, Dances, Acts };

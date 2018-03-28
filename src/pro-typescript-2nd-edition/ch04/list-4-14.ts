@@ -2,9 +2,7 @@
  * Listing 4-14. Body cleaning
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 interface BodyCleaning {
   cleanBody(): void;
@@ -12,20 +10,18 @@ interface BodyCleaning {
 
 class BasicBodyCleaning implements BodyCleaning {
   cleanBody(): void {
-    console.log("clean body 01"); // tslint:disable-line
-    console.log("clean body 02"); // tslint:disable-line
+    console.log("clean body 01");
+    console.log("clean body 02");
   }
 }
 
 class ExecutiveBodyCleaning extends BasicBodyCleaning {
   cleanBody(): void {
     super.cleanBody();
-    console.log("clean body 03"); // tslint:disable-line
-    console.log("clean body 04"); // tslint:disable-line
+    console.log("clean body 03");
+    console.log("clean body 04");
   }
 }
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export { BodyCleaning, BasicBodyCleaning, ExecutiveBodyCleaning };

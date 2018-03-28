@@ -24,7 +24,7 @@ class B extends A {}
 class C extends A {}
 
 function test(x: A): void {
-  console.log("name:", x.name); // tslint:disable-line
+  console.log("name:", x.name);
 }
 
 test(new A());

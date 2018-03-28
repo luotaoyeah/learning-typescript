@@ -9,7 +9,7 @@ function errorsOnThree(num: number): number {
   return num;
 }
 
-console.log(errorsOnThree(1)); // tslint:disable-line;
-console.log(errorsOnThree(2)); // tslint:disable-line;
-console.log(errorsOnThree(3)); // tslint:disable-line;
-console.log(errorsOnThree(4)); // tslint:disable-line;
+console.log(errorsOnThree(1));
+console.log(errorsOnThree(2));
+console.log(errorsOnThree(3));
+console.log(errorsOnThree(4));

@@ -7,9 +7,9 @@ const loseScopeExample = {
   hello() {
     setTimeout(function(this: any) {
       /* 'name: ' */
-      console.log("name:", this.name); // tslint:disable-line
+      console.log("name:", this.name);
       /* this refers to Window */
-      console.log("this", this); // tslint:disable-line
+      console.log("this", this);
     }, 1000);
   }
 };
@@ -21,8 +21,8 @@ const preserveScopeExample = {
   hello() {
     setTimeout(() => {
       /* 'name: cat' */
-      console.log("name:", this.name); // tslint:disable-line
-      console.log("this", this); // tslint:disable-line
+      console.log("name:", this.name);
+      console.log("this", this);
     }, 1000);
   }
 };

@@ -2,9 +2,7 @@
  * Const-named properties
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 export const SERIALIZE = Symbol("serialize-method-key");
 
@@ -14,13 +12,11 @@ export interface Serializer {
 
 class PersonSerializer implements Serializer {
   [SERIALIZE](name: string): void {
-    console.log(SERIALIZE, name); // tslint:disable-line
+    console.log(SERIALIZE, name);
   }
 }
 
 new PersonSerializer()[SERIALIZE]("tom");
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

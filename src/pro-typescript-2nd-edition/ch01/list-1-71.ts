@@ -12,7 +12,7 @@ class Song {
   }
 
   play() {
-    console.log(`歌曲：《${this.title}》，演唱：${this.artist}`); // tslint:disable-line
+    console.log(`歌曲：《${this.title}》，演唱：${this.artist}`);
   }
 }
 

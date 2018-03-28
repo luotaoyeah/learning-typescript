@@ -4,9 +4,7 @@
 import { Acts, Dances, Sings } from "./list-4-20";
 import { applyMixins } from "./list-4-19";
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class Actor implements Sings, Dances, Acts {
   public name: string;
@@ -26,7 +24,5 @@ actor.sing();
 actor.dance();
 actor.act();
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

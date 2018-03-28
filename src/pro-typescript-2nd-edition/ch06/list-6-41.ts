@@ -3,16 +3,12 @@
  */
 import { addEvent } from "./list-6-11";
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 addEvent(window, "devicemotion", (e: DeviceMotionEvent) => {
   debugger; // eslint-disable-line
 });
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 export {};

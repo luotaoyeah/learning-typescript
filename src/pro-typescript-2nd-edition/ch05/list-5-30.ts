@@ -2,9 +2,7 @@
  * Listing 5-30. Event listeners
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 class ClickLogger {
   constructor() {
@@ -16,13 +14,11 @@ class ClickLogger {
 
     const tagName = (e.target as HTMLElement).tagName;
 
-    console.log(`phase: ${eventPhase}, tag: ${tagName}`); // tslint:disable-line
+    console.log(`phase: ${eventPhase}, tag: ${tagName}`);
   }
 }
 
 const clickLogger = new ClickLogger();
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

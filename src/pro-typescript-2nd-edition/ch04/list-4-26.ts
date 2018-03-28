@@ -2,16 +2,14 @@
  * Listing 4-26. The full real mixins
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 type Constructor<T = {}> = new (...args: any[]) => T;
 
 function Acting<T extends Constructor>(BaseClass: T) {
   return class extends BaseClass {
     act() {
-      console.log("I am acting"); // tslint:disable-line
+      console.log("I am acting");
     }
   };
 }
@@ -19,7 +17,7 @@ function Acting<T extends Constructor>(BaseClass: T) {
 function Dancing<T extends Constructor>(BaseClass: T) {
   return class extends BaseClass {
     dance() {
-      console.log("I am dancing"); // tslint:disable-line
+      console.log("I am dancing");
     }
   };
 }
@@ -27,7 +25,7 @@ function Dancing<T extends Constructor>(BaseClass: T) {
 function Singing<T extends Constructor>(BaseClass: T) {
   return class extends BaseClass {
     sing() {
-      console.log("I am singing"); // tslint:disable-line
+      console.log("I am singing");
     }
   };
 }
@@ -48,7 +46,5 @@ actor.dance();
 actor.sing();
 actor.act();
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

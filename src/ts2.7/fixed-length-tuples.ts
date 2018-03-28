@@ -2,9 +2,7 @@
  * Fixed Length Tuples
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 let t01: [number, string] = [18, "tom"];
 
@@ -19,7 +17,5 @@ const t02: [number, string, number] = [20, "cat", 100];
 t01 = t02;
 */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

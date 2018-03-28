@@ -3,13 +3,9 @@
  */
 import { ProductDatabase } from "./list-6-23";
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 const version = 1;
 const productDatabase = new ProductDatabase("db-test", version);
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

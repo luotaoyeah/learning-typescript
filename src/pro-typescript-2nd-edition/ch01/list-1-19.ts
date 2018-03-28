@@ -27,6 +27,6 @@ monuments.push({
 monuments.sort((a: IMonument, b: IMonument) => b.height - a.height);
 
 const heightestMonument: IMonument = monuments[0];
-console.log(JSON.stringify(heightestMonument)); // tslint:disable-line
+console.log(JSON.stringify(heightestMonument));
 
 export {};

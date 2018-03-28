@@ -2,9 +2,7 @@
  * Listing 3-5. Bottom-up and top-down inference
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 function add(x: number, y: number) {
   /* the return value is used to determine the return type */
@@ -25,10 +23,8 @@ const callsFunction: CallsFunction = cb => {
 };
 
 callsFunction(result => {
-  console.log("result:", result); // tslint:disable-line
+  console.log("result:", result);
 });
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};

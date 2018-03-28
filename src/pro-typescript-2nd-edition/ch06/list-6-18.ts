@@ -2,18 +2,14 @@
  * Listing 6-18. Session storage
  */
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 
 const key = "name";
-console.log("name", sessionStorage.getItem(key)); // tslint:disable-line
+console.log("name", sessionStorage.getItem(key));
 
 sessionStorage.setItem(key, "tom");
 
-console.log("name", sessionStorage.getItem(key)); // tslint:disable-line
+console.log("name", sessionStorage.getItem(key));
 
-console.log(
-  "----------------------------------------------------------------------------------------------------"
-); // tslint:disable-line
+console.log("----------");
 export {};
