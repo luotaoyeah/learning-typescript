@@ -1,5 +1,3 @@
-import apply = Reflect.apply;
-
 class Disposable {
   isDisposed: boolean;
   dispose() {
@@ -40,6 +38,11 @@ class SmartObject implements Disposable, Activatable {
   }
 }
 
+/**
+ *
+ * @param derivedCtor
+ * @param baseCtors
+ */
 function applyMixins(derivedCtor: any, baseCtors: any[]) {
   baseCtors.forEach(baseCtor => {
     Object.getOwnPropertyNames(baseCtor.prototype).forEach(name => {
@@ -55,3 +58,5 @@ const smartObject = new SmartObject();
 setTimeout(() => {
   smartObject.interact();
 }, 1000);
+
+export {};

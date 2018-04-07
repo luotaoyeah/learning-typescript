@@ -9,8 +9,11 @@
  * --------------------------------------------------
  */
 console.log("----------: prefix with '+' or '-'");
-type MutableRequired<T> = { -readonly [P in keyof T]-?: T[P] };
-type ReadonlyPartial<T> = { +readonly [P in keyof T]+?: T[P] };
+/* Prettier 尚不支持下面的语法，故注释之 */
+/*
+  type MutableRequired<T> = { -readonly [P in keyof T]-?: T[P] };
+  type ReadonlyPartial<T> = { +readonly [P in keyof T]+?: T[P] };
+*/
 
 /*
  * 前缀 + 可以省略；
@@ -23,15 +26,18 @@ type ReadonlyPartial02<T> = { readonly [P in keyof T]?: T[P] };
  * typescript@2.8 添加了一个预定义类型 Reauired<T>；
  * --------------------------------------------------
  */
-console.log("----------: predefined Required<T>");
-type Required<T> = { [P in keyof T]-?: T[P] };
+/* Prettier 尚不支持下面的语法，故注释之 */
+/*
+  console.log("----------: predefined Required<T>");
+  type Required<T> = { [P in keyof T]-?: T[P] };
 
-type Foo = { name?: string };
-let foo: Foo = { name: "tom" };
-foo = {};
+  type Foo = { name?: string };
+  let foo: Foo = { name: "tom" };
+  foo = {};
 
-type Bar = Required<Foo>;
-let bar: Bar = { name: "tom" };
+  type Bar = Required<Foo>;
+  let bar: Bar = { name: "tom" };
+*/
 /*
   /!* TS2322:  Property 'name' is missing in type '{}' *!/
   bar = {};
