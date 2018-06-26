@@ -4,12 +4,14 @@
 
 /*
  * 当 --strictNullChecks: true 时，
- * null 类型和 undefined 类型，分别只能被赋值为 null 和 undefined；
+ * null 只能赋值给 null 类型；
+ * undefined 可以赋值给 undefined 类型和 void 类型；
  */
 console.log("\n-------------------------------------------------- 01");
 
 const foo01: null = null;
 const bar01: undefined = undefined;
+const baz01: void = undefined;
 
 /*
  * 当 --strictNullChecks: false 时，
