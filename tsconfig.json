@@ -3,6 +3,7 @@
     "outDir": "./out/",
     "sourceMap": true,
     "strict": true,
+    "strictNullChecks": false,
     "strictPropertyInitialization": false,
     "module": "commonjs",
     "moduleResolution": "node",
