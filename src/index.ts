@@ -1,1 +1,1 @@
-import "./handbook/01-basic-types/01-02-boolean";
+import "./handbook/01-basic-types/01-03-number";
