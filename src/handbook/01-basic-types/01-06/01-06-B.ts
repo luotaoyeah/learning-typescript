@@ -1,12 +1,12 @@
 /*
- * 当访问 tuple 的某个元素时，该元素的类型是可以确定的；
+ * 索引内的元素，其类型是确定的，跟定义时的类型保持一致；
  */
 console.log("\n-------------------------------------------------- 01");
 
-const tuple02: [string, number] = ["foo", 9];
+const tuple01: [string, number] = ["foo", 9];
 
-const name: string = tuple02[0];
-const age: number = tuple02[1];
+const name: string = tuple01[0];
+const age: number = tuple01[1];
 /* foo 9 */
 console.log(name, age);
 
