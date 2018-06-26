@@ -1,1 +1,1 @@
-import "./whats-new/ts2.7/unique-symbol";
+import "./handbook/01-basic-types/01-01-introduction.ts";

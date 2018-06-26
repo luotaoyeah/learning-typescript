@@ -6,7 +6,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "build": "rimraf ./dist && webpack",
-    "dev": "npm run build && node ./dist/index.js"
+    "dev": "npm run build && node $NODE_DEBUG_OPTION ./dist/index.js"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
