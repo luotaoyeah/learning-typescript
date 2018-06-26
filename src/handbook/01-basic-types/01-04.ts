@@ -1,4 +1,8 @@
 /*
+ * String
+ */
+
+/*
  * string 类型支持 template string，使用（`）包裹，可以跨越多行，
  * 支持 expression 嵌入；
  */

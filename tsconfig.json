@@ -8,24 +8,17 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "target": "es2015",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "es6",
-      "es7"
-    ],
+    "lib": ["dom", "dom.iterable", "es6", "es7"],
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": false,
+    "noImplicitAny": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,
     "declaration": false
   },
-  "include": [
-    "./src/**/*"
-  ],
-  "exclude": [
-  ]
+  "include": ["./src/**/*"],
+  "exclude": []
 }

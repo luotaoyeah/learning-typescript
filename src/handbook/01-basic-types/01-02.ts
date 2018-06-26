@@ -1,4 +1,8 @@
 /*
+ * Boolean
+ */
+
+/*
  * boolean 类型的值可以为 true 或者 false；
  */
 

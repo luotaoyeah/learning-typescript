@@ -1,4 +1,8 @@
 /*
+ * Array
+ */
+
+/*
  * array 支持两种写法:
  *     使用 ElementType[] 的形式；
  *     使用 Array<ElementType> 的形式；

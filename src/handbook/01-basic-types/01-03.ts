@@ -1,4 +1,8 @@
 /*
+ * Number
+ */
+
+/*
  * number 类型的值支持：
  *     decimal（10进制）
  *     hexadecimal（16进制）

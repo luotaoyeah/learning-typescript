@@ -1,5 +1,12 @@
 /*
- * TS 支持 JS 的所有类型，外加一个 enum 类型；
+ * TS 支持 JS 的所有类型之外，还支持：
+ *     tuple，
+ *     enum，
+ *     null，
+ *     undefined，
+ *     void，
+ *     any，
+ *     never，
  */
 
 console.log("\n-------------------------------------------------- 01");
