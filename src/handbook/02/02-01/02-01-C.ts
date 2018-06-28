@@ -26,6 +26,9 @@
   (function() {
     for (var i = 0; i < 10; i++) {
       (function(i) {
+        /*
+         * 此处的 i 实际上为函数参数 i，只是恰好跟外面的 i 同名；
+         */
         setTimeout(function() {
           console.log(i);
         }, 1000 * i);
