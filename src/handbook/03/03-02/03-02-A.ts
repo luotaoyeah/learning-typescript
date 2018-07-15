@@ -1,5 +1,5 @@
 /*
- * optional properties
+ * Optional Properties
  */
 
 /*
