@@ -12,6 +12,7 @@ console.log("\n-------------------------------------------------- 01");
 interface ISearchFn {
   (source: string, subString: string): boolean;
 }
+
 /*
  * function 类型在检查类型时，主要检查参数列表的类型和返回类型，
  * 其中，参数名称不影响检查结果，主要是参数的顺序以及其对应的类型；
