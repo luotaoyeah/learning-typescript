@@ -2,32 +2,31 @@ const path = require("path");
 
 module.exports = [
   {
-    entry: path.resolve(__dirname + "/src/index.ts"),
+    entry: path.resolve("src/index.ts"),
     output: {
-      path: path.resolve(__dirname + "/dist/"),
-      filename: "index.js",
-      libraryTarget: "umd",
-      library: "ts-test",
-      umdNamedDefine: true
+      path: path.resolve("dist/"),
+      filename: "index.js"
     },
     module: {
       rules: [
         {
-          test: /\.tsx?$/,
+          test: /\.ts?$/,
           loader: "tslint-loader",
           enforce: "pre",
           include: [path.resolve("src")]
         },
         {
-          test: /\.tsx?$/,
+          test: /\.ts$/,
           loader: "ts-loader",
           exclude: /node_modules/
         }
       ]
     },
     resolve: {
-      extensions: [".ts", ".js"]
+      extensions: [".ts", ".js", ".json"]
     },
-    devtool: "source-map"
+    target: "node",
+    mode: "development",
+    devtool: "eval-source-map"
   }
 ];
