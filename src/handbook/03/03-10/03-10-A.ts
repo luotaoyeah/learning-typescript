@@ -1,5 +1,6 @@
 /*
- * Interface Extends Classes
+ * Interfaces
+ *     Interfaces Extending Classes
  */
 
 /*
