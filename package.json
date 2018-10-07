@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "main": "./dist/index.js",
   "scripts": {
-    "precommit": "lint-staged",
     "build": "rimraf ./dist && webpack",
-    "dev": "npm run build && node $NODE_DEBUG_OPTION ./dist/index.js"
+    "dev": "npm run build && node $NODE_DEBUG_OPTION ./dist/index.js",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -23,19 +23,19 @@
     "@types/method-override": "0.0.31",
     "@types/mongoose": "^5.0.5",
     "@types/node": "^8.9.5",
-    "husky": "^0.14.3",
+    "husky": "^1.1.1",
     "jest": "^22.4.2",
     "lint-staged": "^7.3.0",
     "path": "^0.12.7",
     "prettier": "^1.14.3",
     "rimraf": "^2.6.2",
-    "ts-loader": "^5.1.1",
+    "ts-loader": "^5.2.1",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-loader": "^3.6.0",
-    "typescript": "^3.0.3",
-    "webpack": "^4.19.1",
-    "webpack-cli": "^3.1.0"
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "types": "dist/types/index.d.ts"
 }

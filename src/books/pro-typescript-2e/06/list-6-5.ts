@@ -4,9 +4,9 @@
 
 console.log("----------");
 
-const elements: NodeListOf<HTMLDivElement> = document.getElementsByTagName(
-  "div"
-);
+const elements: HTMLCollectionOf<
+  HTMLDivElement
+> = document.getElementsByTagName("div");
 const element: HTMLDivElement = elements[0];
 
 console.log(element.innerText);

@@ -14,8 +14,10 @@ let tuple01: [string, number] = ["foo", 9];
 /*
  * 可以通过索引的方式，给 tuple 添加元素；
  */
-tuple01[2] = "bar";
-tuple01[3] = 19;
+/*
+  tuple01[2] = "bar";
+  tuple01[3] = 19;
+*/
 /* [ 'foo', 9, 'bar', 19 ] */
 console.log(tuple01);
 /* 4 */
