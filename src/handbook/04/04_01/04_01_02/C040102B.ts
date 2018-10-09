@@ -56,6 +56,10 @@ class Horse extends Animal {
 const snake = new Snake("Tom");
 snake.move(15);
 
+/*
+ * 将变量 horse 的类型声明为 Animal，但是 horse 的实际类型是 Horse，
+ * 所以调用 horse.move() 方法，实际上调用的依然是 Horse 类的方法；
+ */
 const horse: Animal = new Horse("Sam");
 horse.move(20);
 
