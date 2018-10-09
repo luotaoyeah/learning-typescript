@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./build/webpack.config.prod.js",
-    "dev": "rimraf ./dist_development && webpack --config ./build/webpack.config.dev.js && node $NODE_DEBUG_OPTION ./dist/index.js",
+    "dev": "rimraf ./dist_development && webpack --config ./build/webpack.config.dev.js && node $NODE_DEBUG_OPTION ./dist_development/index.js",
     "precommit": "lint-staged"
   },
   "dependencies": {
