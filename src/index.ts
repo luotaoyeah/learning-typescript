@@ -1,1 +1,1 @@
-import "./handbook/03/03-10/03-10-A.ts";
+import "./handbook/04/04-01/04-01-A";

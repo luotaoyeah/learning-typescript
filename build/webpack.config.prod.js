@@ -26,7 +26,6 @@ module.exports = [
       extensions: [".ts", ".js", ".json"]
     },
     target: "node",
-    mode: "development",
-    devtool: "eval-source-map"
+    mode: "production"
   }
 ];
