@@ -40,7 +40,7 @@ class Horse extends Animal {
   constructor(name: string) {
     console.log("Horse.constructor()");
     /*
-     * 在 constructor 中，必须调用父类构造函数，即 super()，
+     * 在 constructor 中，必须调用父类的构造函数，即 super()，
      * 且必须在访问 this 之前调用；
      */
     super(name);

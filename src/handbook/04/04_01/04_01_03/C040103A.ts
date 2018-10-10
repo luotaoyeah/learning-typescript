@@ -1,6 +1,7 @@
 /*
  * Classes
  *     Public, private, and protected modifiers
+ *         Public by default
  */
 
 console.log("\n-------------------------------------------------- 01");
