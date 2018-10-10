@@ -58,6 +58,7 @@ console.log("\n-------------------------------------------------- 02");
     private age: number;
 
     constructor(name: string, age: number) {
+      // 将 constructor 设置为 protected，在子类中可以访问该类的 constructor；
       super(name);
       this.age = age;
     }
