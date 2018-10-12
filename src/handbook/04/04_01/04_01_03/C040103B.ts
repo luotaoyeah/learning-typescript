@@ -60,7 +60,7 @@ console.log("\n-------------------------------------------------- 02");
   let animal = new Animal("A");
   let dog = new Dog("D");
   let person = new Person("P");
-  // Dog 继承自 Animal，因此也继承了 private 属性 name，即它们的 name 属性是来自同一个地方，因此类型是兼容的；
+  // Dog 继承自 Animal，因此也继承了 private 属性 name，即它们的 private 属性 name 是来自同一个地方，因此类型是兼容的；
   animal = dog;
   /*
     // Animal 和 Person 都拥有一个 private 属性 name，但是它们不是来自同一个地方，而是各自在自己内部定义的，所以类型不兼容；
