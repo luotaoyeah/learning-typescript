@@ -6,7 +6,7 @@
 console.log("\n-------------------------------------------------- 01");
 {
   /*
-   * 函数可以分为'命名函数（function statement）'和'匿名函数（function expression）'；
+   * 函数可以分为'命名函数（函数定义语句，function statement）'和'匿名函数（函数表达式，function expression）'；
    */
 
   function namedFn() {
