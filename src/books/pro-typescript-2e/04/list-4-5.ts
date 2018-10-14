@@ -24,7 +24,10 @@ class Movie {
   constructor(title: string, year: number, db: Database) {
     this.title = title;
     this.year = year;
-    this.db = Database.connect("username:password@mydb", ["movies"]);
+    this.db = Database.connect(
+      "username:password@mydb",
+      ["movies"]
+    );
   }
 
   save() {

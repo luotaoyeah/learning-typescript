@@ -20,7 +20,10 @@ class MovieRepository {
   private db: Database;
 
   constructor() {
-    this.db = Database.connect("username:password@mydb", ["movies"]);
+    this.db = Database.connect(
+      "username:password@mydb",
+      ["movies"]
+    );
   }
 
   save(movie: Movie): void;

@@ -28,7 +28,8 @@ function log(target: any, key: string) {
 }
 
 class Calculator {
-  @log name: string;
+  @log
+  name: string;
 
   hello() {
     console.log("Calculator.name:", this.name);
