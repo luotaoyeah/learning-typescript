@@ -3,12 +3,12 @@
  */
 
 namespace PersonNS {
-  export interface IPereson {
+  export interface Iperson {
     name: string;
     age: number;
   }
 
-  export class Person implements IPereson {
+  export class Person implements Iperson {
     age: number;
     name: string;
 
@@ -20,7 +20,7 @@ namespace PersonNS {
 
   const defaultAge = 18;
 
-  class PrivatePerson implements IPereson {
+  class PrivatePerson implements Iperson {
     age: number;
     name: string;
 

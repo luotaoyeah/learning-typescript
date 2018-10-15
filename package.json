@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./build/webpack.config.prod.js",
-    "dev": "rimraf ./dist_development && webpack --config ./build/webpack.config.dev.js && node $NODE_DEBUG_OPTION ./dist_development/index.js",
+    "dev:debug": "rimraf ./dist_development && webpack --config ./build/webpack.config.dev.js && node %NODE_DEBUG_OPTION% ./dist_development/index.js",
+    "dev": "rimraf ./dist_development && webpack --config ./build/webpack.config.dev.js && node ./dist_development/index.js",
     "precommit": "lint-staged"
   },
   "dependencies": {
@@ -22,7 +23,7 @@
     "@types/method-override": "0.0.31",
     "@types/mongoose": "^5.0.5",
     "@types/node": "^8.9.5",
-    "husky": "^1.1.1",
+    "husky": "^1.1.2",
     "jest": "^22.4.2",
     "lint-staged": "^7.3.0",
     "path": "^0.12.7",
@@ -32,7 +33,7 @@
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-loader": "^3.6.0",
-    "typescript": "^3.1.1",
+    "typescript": "^3.1.3",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   },
