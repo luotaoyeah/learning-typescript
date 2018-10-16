@@ -15,6 +15,9 @@ console.log("\n-------------------------------------------------- 01");
   function keyOf<T, K extends keyof T>(obj: T, key: K): any {
     return obj[key];
   }
+
+  console.log(keyOf({ name: "tom", age: 18 }, "name"));
+  console.log(keyOf({ name: "tom", age: 18 }, "age"));
 }
 
 export {};
