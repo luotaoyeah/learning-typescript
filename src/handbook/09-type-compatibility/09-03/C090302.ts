@@ -7,8 +7,9 @@
 console.log("\n-------------------------------------------------- 01");
 {
   /*
-   * 对于 function 的 return type，跟 function 的 parameter 相反，
-   * 右边必须是左边的子类，即：函数返回不能缺少（函数参数可以缺少）；
+   * 对于 function 的 return type，
+   * 如果 y 可以赋值给 x，则 y 的返回必须可以赋值给 x 的返回；
+   * 即：返回类型必须兼容；
    */
 
   let x = () => ({ name: "foo" });
