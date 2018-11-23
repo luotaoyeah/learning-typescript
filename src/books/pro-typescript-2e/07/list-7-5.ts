@@ -6,7 +6,7 @@ import http from "http";
 
 http
   .createServer(
-    (request: http.ServerRequest, response: http.ServerResponse) => {
+    (request: http.IncomingMessage, response: http.ServerResponse) => {
       response.writeHead(200, { "Conten-Type": "text/plain" });
       response.write("Response Text Here");
       response.end();
