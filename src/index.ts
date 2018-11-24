@@ -1,1 +1,1 @@
-import "./handbook/09-type-compatibility/09-05/C090502";
+import "./handbook/09-type-compatibility/09-06/C090601";
