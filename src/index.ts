@@ -1,1 +1,1 @@
-import "./handbook/10-advanced-types/10-01/C200102";
+import "./handbook/10-advanced-types/10-02/C200201";
