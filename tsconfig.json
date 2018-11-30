@@ -2,6 +2,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "strict": true,
+    /* FIXME */
     "strictNullChecks": false,
     "strictPropertyInitialization": false,
     "strictFunctionTypes": false,
