@@ -3,7 +3,7 @@
 .DS_Store
 node_modules
 dist/
-dist_development/
+dist-development/
 out/
 built/
 pro-typescript-2nd-edition-code.iml

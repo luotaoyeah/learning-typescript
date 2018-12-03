@@ -3,7 +3,7 @@
     "sourceMap": true,
     "strict": true,
     /* FIXME */
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "strictPropertyInitialization": false,
     "strictFunctionTypes": false,
     "noUnusedLocals": false,

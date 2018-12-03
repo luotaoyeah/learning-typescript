@@ -4,16 +4,15 @@
   "version": "0.1.0",
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./build/webpack.config.prod.js",
-    "dev:debug": "rimraf ./dist_development && webpack --config ./build/webpack.config.dev.js && node %NODE_DEBUG_OPTION% ./dist_development/index.js",
-    "dev": "rimraf ./dist_development && webpack --config ./build/webpack.config.dev.js && node ./dist_development/index.js",
+    "dev": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node ./dist-development/index.js",
+    "dev:debug": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node %NODE_DEBUG_OPTION% ./dist-development/index.js",
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "lodash": "^4.17.11",
-    "method-override": "^2.3.10",
-    "mongoose": "^5.0.7"
+    "mongoose": "^5.3.14"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.8",
@@ -29,12 +28,12 @@
     "path": "^0.12.7",
     "prettier": "^1.15.3",
     "rimraf": "^2.6.2",
-    "ts-loader": "^5.3.0",
+    "ts-loader": "^5.3.1",
     "tslint": "^5.11.0",
-    "tslint-config-prettier": "^1.16.0",
+    "tslint-config-prettier": "^1.17.0",
     "tslint-loader": "^3.6.0",
     "typescript": "^3.2.1",
-    "webpack": "^4.26.0",
+    "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   },
   "main": "./dist/index.js",

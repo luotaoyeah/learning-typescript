@@ -4,7 +4,7 @@ module.exports = [
   {
     entry: path.resolve("src/index.ts"),
     output: {
-      path: path.resolve("dist_development/"),
+      path: path.resolve("dist-development/"),
       filename: "index.js"
     },
     module: {
