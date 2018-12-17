@@ -6,16 +6,16 @@
 console.log("\n-------------------------------------------------- 01");
 {
   /*
-   * literal enum member 是一种特殊的 constant enum member，
-   * 它没有初始值，或者初始值为 literal string 或 literal number；
+   * literal enum member 是一种特殊的 constant enum member
+   * 它没有初始值，或者初始值为 string literal 或 number literal
    */
 
   // 如下，A，B，C，D 都是 literal enum member
   enum enum01 {
     A, // 没有初始值
-    B = "foo", // 初始值为 literal string
-    C = 9, // 初始值为 literal number
-    D = -9 // 初始值为 - literal number
+    B = "foo", // 初始值为 string literal
+    C = 9, // 初始值为 number literal
+    D = -9 // 初始值为 - number literal
   }
 }
 

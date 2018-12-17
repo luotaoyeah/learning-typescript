@@ -5,8 +5,7 @@
   "scripts": {
     "build": "rimraf ./dist && webpack --config ./build/webpack.config.prod.js",
     "dev": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node ./dist-development/index.js",
-    "dev:debug": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node %NODE_DEBUG_OPTION% ./dist-development/index.js",
-    "precommit": "lint-staged"
+    "dev:debug": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node %NODE_DEBUG_OPTION% ./dist-development/index.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -18,11 +17,11 @@
     "@types/body-parser": "^1.16.8",
     "@types/express": "^4.11.1",
     "@types/jest": "^23.3.9",
-    "@types/lodash": "^4.14.116",
+    "@types/lodash": "^4.14.119",
     "@types/method-override": "0.0.31",
     "@types/mongoose": "^5.0.5",
-    "@types/node": "^10.12.10",
-    "husky": "^1.2.0",
+    "@types/node": "^10.12.15",
+    "husky": "^1.2.1",
     "jest": "^23.6.0",
     "lint-staged": "^8.1.0",
     "path": "^0.12.7",
@@ -32,8 +31,8 @@
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.17.0",
     "tslint-loader": "^3.6.0",
-    "typescript": "^3.2.1",
-    "webpack": "^4.26.1",
+    "typescript": "^3.2.2",
+    "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   },
   "main": "./dist/index.js",
