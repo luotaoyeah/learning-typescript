@@ -29,17 +29,19 @@ console.log("\n-------------------------------------------------- 01");
     adult: boolean;
   }
 
-  // TS2366: Function lacks ending return statement and return type does not include 'undefined'.
-  function doSome(x: Foo | Bar | Baz): string | number {
-    switch (x.kind) {
-      case "foo":
-        return x.name.toUpperCase();
-      case "bar":
-        return x.age.toFixed(2);
+  /*
+    // TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+    function doSome(x: Foo | Bar | Baz): string | number {
+      switch (x.kind) {
+        case "foo":
+          return x.name.toUpperCase();
+        case "bar":
+          return x.age.toFixed(2);
+      }
     }
-  }
 
-  console.log(doSome({ kind: "baz", adult: true }));
+    console.log(doSome({ kind: "baz", adult: true }));
+  */
 }
 
 export {};
