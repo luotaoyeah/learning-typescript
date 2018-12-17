@@ -9,6 +9,7 @@ console.log("\n-------------------------------------------------- 01");
    * discriminated union 中的 discriminant 属性的类型，
    * 可以是 string literal，也可以是 numeric literal
    */
+
   interface Foo {
     kind: 9;
     name: string;
