@@ -9,7 +9,7 @@ console.log("\n-------------------------------------------------- 01");
   /*
    * T[K] 称之为 indexed access operator
    * 即对于类型 T 和 K，
-   * T[K] 表示 T 的 K 属性的属性值的类型，
+   * T[K] 表示对象 T 的 K 属性的类型，
    * 其中 K 是一个 string literal 类型
    */
 
