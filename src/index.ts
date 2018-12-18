@@ -1,1 +1,1 @@
-import "./handbook/10-advanced-types/10-09-polymorphic-this-types/C100902";
+import "./handbook/10-advanced-types/10-10-index-types/C101001";

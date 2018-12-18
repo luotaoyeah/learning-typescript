@@ -23,7 +23,9 @@ console.log("\n-------------------------------------------------- 01");
     }
   }
 
-  new Bar().foo().bar(); // TS2339: Property 'bar' does not exist on type 'Foo'.
+  /*
+    new Bar().foo().bar(); // TS2339: Property 'bar' does not exist on type 'Foo'.
+  */
 }
 
 export {};
