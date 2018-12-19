@@ -8,7 +8,7 @@ console.log("\n-------------------------------------------------- 01");
 {
   /*
    * 对于 index signature（string index signature 或者 number index signature）
-   * keyof T 的结果就是 string | number
+   * 由于它没有具体的属性名称，因此 keyof T 的结果是 string | number
    * T[K] 的结果就是其属性的类型
    */
 
