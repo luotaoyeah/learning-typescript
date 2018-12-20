@@ -10,6 +10,11 @@ console.log("\n-------------------------------------------------- 01");
    * TS 内置了很多常用的映射类型
    */
 
+  /*
+   * Partial<T>
+   * 将所有属性变成可选的（optional）
+   */
+
   interface Person {
     name: string;
     age: number;
