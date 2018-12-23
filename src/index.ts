@@ -1,1 +1,1 @@
-import "./handbook/10-advanced-types/10-12-conditional-types/C101204";
+import "./handbook/10-advanced-types/10-12-conditional-types/C101205";
