@@ -21,6 +21,7 @@ console.log("\n-------------------------------------------------- 01");
 
   type ReturnType<T> = T extends (...args: Array<any>) => infer R ? R : any;
   type T01 = ReturnType<typeof fn01>;
+  // @ts-ignore
   const t01: T01 = true; // TS2322: Type 'true' is not assignable to type 'string'.
 }
 
