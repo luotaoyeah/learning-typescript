@@ -10,8 +10,8 @@ console.log("\n-------------------------------------------------- 01");
   /*
    * 可分发的条件类型（distributive conditional type ）可以用来过滤联合类型，
    * 在 T extends U ? X : Y 中，当 T 是一个联合类型时，
-   * 如果 X 为 never，表示从 T 中排除满足条件的分支类型，
-   * 如果 Y 为 never，表示从 T 中保留满足条件的分支类型
+   * 如果 X 为 never，表示从 T 中排除该成员类型，
+   * 如果 Y 为 never，表示从 T 中保留该成员类型
    */
 
   type Diff<T, U> = T extends U ? never : T;
