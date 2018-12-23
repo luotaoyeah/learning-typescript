@@ -11,7 +11,6 @@ console.log("\n-------------------------------------------------- 01");
    * 条件类型跟映射类型结合
    */
 
-  /** 获取值为函数的属性名称组成的联合类型 */
   type FunctionPropertyNames<T> = {
     [K in keyof T]: T[K] extends Function ? K : never
   }[keyof T];

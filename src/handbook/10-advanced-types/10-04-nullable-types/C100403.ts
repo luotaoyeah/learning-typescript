@@ -20,6 +20,7 @@ console.log("\n-------------------------------------------------- 01");
        * 在 nest function 中，编译器不知道该 function 什么时候调用，
        * 因此不能正确识别出 name 不会为 null
        */
+      // @ts-ignore
       return name.toUpperCase();
     }
 

@@ -65,6 +65,7 @@ class Handler02 {
   }
 }
 
+// @ts-ignore
 element.addClickListener(new Handler02().handleClick);
 
 console.log("\n-------------------------------------------------- 03");
@@ -81,6 +82,7 @@ class Handler03 {
   };
 }
 
+// @ts-ignore
 element.addClickListener(new Handler03().handleClick);
 
 export {};

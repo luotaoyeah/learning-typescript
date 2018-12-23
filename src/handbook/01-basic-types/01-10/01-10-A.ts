@@ -19,10 +19,14 @@ const baz01: void = undefined;
  */
 console.log("\n-------------------------------------------------- 02");
 
+// @ts-ignore
 const foo02: null = undefined;
+// @ts-ignore
 const bar02: undefined = null;
 
+// @ts-ignore
 let foo03: number = null;
+// @ts-ignore
 foo03 = undefined;
 
 export {};

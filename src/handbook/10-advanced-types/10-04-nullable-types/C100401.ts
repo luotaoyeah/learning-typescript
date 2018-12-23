@@ -9,7 +9,9 @@ console.log("\n-------------------------------------------------- 01");
    * null 和 undefined 是两个特殊的类型，分别对应 null 和 undefined
    * 默认情况下，null 和 undefined 可以赋值给任意类型，如下：
    */
+  // @ts-ignore
   const x: number = null;
+  // @ts-ignore
   const y: string = undefined;
 }
 

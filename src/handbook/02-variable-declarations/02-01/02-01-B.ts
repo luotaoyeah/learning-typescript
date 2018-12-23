@@ -13,6 +13,7 @@
       var x = 9;
     }
 
+    // @ts-ignore
     return x;
   }
 
