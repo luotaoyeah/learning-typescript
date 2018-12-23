@@ -9,7 +9,7 @@ console.log("\n-------------------------------------------------- 01");
   /*
    * 如果一个条件类型（T extends U ? X : Y）中的 T 是一个类型参数，
    * 则这个条件类型叫做"可分发的条件类型（distributive conditional type）"，
-   * 此时，如果给这个类型参数的实际类型是一个联合类型，
+   * 此时，如果这个类型参数的实际类型是一个联合类型，
    * 则结果类型也会是一个联合类型（对类型参数进行分发）
    */
 
@@ -33,9 +33,8 @@ console.log("\n-------------------------------------------------- 01");
    * 类型 T01 的实际类型为："string" | "number"
    */
   type T01 = TypeName<string | number>;
-  /*
-    let t01: T01 = 0; // TS2322: Type '0' is not assignable to type '"string" | "number"'.
-  */
+  // @ts-ignore
+  let t01: T01 = 0; // TS2322: Type '0' is not assignable to type '"string" | "number"'.
 }
 
 export {};

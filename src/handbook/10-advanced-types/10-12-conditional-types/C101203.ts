@@ -25,9 +25,8 @@ console.log("\n-------------------------------------------------- 01");
     // TS2322: Type 'U extends Foo ? string : number' is not assignable to type 'string'.
     //   Type 'string | number' is not assignable to type 'string'.
     //     Type 'number' is not assignable to type 'string'.
-    /*
-        let y: string = f(u);
-    */
+    // @ts-ignore
+    let y: string = f(u);
   }
 }
 

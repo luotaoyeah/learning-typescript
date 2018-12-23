@@ -18,14 +18,12 @@ console.log("\n-------------------------------------------------- 01");
   type Filter<T, U> = T extends U ? T : never;
 
   type T01 = Diff<"a" | "b" | "c" | "d" | "e" | "f" | "g", "a" | "e">;
-  /*
-    const t01: T01 = "e"; // TS2322: Type '"e"' is not assignable to type '"b" | "c" | "d" | "f" | "g"'.
-  */
+  // @ts-ignore
+  const t01: T01 = "e"; // TS2322: Type '"e"' is not assignable to type '"b" | "c" | "d" | "f" | "g"'.
 
   type T02 = Filter<"a" | "b" | "c" | "d" | "e" | "f" | "g", "a" | "e">;
-  /*
-    const t02: T02 = "b"; // TS2322: Type '"b"' is not assignable to type '"a" | "e"'.
-  */
+  // @ts-ignore
+  const t02: T02 = "b"; // TS2322: Type '"b"' is not assignable to type '"a" | "e"'.
 }
 
 console.log("\n-------------------------------------------------- 02");
@@ -39,10 +37,10 @@ console.log("\n-------------------------------------------------- 02");
   t01 = undefined;
 
   let t02: NonNullable<T01> = "FOO";
-  /*
-    t02 = null; // TS2322: Type 'null' is not assignable to type 'string'.
-    t02 = undefined; // TS2322: Type 'undefined' is not assignable to type 'string'.
-  */
+  // @ts-ignore
+  t02 = null; // TS2322: Type 'null' is not assignable to type 'string'.
+  // @ts-ignore
+  t02 = undefined; // TS2322: Type 'undefined' is not assignable to type 'string'.
 }
 
 export {};

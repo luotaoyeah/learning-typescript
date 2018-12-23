@@ -21,9 +21,8 @@ console.log("\n-------------------------------------------------- 01");
    * 因此 f() 函数的返回类型（条件类型：T extends true ? string : number）无法确定结果类型，
    * 因此，结果类型为两个成员类型组成的联合类型（string | number）
    */
-  /*
-    let x: string = f(t); // TS2322: Type 'string | number' is not assignable to type 'string'.
-  */
+  // @ts-ignore
+  let x: string = f(t); // TS2322: Type 'string | number' is not assignable to type 'string'.
 }
 
 export {};

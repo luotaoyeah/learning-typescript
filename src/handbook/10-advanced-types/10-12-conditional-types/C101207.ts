@@ -29,17 +29,17 @@ console.log("\n-------------------------------------------------- 01");
   }
 
   type T01 = FunctionPropertyNames<Part>;
-  /*
-    const t01: T01 = 0; // TS2322: Type '0' is not assignable to type '"updatePart"'.
-  */
+  // @ts-ignore
+  const t01: T01 = 0; // TS2322: Type '0' is not assignable to type '"updatePart"'.
 
   type T02 = NonFunctionPropertyNames<Part>;
-  /*
-    let t02: T02 = 0; // TS2322: Type '0' is not assignable to type '"id" | "name" | "subparts"'.
-  */
+  // @ts-ignore
+  let t02: T02 = 0; // TS2322: Type '0' is not assignable to type '"id" | "name" | "subparts"'.
 
   type T03 = FunctionProperties<Part>;
-  const t03: T03 = { updatePart(name: string): void {} };
+  const t03: T03 = {
+    updatePart(name: string): void {}
+  };
 
   type T04 = NonFunctionProperties<Part>;
   const t04: T04 = {
