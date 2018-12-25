@@ -1,6 +1,7 @@
 /*
  * Symbols
  *     Well-known Symbols
+ *         Symbol.hasInstance
  */
 
 console.log("\n-------------------------------------------------- 01");
