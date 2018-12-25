@@ -8,7 +8,7 @@
 console.log("\n-------------------------------------------------- 01");
 {
   /*
-   * Symbol.isConcatSpreadable 布尔属性，
+   * [Symbol.isConcatSpreadable] 布尔属性，
    * 存在 array 对象，或者 array-like 对象上，
    * 用来标识：
    *     在使用 Array.prototype.concat() 方法时，
