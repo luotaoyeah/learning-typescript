@@ -3,10 +3,10 @@
  *     Well-known Symbols
  *         Symbol.match
  *         Symbol.replace
+ *         Symbol.search
+ *         Symbol.split
  *
  */
-
-import { MongoClientCommonOption } from "mongodb";
 
 console.log("\n-------------------------------------------------- 01");
 {
@@ -63,6 +63,24 @@ console.log("\n-------------------------------------------------- 03");
   });
 
   console.log("FOO".search(/O/)); // 1
+}
+
+console.log("\n-------------------------------------------------- 04");
+{
+  /*
+   * [Symbol.split] 方法，
+   * 存在于正则表达式实例对象上，
+   * 当调用 String.prototype.split() 方法时，该方法会被调用
+   */
+
+  RegExp.prototype[Symbol.split] = new Proxy(RegExp.prototype[Symbol.split], {
+    apply(target: any, thisArg: any, argArray?: any): any {
+      console.log(target.name); // [Symbol.split]
+      return target.apply(thisArg, argArray);
+    }
+  });
+
+  console.log("F,O,O".split(/,/)); // [ 'F', 'O', 'O' ]
 }
 
 export {};
