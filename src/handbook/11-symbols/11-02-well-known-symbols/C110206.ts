@@ -9,7 +9,8 @@ console.log("\n-------------------------------------------------- 01");
 {
   /*
    * [Symbol.toPrimitive] 方法，
-   * 当需要将对象隐式转换为：string，number，default 时，会调用该方法
+   * 当需要将对象隐式转换为：string，number，default 时，会调用该方法，
+   * 用来代替旧的 valueOf() 方法（TODO 待验证）
    */
 
   const obj = {
