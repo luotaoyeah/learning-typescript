@@ -1,1 +1,1 @@
-import "./handbook/11-symbols/11-02-well-known-symbols/C110207";
+import "./handbook/12-iterators-and-generators/12-01-iterables/C120101";
