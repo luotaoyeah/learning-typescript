@@ -1,4 +1,4 @@
-declare module "foo" {
+declare module "C1307010101" {
   export const c: string;
   export function f(): void;
   export class C {

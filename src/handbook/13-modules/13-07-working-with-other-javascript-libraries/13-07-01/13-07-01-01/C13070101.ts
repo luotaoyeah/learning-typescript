@@ -26,7 +26,7 @@ console.log("\n-------------------------------------------------- 01");
  * 但是，如果在运行时，这些声明对应的实现不存在，则会运行报错
  */
 
-import * as foo from "foo";
+import * as foo from "C1307010101";
 
 console.log(foo.c);
 foo.f();
