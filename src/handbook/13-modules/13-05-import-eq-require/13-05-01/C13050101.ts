@@ -11,9 +11,15 @@ console.log("\n-------------------------------------------------- 01");
  */
 
 /*
+ * 实际上，ES2015 以及 TS 中的 export default 就是用来替代这种方式的
+ */
+
+/*
  * 使用这种方式时，compilerOptions.module 需要设置为 "commonjs" 或者 "amd"
  */
 
-export = function() {
-  console.log("HAHA");
-};
+/*
+  export = function() {
+    console.log("HAHA");
+  };
+*/
