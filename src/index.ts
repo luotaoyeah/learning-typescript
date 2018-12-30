@@ -1,1 +1,1 @@
-import "./handbook/13-modules/13-07-working-with-other-javascript-libraries/13-07-01/13-07-01-01/C13070101";
+import "./handbook/13-modules/13-08-guidance-for-structuring-modules/13-08-01/13-08-01-02/C13080102";
