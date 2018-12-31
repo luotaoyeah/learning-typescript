@@ -10,6 +10,9 @@ console.log("\n-------------------------------------------------- 01");
  */
 
 namespace C140201 {
+  /*
+   * 没有使用 export 输出的数据，不能在 namespace 的外面被访问
+   */
   const GENDER_BOY = "BOY";
   const GENDER_GIRL = "GIRL";
 
@@ -46,7 +49,7 @@ namespace C140201 {
 }
 
 /*
- * 访问 namespace 中的数据时，需要加上该 namespace 作为前缀
+ * 访问 namespace 中的数据时，需要加上该 namespace 的名称作为前缀
  */
 console.log(new C140201.Boy("tom").gender); // BOY
 console.log(new C140201.Girl("lily").gender); // GIRL
