@@ -1,1 +1,1 @@
-import "./handbook/16-module-resolution/16-02-module-resolution-strategies/C160201";
+import "./handbook/17-declaration-merging/17-03-merging-namespaces/C170301";
