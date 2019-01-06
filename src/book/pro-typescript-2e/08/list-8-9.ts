@@ -4,7 +4,7 @@
 
 class CommunicationLine {
   calculate(size: number): number {
-    return size * (size - 1) / 2;
+    return (size * (size - 1)) / 2;
   }
 }
 
