@@ -1,1 +1,1 @@
-import "./handbook/17-declaration-merging/17-05-module-augmentation/C170502";
+import "./handbook/19-decorators/19-02-decorators/C190201";
