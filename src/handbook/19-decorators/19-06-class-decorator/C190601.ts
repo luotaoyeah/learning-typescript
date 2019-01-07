@@ -7,7 +7,7 @@ console.log("\n-------------------------------------------------- 01");
 /*
  * class decorator 用在 class 上面，
  * 因为 class 本质上是一个 function
- * 因此 class decorator 实际上是作用在该 class 的 constructor 上面
+ * 因此 class decorator 实际上装饰的是 class 的 constructor
  */
 
 /*

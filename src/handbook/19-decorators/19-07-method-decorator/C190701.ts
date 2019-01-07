@@ -7,6 +7,7 @@ console.log("\n-------------------------------------------------- 01");
 
 /*
  * method decorator 可以用在静态方法和实例方法上面
+ * method decorator 实际上装饰的是 method 的 descriptor
  */
 
 function enumerable(value: boolean) {
