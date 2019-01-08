@@ -1,1 +1,1 @@
-import "./handbook/19-decorators/19-07-method-decorator/C190704";
+import "./handbook/19-decorators/19-08-accessor-decorator/C190801";
