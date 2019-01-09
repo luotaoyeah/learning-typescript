@@ -1,1 +1,1 @@
-import "./doc/handbook/20-mixin/20-01-mixin-sample/C200101";
+import "./doc/faq/01-type-system-behavior/C0101";
