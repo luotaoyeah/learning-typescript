@@ -1,1 +1,1 @@
-import "./handbook/19-decorators/19-11-metadata/C191101";
+import "./handbook/20-mixin/20-01-mixin-sample/C200101";
