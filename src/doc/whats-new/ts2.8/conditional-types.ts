@@ -34,12 +34,14 @@ let foo: Foo = "tom";
 type TypeName<T> = T extends string
   ? "string"
   : T extends number
-    ? "number"
-    : T extends boolean
-      ? "boolean"
-      : T extends undefined
-        ? "undefined"
-        : T extends Function ? "function" : "object";
+  ? "number"
+  : T extends boolean
+  ? "boolean"
+  : T extends undefined
+  ? "undefined"
+  : T extends Function
+  ? "function"
+  : "object";
 
 type T0 = TypeName<"tom">;
 type T1 = TypeName<18>;
@@ -190,8 +192,10 @@ console.log("----------: nested infer");
 type Unpack<T> = T extends (infer U)[]
   ? U
   : T extends (...args: any[]) => infer U
-    ? U
-    : T extends Promise<infer U> ? U : T;
+  ? U
+  : T extends Promise<infer U>
+  ? U
+  : T;
 
 /* string */
 type T28 = Unpack<string>;
