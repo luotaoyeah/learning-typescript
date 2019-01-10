@@ -39,4 +39,4 @@ let fn02 = (a: A) => void {};
 fn01 = fn02;
 fn02 = fn01;
 
-export {};
+export { A, C, D };
