@@ -1,1 +1,1 @@
-import "./doc/faq/01-type-system-behavior/01-05-why-are-functions-returning-non-void-assignable-to-function-returning-void/C010502";
+import "./doc/faq/01-type-system-behavior/01-09-how-do-i-check-at-run-time-if-an-object-implements-some-interface/C010901";
