@@ -11,6 +11,7 @@ console.log("\n-------------------------------------------------- 01");
    *     为什么传递 boolean 类型的参数不会报错？
    */
 
+  // @ts-ignore
   const fn01: (number) => string = n => n.toString();
   fn01(true);
 }
