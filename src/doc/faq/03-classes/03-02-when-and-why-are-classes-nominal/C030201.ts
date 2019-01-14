@@ -46,7 +46,7 @@ console.log("\n-------------------------------------------------- 02");
    * 因为 TS 是 structural typing 的，因此 class 在比较类型的时候，
    * 实际上比较的是各个成员是否类型兼容，
    * 但是有一个例外：
-   *     就是对于 private 和 protected 成员，
+   *     对于 private 和 protected 成员，
    *     两个 class 要想类型兼容，则它们的所有 private 和 protected 成员，
    *     必须是从同一个基类继承过来的
    */
