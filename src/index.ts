@@ -1,1 +1,1 @@
-import "./doc/faq/03-classes/03-03-why-does-this-get-orphaned-in-my-instance-methods/C030301";
+import "./doc/whats-new/ts@3.0/03-unknown/C0306.ts";

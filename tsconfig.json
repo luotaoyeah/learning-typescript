@@ -2,7 +2,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "strict": true,
-    "strictPropertyInitialization": true,
+    "strictPropertyInitialization": false,
     "strictFunctionTypes": false,
     "noImplicitAny": true,
     "noImplicitThis": true,
