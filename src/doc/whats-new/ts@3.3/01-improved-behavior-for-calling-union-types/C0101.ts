@@ -60,6 +60,12 @@ console.log("\n-------------------------------------------------- 02");
     f("a"); // TS2345: Argument of type '"a"' is not assignable to parameter of type '"x"'.
     // @ts-ignore
     f("b"); // TS2345: Argument of type '"a"' is not assignable to parameter of type '"x"'.
+
+    // ts@3.3 之前，下面的代码会报如下错误：
+    //     TS2349: Cannot invoke an expression whose type lacks a call signature. Type 'F' has no compatible call signatures.
+    f("x");
+
+    // ts@3.3 之后，下面的代码不会报错
     f("x");
   }
 }
