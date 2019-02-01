@@ -1,5 +1,5 @@
 /**
- * Const-named properties
+ * Constant-named properties
  */
 
 console.log("\n-------------------------------------------------- 01");
