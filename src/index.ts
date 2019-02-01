@@ -1,1 +1,1 @@
-import "./doc/whats-new/ts@3.0/03-unknown/C0306.ts";
+import "./doc/whats-new/ts@3.3/01-improved-behavior-for-calling-union-types/C0101";
