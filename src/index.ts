@@ -1,1 +1,1 @@
-import "./doc/whats-new/ts@3.3/01-improved-behavior-for-calling-union-types/C0101";
+import "./doc/whats-new/ts@3.4/01-higher-order-type-inference-from-generic-functions/C0101.ts";
