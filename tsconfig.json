@@ -4,8 +4,6 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "strictFunctionTypes": false,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
     "noImplicitReturns": true,
     "module": "esnext",
     "target": "esnext",
