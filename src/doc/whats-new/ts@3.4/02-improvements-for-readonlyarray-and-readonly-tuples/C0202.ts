@@ -1,6 +1,6 @@
 /**
  * Improvements for ReadonlyArray and Readonly Tuples
- *     readonly tuples
+ *     readonly Tuples
  */
 
 console.log("\n-------------------------------------------------- 01");

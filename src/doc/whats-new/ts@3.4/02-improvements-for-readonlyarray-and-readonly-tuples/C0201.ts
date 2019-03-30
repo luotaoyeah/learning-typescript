@@ -27,7 +27,6 @@ console.log("\n-------------------------------------------------- 02");
    * 即，在非泛型数组类型（string[]，number[]）前面加上 readonly 关键字
    */
 
-  // prettier-ignore
   function fn01(arr: readonly string[]) {
     // @ts-ignore: TS2339
     arr.push();
