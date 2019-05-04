@@ -24,7 +24,7 @@ console.log("\n-------------------------------------------------- 02");
 {
   /*
    * ts@3.4 引入了一种新的语法用来表示只读数组，
-   * 即，在非泛型数组类型（string[]，number[]）前面加上 readonly 关键字
+   * 即在 shorthand array syntax（string[]，number[]）前面加上 readonly 关键字
    */
 
   function fn01(arr: readonly string[]) {

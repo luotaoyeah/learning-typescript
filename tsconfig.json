@@ -15,7 +15,8 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,
-    "declaration": false
+    "declaration": false,
+    "types": ["@types/jest"]
   },
   "include": ["./src/**/*"],
   "exclude": []
