@@ -1,1 +1,1 @@
-import "./doc/whats-new/ts@3.4/03-const-assertion/C0303.ts";
+import "./doc/whats-new/ts@3.4/04-type-checking-for-globalthis/C0401.ts";
