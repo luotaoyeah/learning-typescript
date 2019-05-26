@@ -3,9 +3,9 @@
   "author": "luotao",
   "version": "0.1.0",
   "scripts": {
-    "build": "rimraf ./dist && webpack --config ./build/webpack.config.prod.js",
     "dev": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node ./dist-development/index.js",
-    "dev:debug": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node %NODE_DEBUG_OPTION% ./dist-development/index.js"
+    "dev:debug": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node %NODE_DEBUG_OPTION% ./dist-development/index.js",
+    "build": "rimraf ./dist && webpack --config ./build/webpack.config.prod.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

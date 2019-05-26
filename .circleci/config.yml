@@ -1,0 +1,25 @@
+version: 2.1
+
+jobs:
+  build-learning-typescript:
+    working_directory: ~/learning-typescript
+    docker:
+      - image: circleci/node:10-browsers
+    steps:
+      - checkout
+      - restore_cache:
+          key: learning-typescript-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - run: npm install
+      - save_cache:
+          key: learning-typescript-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          paths:
+            - "node_modules"
+      - run:
+          name: build
+          command: npm run build
+
+workflows:
+  version: 2
+  learning-typescript-workflow:
+    jobs:
+      - build-learning-typescript
