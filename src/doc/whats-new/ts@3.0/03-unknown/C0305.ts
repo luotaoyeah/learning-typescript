@@ -2,7 +2,7 @@
  * https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-unknown-top-type
  *
  * New unknown Top Type
- *     operators
+ *     Only Equality Operators Are Allowed With Unknown
  */
 
 import chalk from "chalk";
