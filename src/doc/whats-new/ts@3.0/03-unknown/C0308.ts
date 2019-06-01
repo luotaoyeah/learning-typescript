@@ -2,22 +2,38 @@
  * https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-unknown-top-type
  *
  * New unknown Top Type
- *     sumary
+ *     initialization
  */
 
 console.log("\n-------------------------------------------------- 01");
 {
   /*
-   * unknown 和 any 的区别是什么？什么时候使用 unknown？
-   * unknown 的一个主要特性是:
-   *     如果一个对象的类型是 unknown 类型, 那么当我们想进一步使用它的属性和方法时,
-   *     必须首先对它进行类型断言（type assertion）或者缩小类型范围（narrow）,
-   *     因此 unknown 类型的一个主要作用就是: 告诉使用者, 在使用这个对象时, 需要先对它的类型进行细化
+   * 如果是 unknown 类型的变量, 可以不需要初始化, 直接赋值给其他变量
    */
 
-  let x: unknown = 9;
+  let x: unknown;
+  let y: any = x;
 
-  console.log((x as number).toFixed(2)); // 9.00
+  /*
+   * 当开启了 strictPropertyInitialization 时,
+   * 如果 class 的 field 是 unknown 类型, 则不会报错
+   */
+  class A {
+    // @ts-ignore
+    x: number; // TS2564: Property 'x' has no initializer and is not definitely assigned in the constructor.
+    y: unknown;
+  }
+}
+
+console.log("\n-------------------------------------------------- 02");
+{
+  /*
+   * 如果是其他类型的变量, 必须先进行初始化, 之后才能赋值给其他变量
+   */
+
+  let x: number;
+  // @ts-ignore
+  let y: any = x; // TS2454: Variable 'x' is used before being assigned.
 }
 
 export {};
