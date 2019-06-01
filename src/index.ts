@@ -1,1 +1,1 @@
-import "./doc/whats-new/ts@3.5/01-the-omit-helper-type/C0102.ts";
+import "./doc/whats-new/ts@3.5/03-smarter-union-type-checking/C0301.ts";
