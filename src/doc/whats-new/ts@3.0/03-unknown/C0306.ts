@@ -1,5 +1,7 @@
-/**
- * New unknown top type
+/*
+ * https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#new-unknown-top-type
+ *
+ * New unknown Top Type
  *     sumary
  */
 
