@@ -5,7 +5,11 @@
  *     Union Type
  */
 
-console.log("\n-------------------------------------------------- 01");
+import chalk from "chalk";
+
+console.log(
+  chalk.red("\n-------------------------------------------------- 01")
+);
 {
   /*
    * 当 union type 中包含 unknown 类型时,

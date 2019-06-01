@@ -5,23 +5,25 @@
  *     keyof
  */
 
-console.log("\n-------------------------------------------------- 01");
+import chalk from "chalk";
+
+console.log(
+  chalk.red("\n-------------------------------------------------- 01")
+);
 {
   /*
-   * unknown 的 keyof 结果为 never
+   * keyof unknown 结果为 never
    */
 
-  /*
-   * T 的实际类型为 never
-   */
   type T = keyof unknown;
 }
 
-console.log("\n-------------------------------------------------- 02");
+console.log(
+  chalk.green("\n-------------------------------------------------- 01")
+);
 {
   /*
-   * 作为对比,
-   * any 的 keyof 结果为 string | number | symbol
+   * keyof any 结果为 string | number | symbol
    */
 
   type T = keyof any;
