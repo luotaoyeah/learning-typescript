@@ -1,6 +1,5 @@
 /**
  * https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#conditional-types
- * --------------------------------------------------
  */
 
 /*
@@ -9,16 +8,17 @@
  * --------------------------------------------------
  */
 
-interface Animal {
+interface IAnimal {
   live(): void;
 }
 
-interface Dog extends Animal {
+interface IDog extends IAnimal {
   woof(): void;
 }
 
-type Foo = Dog extends Animal ? string : number;
+type Foo = IDog extends IAnimal ? string : number;
 
+// tslint:disable-next-line:prefer-const
 let foo: Foo = "tom";
 
 /*
@@ -39,7 +39,7 @@ type TypeName<T> = T extends string
   ? "boolean"
   : T extends undefined
   ? "undefined"
-  : T extends Function
+  : T extends Function // tslint:disable-line:ban-types
   ? "function"
   : "object";
 
@@ -59,23 +59,24 @@ const t4: T4 = "object";
  * --------------------------------------------------
  */
 
-interface Id {
+interface IId {
   id: number;
 }
 
-interface Name {
+interface IName {
   name: string;
 }
 
-declare function createLabel(id: number): Id;
-declare function createLabel(name: string): Name;
+declare function createLabel(id: number): IId;
+declare function createLabel(name: string): IName;
 
 /*
  * --------------------------------------------------
  */
 
-type IdOrName<T extends number | string> = T extends number ? Id : Name;
+type IdOrName<T extends number | string> = T extends number ? IId : IName;
 
+// tslint:disable-next-line:adjacent-overload-signatures
 declare function createLabel<T extends number | string>(
   idOrName: T
 ): IdOrName<T>;
@@ -90,7 +91,7 @@ declare function createLabel<T extends number | string>(
  * --------------------------------------------------
  */
 
-type Flatten01<T> = T extends any[] ? T[number] : T;
+type Flatten01<T> = T extends Array<any> ? T[number] : T;
 
 type Flatten02<T> = T extends Array<infer U> ? U : T;
 
@@ -106,18 +107,20 @@ const element: ElementType = 18;
  * --------------------------------------------------
  */
 console.log("----------: distributive conditional types");
-type DistributiveType<T> = T extends any ? T[] : T;
+type DistributiveType<T> = T extends any ? Array<T> : T;
 type DistributedType = DistributiveType<string | number>;
 /* string[] | number[] */
 let array03: DistributedType = ["a", "b"];
 array03 = [1, 2];
 
 console.log("----------: distributive conditional types");
+// tslint:disable-next-line:interface-over-type-literal
 type BoxedValue<T> = { value: T };
-type BoxedArray<T> = { array: T[] };
-type Boxed<T> = T extends any[] ? BoxedArray<T[number]> : BoxedValue<T>;
+// tslint:disable-next-line:interface-over-type-literal
+type BoxedArray<T> = { array: Array<T> };
+type Boxed<T> = T extends Array<any> ? BoxedArray<T[number]> : BoxedValue<T>;
 
-type T22 = Boxed<string | number[]>;
+type T22 = Boxed<string | Array<number>>;
 let t22: T22 = { value: "tom" };
 t22 = { array: [1, 2, 3] };
 
@@ -129,7 +132,7 @@ console.log("----------: filter union types");
 type Diff<T, U> = T extends U ? never : T;
 type Filter<T, U> = T extends U ? T : never;
 /* t23 的类型为 string */
-let t23: Diff<string | null | undefined, null | undefined> = "tom";
+const t23: Diff<string | null | undefined, null | undefined> = "tom";
 
 /*
  * 条件类型可以跟映射类型（mapped type）结合；
@@ -137,12 +140,15 @@ let t23: Diff<string | null | undefined, null | undefined> = "tom";
  */
 console.log("----------: combine with mapped types");
 type FunctionPropertyNames<T> = {
+  // tslint:disable-next-line:ban-types
   [K in keyof T]: T[K] extends Function ? K : never
 }[keyof T];
 type NonFunctionPropertyNames<T> = {
+  // tslint:disable-next-line:ban-types
   [K in keyof T]: T[K] extends Function ? never : K
 }[keyof T];
 
+// tslint:disable-next-line:interface-name
 interface I24 {
   id: number;
   name: string;
@@ -179,20 +185,20 @@ console.log("----------: not allowed to reference themselves");
  * --------------------------------------------------
  */
 console.log("----------: type inference in conditional types");
-type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
+type ReturnType<T> = T extends (...args: Array<any>) => infer R ? R : any;
 /* T27 的实际类型为 string */
 type T27 = ReturnType<() => string>;
-let t27: T27 = "tom";
+const t27: T27 = "tom";
 
 /*
  * infer 可以嵌套使用；
  * --------------------------------------------------
  */
 console.log("----------: nested infer");
-type Unpack<T> = T extends (infer U)[]
-  ? U
-  : T extends (...args: any[]) => infer U
-  ? U
+type Unpack<T> = T extends Array<infer U>
+  ? U // tslint:disable-next-line:no-shadowed-variable
+  : T extends (...args: Array<any>) => infer U
+  ? U // tslint:disable-next-line:no-shadowed-variable
   : T extends Promise<infer U>
   ? U
   : T;
@@ -200,14 +206,14 @@ type Unpack<T> = T extends (infer U)[]
 /* string */
 type T28 = Unpack<string>;
 /* string */
-type T29 = Unpack<string[]>;
+type T29 = Unpack<Array<string>>;
 /* string */
 type T30 = Unpack<Promise<string>>;
 /* string */
 type T31 = Unpack<() => string>;
 /* string */
-type T32 = Unpack<Unpack<Promise<string[]>>>;
-let t32: T32 = "tom";
+type T32 = Unpack<Unpack<Promise<Array<string>>>>;
+const t32: T32 = "tom";
 
 /*
  * 同一个类型变量可以出现在多个不同的地方；
@@ -232,7 +238,7 @@ type T34 = Bar02<{
   a: (x: { name: string }) => void;
   b: (x: { age: number }) => void;
 }>;
-let t34: T34 = { name: "tom", age: 18 };
+const t34: T34 = { name: "tom", age: 18 };
 
 /*
  * 当推断一个重载函数的类型的时候，会从最后一个函数签名进行推断；

@@ -11,31 +11,32 @@ class Song {
     this.title = title;
   }
 
-  play() {
+  public play() {
     console.log(`歌曲：《${this.title}》，演唱：${this.artist}`);
   }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class Jukebox {
-  constructor(private songs: Song[]) {}
+  constructor(private songs: Array<Song>) {}
 
-  play() {
+  public play() {
     const song = this.getRandomSong();
     song.play();
   }
 
-  getRandomSong(): Song {
+  public getRandomSong(): Song {
     return this.songs[Math.floor(Math.random() * this.songs.length)];
   }
 }
 
-const songs: Song[] = [
+const SONGS: Array<Song> = [
   new Song("周杰伦", "等你下课"),
   new Song("林俊杰", "江南"),
   new Song("潘玮柏", "我的麦克风")
 ];
 
-const jukebox = new Jukebox(songs);
+const jukebox = new Jukebox(SONGS);
 jukebox.play();
 
 export {};

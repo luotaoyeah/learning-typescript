@@ -13,6 +13,7 @@ console.log("\n-------------------------------------------------- 01");
    * 新的 readonly array 语法，只能用于 shorthand syntax，不能用于 generic syntax
    */
 
+  // tslint:disable-next-line:array-type
   const arr01: readonly string[] = [];
 
   /*

@@ -6,22 +6,11 @@ class Song {
   constructor(private artist: string, private title: string) {}
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class PlayList {
-  private songs: Song[] = [];
   public static readonly maxCount: number = 3;
 
-  constructor(public name: string) {}
-
-  add(song: Song): Song {
-    if (this.songs.length >= PlayList.maxCount) {
-      throw new Error("Playlist is full.");
-    }
-
-    this.songs.push(song);
-    return song;
-  }
-
-  static from() {
+  public static from() {
     console.log(this.maxCount);
 
     /* 静态方法里面只能访问静态属性 */
@@ -29,6 +18,19 @@ class PlayList {
         /!* TS2339: Property 'name' does not exist on type 'typeof PlayList'. *!/
         console.log(this.name);
     */
+  }
+
+  private songs: Array<Song> = [];
+
+  constructor(public name: string) {}
+
+  public add(song: Song): Song {
+    if (this.songs.length >= PlayList.maxCount) {
+      throw new Error("Playlist is full.");
+    }
+
+    this.songs.push(song);
+    return song;
   }
 }
 

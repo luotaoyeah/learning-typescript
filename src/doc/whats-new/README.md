@@ -1,1 +1,1 @@
-[What's New](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-1.html)
+[WHAT'S NEW](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-1.html)

@@ -6,10 +6,15 @@
 console.log("\n-------------------------------------------------- 01");
 {
   /*
-   * 相交类型（intersection type），
-   * 将多个类型组合为一个类型，新的类型拥有所有类型的属性和方法；
+   * 相交类型（intersection type）,
+   * 将多个类型组合为一个类型，新的类型拥有所有类型的属性和方法
    */
 
+  /**
+   *
+   * @param t T
+   * @param u U
+   */
   function extend<T, U>(t: T, u: U): T & U {
     const obj: T & U = {} as T & U;
 
@@ -18,7 +23,7 @@ console.log("\n-------------------------------------------------- 01");
     }
 
     for (let k in u) {
-      if (!obj.hasOwnProperty(k)) {
+      if (!((obj as unknown) as object).hasOwnProperty(k)) {
         (obj as any)[k] = u[k];
       }
     }

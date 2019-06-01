@@ -18,12 +18,12 @@ console.log("\n-------------------------------------------------- 01");
     return (x: A) => g(f(x));
   }
 
-  interface Person {
+  interface IPerson {
     name: string;
     age: number;
   }
 
-  function fn01(person: Person): string {
+  function fn01(person: IPerson): string {
     return person.name.toUpperCase();
   }
 
@@ -32,7 +32,7 @@ console.log("\n-------------------------------------------------- 01");
   }
 
   /*
-   * 下面的 fn03() 的类型可以被正确地推断出来：(person: Person) => number
+   * 下面的 fn03() 的类型可以被正确地推断出来：(person: IPerson) => number
    */
   const fn03 = compose(
     fn01,
@@ -58,7 +58,7 @@ console.log("\n-------------------------------------------------- 02");
     return (x: A) => g(f(x));
   }
 
-  interface Box<T> {
+  interface IBox<T> {
     value: T;
   }
 
@@ -66,12 +66,12 @@ console.log("\n-------------------------------------------------- 02");
     return [t];
   }
 
-  function makeBox<U>(u: U): Box<U> {
+  function makeBox<U>(u: U): IBox<U> {
     return { value: u };
   }
 
   /*
-   * 下面的 fn03 的类型现在也可以被正确地推断出来：<T>(t: T) => Box<Array<T>>
+   * 下面的 fn03 的类型现在也可以被正确地推断出来：<T>(t: T) => IBox<Array<T>>
    */
   const fn03 = compose(
     makeArray,

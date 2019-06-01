@@ -14,7 +14,7 @@ console.log(
    *     只是在写类型的地方，我们写的是一个 const，如下：
    */
 
-  let x = "foo" as "foo";
+  const x = "foo" as "foo";
 
   /*
    * const assertion 的作用：
@@ -23,7 +23,7 @@ console.log(
    * 使用了 const assertion 之后，y 的推断类型就是 "foo"，
    * 不会再自动进行 type widening
    */
-  let y = "foo" as const;
+  const y = "foo" as const;
 }
 
 console.log(

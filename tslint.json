@@ -1,3 +1,10 @@
 {
-  "extends": ["tslint:latest", "tslint-config-prettier"]
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": {
+    "no-console": [true, "debug", "info", "time", "timeEnd", "trace"],
+    "object-literal-sort-keys": false,
+    "array-type": {
+      "options": ["generic"]
+    }
+  }
 }

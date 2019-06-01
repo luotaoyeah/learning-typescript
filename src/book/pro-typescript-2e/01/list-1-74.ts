@@ -3,6 +3,7 @@
  */
 
 class Person {
+  // tslint:disable-next-line:variable-name
   private _name: string = "cat";
 
   get name(): string {

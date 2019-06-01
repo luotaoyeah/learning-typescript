@@ -3,21 +3,23 @@
  */
 
 abstract class Logger {
-  abstract log(message: string): void;
+  public abstract log(message: string): void;
 
   protected getMessage(message: string): string {
     return `[${new Date().toLocaleString()}]:${message}`;
   }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class ConsoleLogger extends Logger {
-  log(message: string): void {
+  public log(message: string): void {
     console.log(this.getMessage(message));
   }
 }
 
+// tslint:disable-next-line:max-classes-per-file
 class AlertLogger extends Logger {
-  log(message: string): void {
+  public log(message: string): void {
     alert(this.getMessage(message));
   }
 }

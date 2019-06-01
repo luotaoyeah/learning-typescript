@@ -13,14 +13,14 @@ interface IStudent {
 }
 
 class Person implements IPerson {
-  name: string;
+  public name: string;
 
   constructor(name: string) {
     this.name = name;
   }
 
   /* method can has fewer parameters than the interface specifies */
-  hello(): void {
+  public hello(): void {
     console.log("hello() in Person");
   }
 }
@@ -29,9 +29,10 @@ const person = new Person("tom");
 console.log(person.name);
 person.hello();
 
+// tslint:disable-next-line:max-classes-per-file
 class SeniorStudent extends Person implements IStudent {
-  score: number;
-  age: number;
+  public score: number;
+  public age: number;
 
   constructor(name: string, score: number, age: number) {
     super(name);
@@ -40,7 +41,7 @@ class SeniorStudent extends Person implements IStudent {
   }
 
   /* method override */
-  hello() {
+  public hello() {
     console.log("hello() in SeniorStudent");
   }
 }

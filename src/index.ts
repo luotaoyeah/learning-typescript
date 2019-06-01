@@ -1,1 +1,1 @@
-import "./doc/whats-new/ts@3.4/04-type-checking-for-globalthis/C0401.ts";
+import "./doc/whats-new/ts@3.5/01-the-omit-helper-type/C0102.ts";

@@ -32,6 +32,7 @@ console.log(
    * 如下，使用 let 声明变量，且显式地标注了类型，
    * 因此 z 的类型是 "foo"
    */
+  // tslint:disable-next-line:prefer-const
   let z: "foo" = "foo";
 }
 

@@ -9,14 +9,15 @@ console.log("\n-------------------------------------------------- 01");
    * 对于普通的 mapped type 来说，array 和 tuple 都可以正常地工作
    */
 
-  interface Box<T> {
+  interface IBox<T> {
     value: T;
   }
 
-  type Boxify<T> = { [K in keyof T]: Box<T[K]> };
+  type Boxify<T> = { [K in keyof T]: IBox<T[K]> };
 
   type A = Boxify<{ x: string; y: number }>;
 
+  // tslint:disable-next-line:array-type
   type B = Boxify<string[]>;
 
   type C = Boxify<[string, number]>;
@@ -31,14 +32,15 @@ console.log("\n-------------------------------------------------- 01");
    * 这个问题就被修复了
    */
 
-  interface Box<T> {
+  interface IBox<T> {
     value: T;
   }
 
-  type ReadonlyBoxify<T> = { readonly [K in keyof T]: Box<T[K]> };
+  type ReadonlyBoxify<T> = { readonly [K in keyof T]: IBox<T[K]> };
 
   type A = ReadonlyBoxify<{ x: string; y: number }>;
 
+  // tslint:disable-next-line:array-type
   type B = ReadonlyBoxify<string[]>;
 
   type C = ReadonlyBoxify<[string, number]>;
