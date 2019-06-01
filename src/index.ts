@@ -1,1 +1,1 @@
-import "./doc/whats-new/ts@3.5/03-smarter-union-type-checking/C0301.ts";
+import "./doc/whats-new/ts@3.0/03-unknown/C0301.ts";
