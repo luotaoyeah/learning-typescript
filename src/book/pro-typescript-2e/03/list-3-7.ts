@@ -4,7 +4,7 @@
 
 console.log("----------");
 
-window.onclick = e => {
+window.onclick = (e: MouseEvent) => {
   console.log(e.button);
 };
 

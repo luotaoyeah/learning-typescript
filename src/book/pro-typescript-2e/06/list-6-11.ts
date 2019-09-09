@@ -1,3 +1,5 @@
+/* tslint:disable */
+
 /**
  * Listing 6-11. Cross-Browser enhanced events
  */
@@ -7,9 +9,9 @@ export const addEvent: (
   eventName: string,
   callback: Function
 ) => void = (function() {
-  if (document.addEventListener) {
+  if (!!document.addEventListener) {
     // Handles modern browsers
-    return function(elem: any, eventName: any, callback: any) {
+    return (elem: any, eventName: any, callback: any) => {
       if (elem && elem.addEventListener) {
         // Handles a single element
         elem.addEventListener(eventName, callback, false);
@@ -22,10 +24,10 @@ export const addEvent: (
     };
   } else {
     // Handles some old browsers
-    return function(elem: any, eventName: any, callback: any) {
+    return (elem: any, eventName: any, callback: any) => {
       if (elem && elem.attachEvent) {
         // Handles a single element
-        elem.attachEvent("on" + eventName, function() {
+        elem.attachEvent("on" + eventName, () => {
           return callback.call(elem, window.event);
         });
       } else if (elem && elem.length) {
