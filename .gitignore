@@ -1,4 +1,3 @@
-.idea
 .vs
 .DS_Store
 node_modules
@@ -7,3 +6,4 @@ dist-development/
 out/
 built/
 pro-typescript-2nd-edition-code.iml
+/coverage/
