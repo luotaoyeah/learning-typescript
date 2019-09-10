@@ -6,7 +6,7 @@
     "dev": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node ./dist-development/index.js",
     "dev:debug": "rimraf ./dist-development && webpack --config ./build/webpack.config.dev.js && node %NODE_DEBUG_OPTION% ./dist-development/index.js",
     "build": "rimraf ./dist && webpack --config ./build/webpack.config.prod.js",
-    "eslint": "eslint src/**/*.ts",
+    "eslint:ts": "eslint src/**/*.ts",
     "test": "jest --coverage",
     "codecov": "codecov --token=49334e71-be3e-489d-968a-9e130495d017"
   },
