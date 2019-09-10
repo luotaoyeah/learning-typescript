@@ -1,3 +1,4 @@
+/* eslint-disable no-var */
 /**
  * Listing 5-3. C-like scope
  */
@@ -8,6 +9,7 @@ function test() {
   var scope = 1;
 
   {
+    // eslint-disable-next-line no-redeclare
     var scope = 2;
 
     /* inner 2 */

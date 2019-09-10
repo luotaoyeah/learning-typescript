@@ -15,14 +15,14 @@ console.log("\n-------------------------------------------------- 01");
     return t as any;
   }
 
-  const t: boolean = Math.random() < 0.5;
+  const t01: boolean = Math.random() < 0.5;
   /*
    * 因为参数 t 在编译时无法确定类型（true | false），
    * 因此 f() 函数的返回类型（条件类型：T extends true ? string : number）无法确定结果类型，
    * 因此，结果类型为两个成员类型组成的联合类型（string | number）
    */
   // @ts-ignore
-  let x: string = f(t); // TS2322: Type 'string | number' is not assignable to type 'string'.
+  const x: string = f(t01); // TS2322: Type 'string | number' is not assignable to type 'string'.
 }
 
 export {};

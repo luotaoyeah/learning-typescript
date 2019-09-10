@@ -4,19 +4,17 @@
 
 console.log("----------");
 
-interface Subscriber {
-  (message: string): void;
-}
+type Subscriber = (message: string) => void;
 
 class Publisher {
-  subscribers: Subscriber[] = [];
+  subscribers: Array<Subscriber> = [];
 
   addSubscriber(subscriber: Subscriber) {
     this.subscribers.push(subscriber);
   }
 
   notify(message: string) {
-    for (let subscriber of this.subscribers) {
+    for (const subscriber of this.subscribers) {
       subscriber(message);
     }
   }

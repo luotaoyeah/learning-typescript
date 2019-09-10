@@ -19,11 +19,11 @@ interface ICounter {
  *
  */
 function getCounter(): ICounter {
-  const counter: ICounter = ((start: number) => {}) as ICounter;
-  counter.interval = 9;
-  counter.reset = () => {};
+  const ctr: ICounter = ((start: number) => {}) as ICounter;
+  ctr.interval = 9;
+  ctr.reset = () => {};
 
-  return counter;
+  return ctr;
 }
 
 const counter: ICounter = getCounter();

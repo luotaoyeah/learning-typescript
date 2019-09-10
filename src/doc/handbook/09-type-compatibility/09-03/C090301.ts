@@ -17,7 +17,7 @@ console.log("\n-------------------------------------------------- 01");
    * { number } 相比于 { number, string }，参数个数少了（少了 string），并且参数类型是兼容的（number 和 number）
    * 所以 x 可以赋值给 y
    */
-  let x = (x: number) => 0;
+  const x = (i: number) => 0;
   let y = (a: number, b: string) => 0;
 
   y = x;

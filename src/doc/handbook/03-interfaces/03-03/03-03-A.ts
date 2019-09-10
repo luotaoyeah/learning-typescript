@@ -17,7 +17,7 @@ interface Point {
  * 可以使用 object literal 进行初始化，
  * 初始化之后，属性不能再被重新赋值；
  */
-let point01: Point = { x: 0, y: 0 };
+const point01: Point = { x: 0, y: 0 };
 /*
   // TS2540: Cannot assign to 'x' because it is a constant or a read-only property.
   point01.x = 9;

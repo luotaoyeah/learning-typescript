@@ -10,8 +10,11 @@ console.log("\n-------------------------------------------------- 01");
  * 增强代码的可读性
  */
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 namespace N01 {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
   export namespace N02 {
+    // eslint-disable-next-line no-shadow
     export function fn01() {
       console.log("X");
     }

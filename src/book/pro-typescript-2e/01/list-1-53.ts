@@ -13,7 +13,7 @@ const arr = [1, 2];
 /!* https://github.com/Microsoft/TypeScript/issues/4130 *!/
 const sum = f(...arr);
 
-console.log(sum); 
+console.log(sum);
 */
 
 export {};

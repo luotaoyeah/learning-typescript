@@ -2,10 +2,11 @@
  * Listing 1-4. Name reuse with let
  */
 
-let firstName: string = "Foo";
+const firstName: string = "Foo";
 
 {
-  let firstName = "Bar";
+  // eslint-disable-next-line no-shadow
+  const firstName = "Bar";
   console.log("inner name: ", firstName); // inner name: Bar
 }
 

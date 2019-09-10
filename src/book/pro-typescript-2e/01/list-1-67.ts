@@ -4,6 +4,7 @@
 
 interface IPerson {
   /* constructor */
+  // eslint-disable-next-line @typescript-eslint/no-misused-new
   new (name: string): IPerson;
 
   /* property */

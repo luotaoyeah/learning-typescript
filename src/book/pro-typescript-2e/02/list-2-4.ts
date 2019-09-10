@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 /**
  * Listing 2-4. Import alias
  */
@@ -17,9 +18,9 @@ namespace BNS {
   import A = ANS.A;
 
   export class B {
-    as: A[] = [];
+    as: Array<A> = [];
 
-    constructor(as: A[]) {
+    constructor(as: Array<A>) {
       this.as = as;
     }
   }

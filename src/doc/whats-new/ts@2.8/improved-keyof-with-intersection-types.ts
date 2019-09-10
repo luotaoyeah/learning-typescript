@@ -18,6 +18,6 @@ type D = keyof A | keyof B;
 let c: C = "a";
 c = "b";
 
-let d: D = c;
+const d: D = c;
 
 export {};

@@ -4,7 +4,7 @@
 
 console.log("----------");
 
-declare var $: any;
+declare let $: any;
 
 $("#div").html("hello");
 

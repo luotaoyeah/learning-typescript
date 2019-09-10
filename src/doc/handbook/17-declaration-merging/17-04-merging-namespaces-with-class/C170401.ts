@@ -25,6 +25,7 @@ class Person {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-namespace,no-redeclare
 namespace Person {
   /*
    * 添加静态属性

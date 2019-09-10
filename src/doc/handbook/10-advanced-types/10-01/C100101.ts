@@ -16,13 +16,15 @@ console.log("\n-------------------------------------------------- 01");
    * @param u U
    */
   function extend<T, U>(t: T, u: U): T & U {
+    // eslint-disable-next-line no-shadow
     const obj: T & U = {} as T & U;
 
-    for (let k in t) {
+    // eslint-disable-next-line guard-for-in
+    for (const k in t) {
       (obj as any)[k] = t[k];
     }
 
-    for (let k in u) {
+    for (const k in u) {
       if (!((obj as unknown) as object).hasOwnProperty(k)) {
         (obj as any)[k] = u[k];
       }

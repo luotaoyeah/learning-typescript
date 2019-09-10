@@ -18,6 +18,7 @@ console.log("\n-------------------------------------------------- 01");
   }
 
   let x: Bar;
-  let y = { foo: { name: "foo", age: 18 }, score: 99 };
+  const y = { foo: { name: "foo", age: 18 }, score: 99 };
+  // eslint-disable-next-line prefer-const
   x = y;
 }

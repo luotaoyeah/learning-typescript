@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 /*
  * Declaration Merging
  *     Merging Namespaces
@@ -18,6 +19,7 @@ namespace N01 {
   }
 }
 
+// eslint-disable-next-line no-redeclare
 namespace N01 {
   export function fn02() {
     /*

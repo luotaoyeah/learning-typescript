@@ -6,7 +6,6 @@ class Song {
   constructor(private artist: string, private title: string) {}
 }
 
-// tslint:disable-next-line:max-classes-per-file
 class PlayList {
   public static readonly maxCount: number = 3;
 

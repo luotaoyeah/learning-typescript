@@ -12,10 +12,10 @@ console.log("\n-------------------------------------------------- 01");
    */
 
   type FunctionPropertyNames<T> = {
-    [K in keyof T]: T[K] extends Function ? K : never
+    [K in keyof T]: T[K] extends Function ? K : never;
   }[keyof T];
   type NonFunctionPropertyNames<T> = {
-    [K in keyof T]: T[K] extends Function ? never : K
+    [K in keyof T]: T[K] extends Function ? never : K;
   }[keyof T];
   type FunctionProperties<T> = Pick<T, FunctionPropertyNames<T>>;
   type NonFunctionProperties<T> = Pick<T, NonFunctionPropertyNames<T>>;
@@ -23,7 +23,7 @@ console.log("\n-------------------------------------------------- 01");
   interface Part {
     id: number;
     name: string;
-    subparts: Part[];
+    subparts: Array<Part>;
 
     updatePart(name: string): void;
   }
@@ -34,7 +34,7 @@ console.log("\n-------------------------------------------------- 01");
 
   type T02 = NonFunctionPropertyNames<Part>;
   // @ts-ignore
-  let t02: T02 = 0; // TS2322: Type '0' is not assignable to type '"id" | "name" | "subparts"'.
+  const t02: T02 = 0; // TS2322: Type '0' is not assignable to type '"id" | "name" | "subparts"'.
 
   type T03 = FunctionProperties<Part>;
   const t03: T03 = {

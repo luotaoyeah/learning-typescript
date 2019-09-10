@@ -11,7 +11,6 @@ console.log("\n-------------------------------------------------- 01");
    * 可以对 unknown 类型使用 instanceof/typeof/user defined type predicate
    */
 
-  // tslint:disable-next-line:ban-types
   const isFunction = (x: unknown): x is Function => typeof x === "function";
 
   const fn01 = (x: unknown): void => {

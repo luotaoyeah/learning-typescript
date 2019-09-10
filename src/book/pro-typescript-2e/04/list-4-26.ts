@@ -4,7 +4,7 @@
 
 console.log("----------");
 
-type Constructor<T = {}> = new (...args: any[]) => T;
+type Constructor<T = {}> = new (...args: Array<any>) => T;
 
 function Acting<T extends Constructor>(BaseClass: T) {
   return class extends BaseClass {

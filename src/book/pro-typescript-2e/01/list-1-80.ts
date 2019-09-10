@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /**
  * Listing 1-80. Preserving context with bind
  */

@@ -5,9 +5,9 @@
 console.log("----------");
 
 class Database {
-  movies: Movie[] = [];
+  movies: Array<Movie> = [];
 
-  static connect(connString: string, collections: string[]): Database {
+  static connect(connString: string, collections: Array<string>): Database {
     return new Database();
   }
 
@@ -20,14 +20,12 @@ class MovieRepository {
   private db: Database;
 
   constructor() {
-    this.db = Database.connect(
-      "username:password@mydb",
-      ["movies"]
-    );
+    this.db = Database.connect("username:password@mydb", ["movies"]);
   }
 
   save(movie: Movie): void;
-  save(movies: Movie[]): void;
+  // eslint-disable-next-line @typescript-eslint/unified-signatures
+  save(movies: Array<Movie>): void;
   save(movie: any): void {
     this.db.save(movie);
   }

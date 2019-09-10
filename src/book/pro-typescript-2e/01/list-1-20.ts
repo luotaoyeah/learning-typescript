@@ -5,7 +5,7 @@
 /* 元组 */
 type PoemType = [number, string, boolean];
 
-let poem: PoemType = [18, "tom", true];
+const poem: PoemType = [18, "tom", true];
 console.log(poem);
 
 poem[2].valueOf();

@@ -13,8 +13,9 @@
  */
 console.log("\n-------------------------------------------------- 01");
 
-let str: any = "this is a string";
+const str: any = "this is a string";
 /* 16 */
+// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 console.log((<string>str).length);
 /* 16 */
 console.log((str as string).length);

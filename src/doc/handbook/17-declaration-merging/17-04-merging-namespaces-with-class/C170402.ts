@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 /*
  * Declaration Merging
  *     Merging Namespaces with Function
@@ -13,6 +14,7 @@ function fn() {
   console.log(fn.PI);
 }
 
+// eslint-disable-next-line no-redeclare
 namespace fn {
   export const PI = 3.14;
   export function fn01() {

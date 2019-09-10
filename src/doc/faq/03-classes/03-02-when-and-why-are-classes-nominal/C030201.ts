@@ -28,9 +28,9 @@ console.log("\n-------------------------------------------------- 01");
   }
 
   let a: A = new A();
-  let b: B = new B();
+  const b: B = new B();
   let c: C = new C();
-  let d: D = new D();
+  const d: D = new D();
 
   a = b;
 
@@ -60,7 +60,7 @@ console.log("\n-------------------------------------------------- 02");
   }
 
   let c: C = new C();
-  let d: D = new D();
+  const d: D = new D();
   // TS2322: Type 'D' is not assignable to type 'C'.
   //   Property 'x' is protected but type 'D' is not a class derived from 'C'.
   // @ts-ignore

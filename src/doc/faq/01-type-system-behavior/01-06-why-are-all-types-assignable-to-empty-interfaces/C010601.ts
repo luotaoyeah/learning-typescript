@@ -13,9 +13,9 @@ console.log("\n-------------------------------------------------- 01");
  * 因为任何类型都满足它的类型条件（没有条件）
  */
 
-interface empty {}
+interface Empty {}
 
-let x: empty;
+let x: Empty;
 x = "0";
 x = 9;
 x = {};

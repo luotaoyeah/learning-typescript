@@ -13,6 +13,7 @@ function fn01(): never {
 }
 
 function fn02(): never {
+  // eslint-disable-next-line no-empty
   while (true) {}
 }
 

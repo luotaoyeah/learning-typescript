@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 /*
  * Type Compatibility
  *     Classes
@@ -28,8 +29,8 @@ console.log("\n-------------------------------------------------- 01");
     constructor(c: boolean) {}
   }
 
-  let a: A = new B(true);
-  let b: B = new A(9, "foo");
+  const a: A = new B(true);
+  const b: B = new A(9, "foo");
 }
 
 export {};

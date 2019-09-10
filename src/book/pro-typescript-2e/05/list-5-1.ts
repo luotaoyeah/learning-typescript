@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * Listing 5-1. Queued timer
  */

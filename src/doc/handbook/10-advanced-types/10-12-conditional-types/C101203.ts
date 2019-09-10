@@ -26,7 +26,7 @@ console.log("\n-------------------------------------------------- 01");
     //   Type 'string | number' is not assignable to type 'string'.
     //     Type 'number' is not assignable to type 'string'.
     // @ts-ignore
-    let y: string = f(u);
+    const y: string = f(u);
   }
 }
 

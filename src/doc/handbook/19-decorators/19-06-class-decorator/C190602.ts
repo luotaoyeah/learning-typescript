@@ -10,7 +10,7 @@ console.log("\n-------------------------------------------------- 01");
  * 则原来的构造函数会被替换为新的构造函数
  */
 
-function Dog<T extends { new (...args: Array<any>): {} }>(Ctor: T) {
+function Dog<T extends new (...args: Array<any>) => {}>(Ctor: T) {
   return class {
     log() {
       console.log("DOG");

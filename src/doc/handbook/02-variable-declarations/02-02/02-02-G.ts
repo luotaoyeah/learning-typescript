@@ -11,9 +11,9 @@
     let getCity: () => string;
 
     if (true) {
-      let city: string = "chengdu";
+      const ct: string = "chengdu";
       getCity = function(): string {
-        return city;
+        return ct;
       };
 
       return getCity();

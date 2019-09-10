@@ -5,9 +5,9 @@
 console.log("----------");
 
 class Database {
-  movies: Movie[] = [];
+  movies: Array<Movie> = [];
 
-  static connect(connString: string, collections: string[]): Database {
+  static connect(connString: string, collections: Array<string>): Database {
     return new Database();
   }
 
@@ -24,10 +24,7 @@ class Movie {
   constructor(title: string, year: number, db: Database) {
     this.title = title;
     this.year = year;
-    this.db = Database.connect(
-      "username:password@mydb",
-      ["movies"]
-    );
+    this.db = Database.connect("username:password@mydb", ["movies"]);
   }
 
   save() {

@@ -58,8 +58,8 @@ console.log("\n-------------------------------------------------- 02");
   }
 
   let animal = new Animal("A");
-  let dog = new Dog("D");
-  let person = new Person("P");
+  const dog = new Dog("D");
+  const person = new Person("P");
   // Dog 继承自 Animal，因此也继承了 private 属性 name，即它们的 private 属性 name 是来自同一个地方，因此类型是兼容的；
   animal = dog;
   /*

@@ -22,7 +22,7 @@ console.log("\n-------------------------------------------------- 01");
     t01 = true; // TS2322: Type 'true' is not assignable to type 'string | number'.
   */
 
-  let t02: Foo<number>["foo"] = 99;
+  const t02: Foo<number>["foo"] = 99;
   /*
     t02 = "FOO"; // TS2322: Type '"FOO"' is not assignable to type 'number'.
   */

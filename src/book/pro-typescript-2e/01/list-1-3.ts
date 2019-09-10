@@ -20,6 +20,6 @@ let globalScope = 1;
 
     blockScope = 200;
 
-    let nestedBlockScope = 3;
+    const nestedBlockScope = 3;
   }
 }

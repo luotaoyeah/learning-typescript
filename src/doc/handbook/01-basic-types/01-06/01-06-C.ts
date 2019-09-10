@@ -3,7 +3,7 @@
  */
 console.log("\n-------------------------------------------------- 01");
 
-let tuple01: [string, number] = ["foo", 9];
+const tuple01: [string, number] = ["foo", 9];
 
 /*
   // 直接赋值时，元素数量必须跟定义的数量一致；

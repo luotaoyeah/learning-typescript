@@ -11,6 +11,7 @@ console.log("\n-------------------------------------------------- 01");
 // @ts-ignore
 class C {}
 // @ts-ignore
+// eslint-disable-next-line no-redeclare
 class C {} // TS2300: Duplicate identifier 'C'.
 
 export {};

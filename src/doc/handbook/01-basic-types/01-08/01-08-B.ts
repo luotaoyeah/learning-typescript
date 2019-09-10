@@ -10,7 +10,7 @@ const foo: any = 4;
 /* 4.00 */
 console.log(foo.toFixed(2));
 
-const bar: Object = 4;
+const bar: Record<string, any> = 4;
 /* 4 */
 console.log(bar.toString());
 /*

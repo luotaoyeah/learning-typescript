@@ -10,7 +10,7 @@
 
 console.log("\n-------------------------------------------------- 01");
 
-let tuple01: [string, number] = ["foo", 9];
+const tuple01: [string, number] = ["foo", 9];
 
 /*
   // TS2322: Type '[string, string]' is not assignable to type '[string, number]'

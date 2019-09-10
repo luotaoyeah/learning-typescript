@@ -24,6 +24,7 @@ console.log("\n-------------------------------------------------- 01");
      */
     // TS2693: 'A' only refers to a type, but is being used as a value here.
     // @ts-ignore
+    // eslint-disable-next-line no-empty
     if (obj instanceof A) {
     }
   }

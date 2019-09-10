@@ -15,6 +15,7 @@ console.log("\n-------------------------------------------------- 01");
   Object.setPrototypeOf(bar, foo);
 
   console.log(Object.getOwnPropertyNames(bar)); // [ 'y' ]
+  // eslint-disable-next-line guard-for-in
   for (const i in bar) {
     // y
     // x

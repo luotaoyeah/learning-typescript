@@ -1,3 +1,4 @@
+/* eslint-disable no-empty */
 /*
  * Enums
  *     Union enums and enum member types
@@ -45,7 +46,7 @@ console.log("\n-------------------------------------------------- 02");
   }
 
   // FIXME 为什么可以将 0 赋值给 b ?
-  let b: enum02.B = 0;
+  const b: enum02.B = 0;
 }
 
 console.log("\n-------------------------------------------------- 03");

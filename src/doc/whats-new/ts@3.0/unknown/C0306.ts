@@ -7,16 +7,12 @@
 
 console.log("\n-------------------------------------------------- 01");
 {
-  /*
-   *
-   */
-
   const x: unknown = () => 0;
 
   // @ts-ignore TS2571: Object is of type 'unknown'.
   console.log(x.name);
   // @ts-ignore TS2571: Object is of type 'unknown'.
-  // tslint:disable-next-line:no-string-literal
+  // eslint-disable-next-line dot-notation
   console.log(x["name"]);
   // @ts-ignore TS2571: Object is of type 'unknown'.
   console.log(x());

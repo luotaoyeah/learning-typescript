@@ -18,7 +18,7 @@ console.log("\n-------------------------------------------------- 01");
     name: string;
   }
 
-  let p: Named = new Person();
+  const p: Named = new Person();
   p.name = "foo";
   console.log(p); // Person { name: 'foo' }
 }

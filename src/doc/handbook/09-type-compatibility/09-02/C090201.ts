@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 /*
  * Type Compatibility
  *     Starting out
@@ -23,7 +24,7 @@ console.log("\n-------------------------------------------------- 01");
    * y 具有 x 的属性：{ name: string }
    * 因此 x 跟 y 是兼容的
    */
-  let y = { name: "foo", location: "chengdu" };
+  const y = { name: "foo", location: "chengdu" };
   x = y;
 }
 
@@ -41,6 +42,6 @@ console.log("\n-------------------------------------------------- 02");
     console.log(x.name);
   }
 
-  let y = { name: "foo", location: "chengdu" };
+  const y = { name: "foo", location: "chengdu" };
   fn01(y); // foo
 }

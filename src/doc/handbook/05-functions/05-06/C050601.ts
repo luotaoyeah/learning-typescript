@@ -37,7 +37,7 @@ console.log("\n-------------------------------------------------- 02");
    * 如：下面有两个方法重载，最后一个具有方法体的是方法实现，不是方法重载；
    */
   function fn01(age: number): void;
-  function fn01(person: Person): void;
+  function fn01(p: Person): void;
   function fn01(x: any): void {
     if (x instanceof Person) {
       console.log(x.age);

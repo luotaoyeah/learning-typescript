@@ -11,14 +11,14 @@
 
   (function() {
     /* x 的 TDZ 开始 */
-    let y = 9;
+    const y = 9;
     console.log(y);
 
     /*
         // TS2448: Block-scoped variable 'x' used before its declaration.
         console.log(x);
     */
-    let x = 9;
+    const x = 9;
     /* x 的 TDZ 结束 */
   })();
 })();
@@ -32,7 +32,7 @@
    */
   console.log("\n-------------------------------------------------- 02");
 
-  let x = 9;
+  const x = 9;
   {
     /*
         // 此处已经进入 x 的 TDZ，即此处的 x 为该代码块的 x，而不是外部的 x；
@@ -40,6 +40,7 @@
         // TS2448: Block-scoped variable 'x' used before its declaration.
         console.log(x);
     */
-    let x = 99;
+    // eslint-disable-next-line no-shadow
+    const x = 99;
   }
 })();

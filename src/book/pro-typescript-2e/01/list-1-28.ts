@@ -7,7 +7,7 @@ interface IStudent {
 }
 
 interface ITeacher {
-  students: IStudent[];
+  students: Array<IStudent>;
 }
 
 function isStudent(person: IStudent | any): person is IStudent {

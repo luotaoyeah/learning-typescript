@@ -13,7 +13,7 @@ type OptionalPerson = Partial<IPerson>;
 type PickPerson = Pick<IPerson, "name">;
 type RecordPerson = Record<"teacher" | "student", IPerson>;
 
-let readonlyPerson: ReadonlyPerson = {
+const readonlyPerson: ReadonlyPerson = {
   name: "tom",
   age: 18
 };
@@ -23,7 +23,7 @@ let readonlyPerson: ReadonlyPerson = {
 readonlyPerson.name = 'cat';
 */
 
-let optionalPerson: OptionalPerson = {
+const optionalPerson: OptionalPerson = {
   name: "tom"
 };
 
@@ -35,7 +35,7 @@ let pickPerson: PickPerson = {
 };
 */
 
-let recordPerson: RecordPerson = {
+const recordPerson: RecordPerson = {
   student: readonlyPerson,
   teacher: {
     name: "cat",

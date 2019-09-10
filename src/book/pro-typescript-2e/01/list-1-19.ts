@@ -7,7 +7,7 @@ interface IMonument {
   height: number;
 }
 
-const monuments: IMonument[] = [];
+const monuments: Array<IMonument> = [];
 
 monuments.push({
   name: "A",

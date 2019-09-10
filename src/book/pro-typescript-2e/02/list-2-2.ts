@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace,no-shadow,no-redeclare */
 /**
  * Listing 2-2. Nested and dotted hierarchies
  */

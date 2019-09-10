@@ -3,9 +3,7 @@
  */
 console.log("\n-------------------------------------------------- 01");
 
-interface ISearchFn {
-  (source: string, subString: string): boolean;
-}
+type ISearchFn = (source: string, subString: string) => boolean;
 
 const searchFn02: ISearchFn = function(src, sub) {
   return src.search(sub) > -1;

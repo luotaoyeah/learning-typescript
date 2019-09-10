@@ -9,9 +9,7 @@ console.log("\n-------------------------------------------------- 01");
  * 因为 constructor 属于 class 的 static side，
  * 而 class 在实现一个 interface 的时候，检查的是这个 calss 的 instance side；
  */
-interface IClockConstructor {
-  new (h: number, m: number): any;
-}
+type IClockConstructor = new (h: number, m: number) => any;
 
 /*
   /!*
@@ -28,9 +26,7 @@ interface IClockConstructor {
  * 为了解决这个问题，需要手动检查 class 的 static side；
  */
 console.log("\n-------------------------------------------------- 02");
-interface IClockConstructor02 {
-  new (h: number, m: number): IClock;
-}
+type IClockConstructor02 = new (h: number, m: number) => IClock;
 
 interface IClock {
   tick(): void;

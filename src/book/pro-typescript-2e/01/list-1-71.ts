@@ -16,7 +16,6 @@ class Song {
   }
 }
 
-// tslint:disable-next-line:max-classes-per-file
 class Jukebox {
   constructor(private songs: Array<Song>) {}
 

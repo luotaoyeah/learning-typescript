@@ -34,8 +34,8 @@ console.log("\n-------------------------------------------------- 01");
   /*
    * B 和 C 相互兼容
    */
-  let b: B = new C();
-  let c: C = new B();
+  const b: B = new C();
+  const c: C = new B();
 
   /*
    * B 和 D 虽然具有相同的 private 属性 name，

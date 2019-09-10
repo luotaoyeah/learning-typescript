@@ -8,11 +8,11 @@ const age: number = 18;
 const isOld: boolean = false;
 
 /* array type annotation */
-const names: string[] = ["foo", "bar"];
+const names: Array<string> = ["foo", "bar"];
 
 /* function annotation with parameter type annotation and return type annotation */
-const sayHello: (name: string, age: number) => string = (name: string) => {
-  return `hello ${name}`;
+const sayHello: (name: string, age: number) => string = (n: string) => {
+  return `hello ${n}`;
 };
 
 /* object type annotation */

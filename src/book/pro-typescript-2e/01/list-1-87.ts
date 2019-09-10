@@ -14,7 +14,7 @@ interface Repository<T, TID> {
 }
 
 class PersonRepository implements Repository<Person, string> {
-  constructor(private persons: Person[]) {}
+  constructor(private persons: Array<Person>) {}
 
   get(id: string): Person {
     return this.persons[id];

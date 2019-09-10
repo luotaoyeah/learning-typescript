@@ -10,7 +10,7 @@ function test() {
     console.log('name', name);
   */
 
-  var name = "tom";
+  const name = "tom";
 }
 
 test();

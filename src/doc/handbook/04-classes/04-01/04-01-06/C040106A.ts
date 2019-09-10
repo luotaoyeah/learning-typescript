@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /*
  * Classes
  *     Static Properties

@@ -13,7 +13,7 @@ console.log("\n-------------------------------------------------- 01");
    * 泛型函数的类型标注如下：将类型参数（<T>）放在前面；
    */
 
-  let i: <T>(arg: T) => T = identity;
+  const i: <T>(arg: T) => T = identity;
 }
 
 console.log("\n-------------------------------------------------- 02");
@@ -22,7 +22,7 @@ console.log("\n-------------------------------------------------- 02");
    * 类型标注中的泛型参数，可以使用其他的名称；
    */
 
-  let i: <U>(arg: U) => U = identity;
+  const i: <U>(arg: U) => U = identity;
 }
 
 console.log("\n-------------------------------------------------- 03");
@@ -31,7 +31,7 @@ console.log("\n-------------------------------------------------- 03");
    * 泛型函数的类型标注，可以写成 call signature 的形式；
    */
 
-  let i: { <T>(arg: T): T } = identity;
+  const i: <T>(arg: T) => T = identity;
 }
 
 console.log("\n-------------------------------------------------- 04");
@@ -41,11 +41,9 @@ console.log("\n-------------------------------------------------- 04");
    * 此时，接口中的 call signature 可以声明为一个泛型的 call signature；
    */
 
-  interface IGenericIdentity {
-    <T>(arg: T): T;
-  }
+  type IGenericIdentity = <T>(arg: T) => T;
 
-  let i: IGenericIdentity = identity;
+  const i: IGenericIdentity = identity;
 }
 
 console.log("\n-------------------------------------------------- 05");
@@ -56,11 +54,9 @@ console.log("\n-------------------------------------------------- 05");
    * 此时，在使用该泛型接口时，必须指明其泛型参数的实际类型；
    */
 
-  interface IGenericIdentity<T> {
-    (arg: T): T;
-  }
+  type IGenericIdentity<T> = (arg: T) => T;
 
-  let i: IGenericIdentity<number> = identity;
+  const i: IGenericIdentity<number> = identity;
 }
 
 export {};

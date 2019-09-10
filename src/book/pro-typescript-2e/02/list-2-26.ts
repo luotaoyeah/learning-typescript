@@ -7,7 +7,7 @@ console.log("----------");
 function log(target: any) {
   const originalConstructor = target;
 
-  const newConstructor: any = (...args: any[]) => {
+  const newConstructor: any = (...args: Array<any>) => {
     console.log(`new instance: ${JSON.stringify(args)}`);
 
     const ctor: any = () => {

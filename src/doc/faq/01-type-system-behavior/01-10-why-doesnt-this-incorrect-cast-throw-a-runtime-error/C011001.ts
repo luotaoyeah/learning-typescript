@@ -13,8 +13,8 @@ console.log("\n-------------------------------------------------- 01");
   /*
    * 为什么 true 转换为 string 不会报错？
    */
-  let a: any = true;
-  let b: string = a as string;
+  const a: any = true;
+  const b: string = a as string;
 }
 
 console.log("\n-------------------------------------------------- 02");

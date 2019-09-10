@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace */
 namespace C1403 {
   const GENDER_GIRL = "GIRL";
 

@@ -32,7 +32,7 @@ class ProductDatabase {
         .transaction("products", "readwrite")
         .objectStore("products");
 
-      for (let product of products) {
+      for (const product of products) {
         idbTransaction.add(product);
       }
     };

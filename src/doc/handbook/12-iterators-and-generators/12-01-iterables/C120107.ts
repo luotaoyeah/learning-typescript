@@ -1,3 +1,4 @@
+/* eslint-disable dot-notation,guard-for-in */
 /*
  * Iterators and Generators
  *     Iterables

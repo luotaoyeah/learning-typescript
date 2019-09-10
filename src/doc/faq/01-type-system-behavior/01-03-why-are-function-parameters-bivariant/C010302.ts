@@ -11,8 +11,8 @@ console.log("\n-------------------------------------------------- 01");
  * 则首先需要判断 Array<D> 是否可以赋值给 Array<A> ？
  */
 
-let a: A = { x: 9 };
-let d: D = { x: 9, z: 9 };
+const a: A = { x: 9 };
+const d: D = { x: 9, z: 9 };
 
 function fn01(as: Array<A>) {}
 

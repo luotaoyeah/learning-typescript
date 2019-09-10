@@ -7,14 +7,14 @@ class DomainId<T> {
 }
 
 class OrderId extends DomainId<number> {
-  constructor(orderId: number) {
-    super(orderId);
+  constructor(id: number) {
+    super(id);
   }
 }
 
 class PersonId extends DomainId<string> {
-  constructor(personId: string) {
-    super(personId);
+  constructor(id: string) {
+    super(id);
   }
 }
 

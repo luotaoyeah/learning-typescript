@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-namespace,no-redeclare */
 /**
  * Listing 2-6. Namespace/class merging
  */

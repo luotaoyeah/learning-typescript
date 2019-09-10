@@ -13,6 +13,7 @@ console.log("\n-------------------------------------------------- 01");
   const symbol02 = Symbol("FOO");
 
   // @ts-ignore
+  // eslint-disable-next-line eqeqeq
   console.log(symbol01 == symbol02); // TS2367: This condition will always return 'false' since the types 'unique symbol' and 'unique symbol' have no overlap.
   // @ts-ignore
   console.log(symbol01 === symbol02); // TS2367: This condition will always return 'false' since the types 'unique symbol' and 'unique symbol' have no overlap.

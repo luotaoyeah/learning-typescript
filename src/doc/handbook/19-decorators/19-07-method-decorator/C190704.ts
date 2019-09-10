@@ -11,9 +11,9 @@ console.log("\n-------------------------------------------------- 01");
 
 function log(target: any, key: string, descriptor: PropertyDescriptor) {
   descriptor.value = new Proxy(descriptor.value, {
-    apply(target: Function, thisArg: any, argArray?: any): any {
+    apply(t: Function, thisArg: any, argArray?: any): any {
       console.log("BEFORE");
-      const apply = target.apply(thisArg, argArray);
+      const apply = t.apply(thisArg, argArray);
       console.log("AFTER");
       return apply;
     }

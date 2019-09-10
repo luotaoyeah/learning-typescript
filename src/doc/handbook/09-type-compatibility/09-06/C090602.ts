@@ -10,12 +10,12 @@ console.log("\n-------------------------------------------------- 01");
    * 在比较类型的时候，这些泛型参数会被指定为 any 类型，然后进行类型比较；
    */
 
-  let x = function<T>(x: T): T {
-    return x;
+  let x = function<T>(t: T): T {
+    return t;
   };
 
-  let y = function<U>(y: U): U {
-    return y;
+  let y = function<U>(u: U): U {
+    return u;
   };
 
   /*

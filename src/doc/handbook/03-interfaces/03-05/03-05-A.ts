@@ -9,9 +9,7 @@
  */
 console.log("\n-------------------------------------------------- 01");
 
-interface ISearchFn {
-  (source: string, subString: string): boolean;
-}
+type ISearchFn = (source: string, subString: string) => boolean;
 
 /*
  * function 类型在检查类型时，主要检查参数列表的类型和返回类型，

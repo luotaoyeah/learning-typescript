@@ -40,8 +40,8 @@ console.log("\n-------------------------------------------------- 02");
    * 这时候在比较类型的时候，泛型参数会被替换为实际的类型，
    * 相当于比较没有泛型参数的类型；
    */
-  let x: NotEmpty<number> = { data: 9 };
-  let y: NotEmpty<string> = { data: "foo" };
+  const x: NotEmpty<number> = { data: 9 };
+  const y: NotEmpty<string> = { data: "foo" };
 
   /*
    * TS2322: Type 'NotEmpty<string>' is not assignable to type 'NotEmpty<number>'.

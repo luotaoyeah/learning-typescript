@@ -15,7 +15,7 @@
     fn01();
   */
 
-  let a: string = "foo";
+  const a: string = "foo";
 
   /* foo */
   console.log(fn01());

@@ -33,7 +33,7 @@ console.log("\n-------------------------------------------------- 02");
   type B = string & { B: "" };
 
   let a: A = "A" as A;
-  let b: B = "B" as B;
+  const b: B = "B" as B;
 
   // TS2322: Type 'B' is not assignable to type 'A'.
   //   Property 'A' is missing in type 'String & { B: ""; }' but required in type '{ A: ""; }'.

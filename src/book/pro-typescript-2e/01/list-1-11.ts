@@ -1,3 +1,5 @@
+/* eslint-disable no-redeclare */
+
 /**
  * Listing 1-11. Enumeration split across multiple blocks
  */

@@ -19,7 +19,7 @@ console.log("\n-------------------------------------------------- 01");
     name: string = "tom";
   }
 
-  function create01<T>(Ctor: { new (): T }): T {
+  function create01<T>(Ctor: new () => T): T {
     return new Ctor();
   }
 

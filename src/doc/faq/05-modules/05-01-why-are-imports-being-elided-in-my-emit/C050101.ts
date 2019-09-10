@@ -10,7 +10,6 @@ console.log("\n-------------------------------------------------- 01");
  */
 
 import { PathLike } from "fs";
-// tslint:disable-next-line:no-object-literal-type-assertion
 const data: PathLike = {} as PathLike;
 
 console.log("\n-------------------------------------------------- 02");
@@ -23,7 +22,7 @@ console.log("\n-------------------------------------------------- 02");
  *     如果要使引入的模块具有 side effects, 需要直接使用 `import "mod"` 的形式来引入
  */
 
-// tslint:disable-next-line:no-duplicate-imports
+// eslint-disable-next-line no-duplicate-imports
 import "fs";
 
 export {};

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/consistent-type-assertions */
 /**
  * Listing 1-26. Forced type assertions
  */

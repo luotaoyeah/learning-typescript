@@ -10,13 +10,13 @@ console.log("\n-------------------------------------------------- 01");
  * 在 ambient enum 中，如果某个 member 没有初始值，则认为它是 computed ；
  */
 
-declare enum E {
+declare enum E01 {
   A = 1,
   B,
   C = 2
 }
 
-declare const enum EE {
+declare const enum E02 {
   D,
   E
 }

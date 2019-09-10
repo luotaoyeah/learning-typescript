@@ -7,7 +7,7 @@ console.log("----------");
 // @ts-ignore:
 Array.prototype.myForEach = function(callback: Function) {
   // @ts-ignore:
-  for (let item of this) {
+  for (const item of this) {
     callback.call(item);
   }
 };

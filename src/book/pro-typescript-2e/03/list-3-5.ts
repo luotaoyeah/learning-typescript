@@ -9,9 +9,7 @@ function add(x: number, y: number) {
   return x + y;
 }
 
-interface CallsFunction {
-  (cb: (result: string) => any): void;
-}
+type CallsFunction = (cb: (result: string) => any) => void;
 
 const callsFunction: CallsFunction = cb => {
   cb("tom");

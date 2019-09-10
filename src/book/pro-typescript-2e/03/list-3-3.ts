@@ -5,7 +5,7 @@
 console.log("----------");
 
 class OrderArray<T> {
-  private items: T[] = [];
+  private items: Array<T> = [];
 
   constructor(private comparer?: (x: T, y: T) => number) {}
 

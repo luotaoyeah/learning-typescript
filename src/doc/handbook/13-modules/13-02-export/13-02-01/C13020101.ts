@@ -14,7 +14,7 @@ console.log("\n-------------------------------------------------- 01");
  *     类型别名（type alias）
  */
 
-export let name: string = "FOO";
+export const name: string = "FOO";
 
 export function fn() {
   console.log("FN");

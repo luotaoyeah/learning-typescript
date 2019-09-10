@@ -12,7 +12,7 @@ interface IStudent {
 
 type IntersectionType = IPerson & IStudent;
 
-let person: IntersectionType = {
+const person: IntersectionType = {
   f1() {
     console.log("from IPerson");
   },

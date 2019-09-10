@@ -11,9 +11,9 @@ interface IPersonDict {
   [index: string]: IPerson;
 }
 
-let personDict: IPersonDict = {};
+const personDict: IPersonDict = {};
 
-personDict["a"] = {
+personDict.a = {
   name: "toma",
   age: 28
 };

@@ -15,7 +15,7 @@ class Performance {
    *
    */
   private test() {
-    const errors: number[] = [];
+    const errors: Array<number> = [];
 
     const startTime = performance.now();
 

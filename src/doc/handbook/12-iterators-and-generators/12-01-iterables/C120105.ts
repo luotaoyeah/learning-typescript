@@ -21,6 +21,7 @@ console.log("\n-------------------------------------------------- 01");
     console.log(i);
   }
 
+  // eslint-disable-next-line guard-for-in
   for (const i in arr) {
     // 0
     // 1

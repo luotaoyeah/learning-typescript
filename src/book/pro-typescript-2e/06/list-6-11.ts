@@ -1,5 +1,3 @@
-/* tslint:disable */
-
 /**
  * Listing 6-11. Cross-Browser enhanced events
  */
@@ -17,6 +15,7 @@ export const addEvent: (
         elem.addEventListener(eventName, callback, false);
       } else if (elem && elem.length) {
         // Handles a collection of elements (recursively)
+        // eslint-disable-next-line @typescript-eslint/prefer-for-of
         for (let i = 0; i < elem.length; i++) {
           addEvent(elem[i], eventName, callback);
         }
@@ -32,6 +31,7 @@ export const addEvent: (
         });
       } else if (elem && elem.length) {
         // Handles a collection of elements (recursively)
+        // eslint-disable-next-line @typescript-eslint/prefer-for-of
         for (let i = 0; i < elem.length; i++) {
           addEvent(elem[i], eventName, callback);
         }

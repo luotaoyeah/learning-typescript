@@ -10,12 +10,12 @@ console.log("\n-------------------------------------------------- 01");
    */
 
   // 变量声明
-  let x = 3;
+  const x = 3;
   console.log(x.toFixed(1)); // 3.0
 
   // 有默认值的函数参数
-  (function fn01(x = 3) {
-    console.log(x.toFixed(2));
+  (function fn01(i = 3) {
+    console.log(i.toFixed(2));
   })(); // 3.00
 
   // 函数的返回值

@@ -6,7 +6,7 @@
  */
 console.log("\n-------------------------------------------------- 01");
 
-let foo: void = undefined;
+const foo: void;
 
 /*
   // 当 --strictNullChecks: true 时，不能赋值为 null；

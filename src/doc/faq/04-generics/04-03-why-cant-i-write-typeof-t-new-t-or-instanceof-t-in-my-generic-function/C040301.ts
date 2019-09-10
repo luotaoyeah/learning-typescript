@@ -31,7 +31,7 @@ console.log("\n-------------------------------------------------- 02");
    *     可以使用 constructor signature 类型
    */
 
-  function fn01<T>(Ctor: { new (...args: Array<any>): T }) {
+  function fn01<T>(Ctor: new (...args: Array<any>) => T) {
     type T01 = typeof Ctor;
     console.log({} instanceof Ctor);
     console.log(new Ctor());

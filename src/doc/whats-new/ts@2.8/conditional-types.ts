@@ -18,7 +18,7 @@ interface IDog extends IAnimal {
 
 type Foo = IDog extends IAnimal ? string : number;
 
-// tslint:disable-next-line:prefer-const
+// eslint-disable-next-line prefer-const
 let foo: Foo = "tom";
 
 /*
@@ -39,7 +39,7 @@ type TypeName<T> = T extends string
   ? "boolean"
   : T extends undefined
   ? "undefined"
-  : T extends Function // tslint:disable-line:ban-types
+  : T extends Function
   ? "function"
   : "object";
 
@@ -76,7 +76,7 @@ declare function createLabel(name: string): IName;
 
 type IdOrName<T extends number | string> = T extends number ? IId : IName;
 
-// tslint:disable-next-line:adjacent-overload-signatures
+// eslint-disable-next-line @typescript-eslint/adjacent-overload-signatures
 declare function createLabel<T extends number | string>(
   idOrName: T
 ): IdOrName<T>;
@@ -114,9 +114,7 @@ let array03: DistributedType = ["a", "b"];
 array03 = [1, 2];
 
 console.log("----------: distributive conditional types");
-// tslint:disable-next-line:interface-over-type-literal
 type BoxedValue<T> = { value: T };
-// tslint:disable-next-line:interface-over-type-literal
 type BoxedArray<T> = { array: Array<T> };
 type Boxed<T> = T extends Array<any> ? BoxedArray<T[number]> : BoxedValue<T>;
 
@@ -140,15 +138,12 @@ const t23: Diff<string | null | undefined, null | undefined> = "tom";
  */
 console.log("----------: combine with mapped types");
 type FunctionPropertyNames<T> = {
-  // tslint:disable-next-line:ban-types
-  [K in keyof T]: T[K] extends Function ? K : never
+  [K in keyof T]: T[K] extends Function ? K : never;
 }[keyof T];
 type NonFunctionPropertyNames<T> = {
-  // tslint:disable-next-line:ban-types
-  [K in keyof T]: T[K] extends Function ? never : K
+  [K in keyof T]: T[K] extends Function ? never : K;
 }[keyof T];
 
-// tslint:disable-next-line:interface-name
 interface I24 {
   id: number;
   name: string;
@@ -196,9 +191,9 @@ const t27: T27 = "tom";
  */
 console.log("----------: nested infer");
 type Unpack<T> = T extends Array<infer U>
-  ? U // tslint:disable-next-line:no-shadowed-variable
+  ? U
   : T extends (...args: Array<any>) => infer U
-  ? U // tslint:disable-next-line:no-shadowed-variable
+  ? U
   : T extends Promise<infer U>
   ? U
   : T;

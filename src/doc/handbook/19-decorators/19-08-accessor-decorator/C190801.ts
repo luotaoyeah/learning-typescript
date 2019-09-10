@@ -13,8 +13,8 @@ console.log("\n-------------------------------------------------- 01");
 function upper(target: any, key: string, descriptor: PropertyDescriptor) {
   if (descriptor.get) {
     descriptor.get = new Proxy(descriptor.get, {
-      apply(target: () => any, thisArg: any, argArray?: any): any {
-        const value = target.apply(thisArg, argArray);
+      apply(t: () => any, thisArg: any, argArray?: any): any {
+        const value = t.apply(thisArg, argArray);
 
         if (typeof value === "string") {
           return value.toUpperCase();

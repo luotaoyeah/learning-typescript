@@ -16,11 +16,11 @@ console.log("\n-------------------------------------------------- 01");
   }
 
   /* enum 可以赋值给 number 类型 */
-  let n: number = E.B;
+  const n: number = E.B;
   console.log(n); // 1
 
   /* number 可以赋值给 enum 类型 */
-  let m: E = 2;
+  const m: E = 2;
   console.log(m); // 2
 }
 
@@ -31,8 +31,8 @@ console.log("\n-------------------------------------------------- 02");
     B = 9
   }
 
-  let n: string = E.A;
-  let m: number = E.B;
+  const n: string = E.A;
+  const m: number = E.B;
   console.log(n, m); // a 9
 }
 

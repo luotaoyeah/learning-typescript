@@ -1,3 +1,4 @@
+/* eslint-disable no-var,no-redeclare */
 /**
  * Listing 1-5. Name reuse with var
  */

@@ -10,7 +10,7 @@
 
 console.log("\n-------------------------------------------------- 01");
 
-const array01: number[] = [1, 2, 3];
+const array01: Array<number> = [1, 2, 3];
 const array02: Array<number> = [1, 2, 3];
 
 /* [ 1, 2, 3 ] */

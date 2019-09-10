@@ -14,6 +14,7 @@ enum E {
   Y
 }
 
+// eslint-disable-next-line @typescript-eslint/no-namespace,no-redeclare
 namespace E {
   export function fn01() {
     console.log(E.X, E.Y);

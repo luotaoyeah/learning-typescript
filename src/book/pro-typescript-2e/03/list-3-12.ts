@@ -28,7 +28,7 @@ class C3 {
   }
 }
 
-const array: C1[] = [
+const array: Array<C1> = [
   new C1(),
   new C2("tom"),
   new C3(),
@@ -40,6 +40,7 @@ const array: C1[] = [
   }
 ];
 
+// eslint-disable-next-line @typescript-eslint/prefer-for-of
 for (let i = 0; i < array.length; i++) {
   console.log(array[i].show());
 }

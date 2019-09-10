@@ -34,7 +34,7 @@ console.log("\n-------------------------------------------------- 01");
    */
   type T01 = TypeName<string | number>;
   // @ts-ignore
-  let t01: T01 = 0; // TS2322: Type '0' is not assignable to type '"string" | "number"'.
+  const t01: T01 = 0; // TS2322: Type '0' is not assignable to type '"string" | "number"'.
 }
 
 export {};

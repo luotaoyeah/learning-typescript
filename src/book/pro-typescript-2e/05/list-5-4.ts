@@ -5,10 +5,11 @@
 console.log("----------");
 
 function test() {
-  var scope = 1;
+  const scope = 1;
 
   (function() {
-    var scope = 2;
+    // eslint-disable-next-line no-shadow
+    const scope = 2;
 
     /* inner 2 */
     console.log("inner", scope);

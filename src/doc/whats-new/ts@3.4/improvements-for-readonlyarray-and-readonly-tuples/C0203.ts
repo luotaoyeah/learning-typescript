@@ -17,7 +17,7 @@ console.log("\n-------------------------------------------------- 01");
 
   type A = Boxify<{ x: string; y: number }>;
 
-  // tslint:disable-next-line:array-type
+  // eslint-disable-next-line @typescript-eslint/array-type
   type B = Boxify<string[]>;
 
   type C = Boxify<[string, number]>;
@@ -40,7 +40,7 @@ console.log("\n-------------------------------------------------- 01");
 
   type A = ReadonlyBoxify<{ x: string; y: number }>;
 
-  // tslint:disable-next-line:array-type
+  // eslint-disable-next-line @typescript-eslint/array-type
   type B = ReadonlyBoxify<string[]>;
 
   type C = ReadonlyBoxify<[string, number]>;

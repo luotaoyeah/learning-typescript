@@ -29,7 +29,6 @@ const person = new Person("tom");
 console.log(person.name);
 person.hello();
 
-// tslint:disable-next-line:max-classes-per-file
 class SeniorStudent extends Person implements IStudent {
   public score: number;
   public age: number;

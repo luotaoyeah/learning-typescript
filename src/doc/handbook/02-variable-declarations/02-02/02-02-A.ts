@@ -12,11 +12,11 @@
 
   (function(init: boolean = false): number {
     /* a 的作用域为：当前 function */
-    let a = 9;
+    const a = 9;
 
     if (init) {
       /* b 的作用域为：当前 if 代码块 */
-      let b = 9;
+      const b = 9;
       return a + b;
     }
 

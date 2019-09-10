@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /**
  * Listing 1-77. Lost context
  */

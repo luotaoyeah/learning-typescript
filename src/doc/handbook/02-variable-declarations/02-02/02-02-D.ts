@@ -1,3 +1,4 @@
+/* eslint-disable no-var,no-redeclare */
 (function() {
   /*
    * 在相同的作用域内，var 可以重复声明同一个变量，实际上指向的是同一个变量；
@@ -25,7 +26,7 @@
   console.log("\n-------------------------------------------------- 02");
 
   (function(init: boolean = false) {
-    let x: any = "foo";
+    const x: any = "foo";
 
     /*
         // TS2451: Cannot redeclare block-scoped variable 'x'.

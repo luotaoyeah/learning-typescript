@@ -5,7 +5,7 @@
 function log(target: Function, key: string, descriptor: PropertyDescriptor) {
   const fn = descriptor.value;
 
-  descriptor.value = function(...args: any[]) {
+  descriptor.value = function(...args: Array<any>) {
     console.log("args:", JSON.stringify(args));
     return fn.apply(this, args);
   };

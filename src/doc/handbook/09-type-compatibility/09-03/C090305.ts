@@ -13,8 +13,8 @@ console.log("\n-------------------------------------------------- 01");
     console.log(x, y);
   }
 
-  let foo: (x: number, y: number) => void = fn01;
-  let bar: (x: string, y: string) => void = fn01;
+  const foo: (x: number, y: number) => void = fn01;
+  const bar: (x: string, y: string) => void = fn01;
 }
 
 console.log("\n-------------------------------------------------- 02");
@@ -25,5 +25,5 @@ console.log("\n-------------------------------------------------- 02");
     console.log(x, y);
   }
 
-  let foo: typeof fn01 = (x: number | string, y: number | string) => {};
+  const foo: typeof fn01 = (x: number | string, y: number | string) => {};
 }

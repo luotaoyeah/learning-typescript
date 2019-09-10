@@ -6,7 +6,7 @@ function multiply(a: number): (b: number) => number;
 function multiply(a: number, b: number): number;
 function multiply(a: number, b?: number): any {
   if (b === undefined) {
-    return (b: number) => a * b;
+    return (i: number) => a * i;
   }
   return a * b;
 }

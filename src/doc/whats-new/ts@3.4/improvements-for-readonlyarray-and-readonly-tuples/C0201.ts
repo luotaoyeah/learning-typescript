@@ -27,7 +27,7 @@ console.log("\n-------------------------------------------------- 02");
    * 即在 shorthand array syntax（string[]，number[]）前面加上 readonly 关键字
    */
 
-  // tslint:disable-next-line:array-type
+  // eslint-disable-next-line @typescript-eslint/array-type
   function fn01(arr: readonly string[]) {
     // @ts-ignore: TS2339
     arr.push();

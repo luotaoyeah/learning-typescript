@@ -8,7 +8,8 @@
 
   function fn01(condition: boolean, x: number): number | string {
     if (condition) {
-      let x: string = "foo";
+      // eslint-disable-next-line no-shadow
+      const x: string = "foo";
       return x;
     }
 

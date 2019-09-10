@@ -8,6 +8,7 @@ function test() {
   const scope = 1;
 
   {
+    // eslint-disable-next-line no-shadow
     const scope = 2;
 
     /* inner 2 */

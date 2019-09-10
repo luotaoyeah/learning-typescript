@@ -25,7 +25,7 @@ console.log("\n-------------------------------------------------- 01");
     console.log(a);
   }
 
-  let b: B = { x: 9, y: 9 };
+  const b: B = { x: 9, y: 9 };
   fn01(b);
 }
 
@@ -59,7 +59,7 @@ console.log("\n-------------------------------------------------- 02");
    * 那么每次在创建新的对象时，都需要使用 type assertion 进行断言，
    * 因为没有提供那个 brand 成员
    */
-  let b: B = { x: 9, y: 9 } as B;
+  const b: B = { x: 9, y: 9 } as B;
   // TS2345: Argument of type 'B' is not assignable to parameter of type 'A'.
   //   Property '_a' is missing in type 'B' but required in type 'A'.
   // @ts-ignore

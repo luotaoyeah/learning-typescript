@@ -4,7 +4,7 @@
 
 type Letter = "a" | "b" | "c";
 
-let letter1: Letter = "a";
+const letter1: Letter = "a";
 
 /*
 /!* TS2322: Type '"d"' is not assignable to type 'Letter'. *!/

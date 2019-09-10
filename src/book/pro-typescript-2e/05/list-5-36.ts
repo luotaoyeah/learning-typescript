@@ -9,7 +9,7 @@ interface Array<T> {
 }
 
 Array.prototype.myForEach = function(callback: Function) {
-  for (let item of this) {
+  for (const item of this) {
     callback.call(item, item);
   }
 };

@@ -9,15 +9,15 @@ interface IPerson {
 }
 
 const getPerson = (): IPerson => {
-  let person = function(name: string) {
+  const p = function(name: string) {
     return `as a function: ${name}`;
   } as IPerson;
 
-  person.hello = (name: string) => {
+  p.hello = (name: string) => {
     console.log("as an object:", name);
   };
 
-  return person;
+  return p;
 };
 
 const person = getPerson();

@@ -13,7 +13,7 @@ console.log("\n-------------------------------------------------- 01");
 /*
  * class decorator 只接收一个参数，即构造函数
  */
-function Log<T extends { new (...args: Array<any>): {} }>(Ctor: T) {
+function Log<T extends new (...args: Array<any>) => {}>(Ctor: T) {
   return new Proxy(Ctor, {
     construct(target: T, argArray: Array<any>): {} {
       const args = argArray.map(i =>

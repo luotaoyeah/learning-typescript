@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /**
  * Listing 1-78. Preserving context with a property and an arrow function
  */

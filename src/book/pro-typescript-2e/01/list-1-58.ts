@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/unified-signatures */
 /**
  * Listing 1-58. Overloads
  */

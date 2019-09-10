@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * Listing 5-2. Queued timer, delayed, waiting for the test method to finish
  */

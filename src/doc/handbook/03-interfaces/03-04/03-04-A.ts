@@ -17,16 +17,16 @@ interface ISquareConfig {
 
 /**
  *
- * @param config
+ * @param cfg
  */
-function createSquare(config: ISquareConfig): { color: string; area: number } {
+function createSquare(cfg: ISquareConfig): { color: string; area: number } {
   const defaultConfig = { color: "red", width: 100 };
 
-  if (config.width) {
-    defaultConfig.width = config.width;
+  if (cfg.width) {
+    defaultConfig.width = cfg.width;
   }
-  if (config.color) {
-    defaultConfig.color = config.color;
+  if (cfg.color) {
+    defaultConfig.color = cfg.color;
   }
 
   return {

@@ -37,7 +37,7 @@ console.log("\n-------------------------------------------------- 02");
   }
 
   let a: A<string> = { x: 9, y: "0" };
-  let b: A<number> = { x: 9, y: 9 };
+  const b: A<number> = { x: 9, y: 9 };
 
   // TS2322: Type 'A<number>' is not assignable to type 'A<string>'.
   //   Type 'number' is not assignable to type 'string'.

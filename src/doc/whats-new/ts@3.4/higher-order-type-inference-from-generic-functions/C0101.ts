@@ -51,6 +51,7 @@ console.log("\n-------------------------------------------------- 02");
    * @param f 参数函数
    * @param g 参数函数
    */
+
   function compose<A, B, C>(f: (a: A) => B, g: (b: B) => C): (a: A) => C {
     return (x: A) => g(f(x));
   }

@@ -22,7 +22,6 @@ console.log("\n-------------------------------------------------- 01");
    * 再合成为 {value:boolean}, 因为这种合成会导致问题
    */
 
-  // tslint:disable-next-line:interface-over-type-literal
   type S = { value: boolean };
   type T = { value: true } | { value: false };
 

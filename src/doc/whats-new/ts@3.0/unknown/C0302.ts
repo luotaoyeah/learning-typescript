@@ -13,7 +13,6 @@ console.log("\n-------------------------------------------------- 01");
    * 等价于该 intersection type 中没有包含 unknown 类型
    */
 
-  // tslint:disable-next-line:prefer-const
   let x: unknown;
 
   // @ts-ignore

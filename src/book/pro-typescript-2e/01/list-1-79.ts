@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /**
  * Listing 1-79. Preserving context with a closure
  */

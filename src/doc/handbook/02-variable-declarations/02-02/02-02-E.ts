@@ -1,3 +1,4 @@
+/* eslint-disable no-var */
 (function() {
   /*
    * 在同一作用域内，'let 变量'和'函数参数'，'let 变量'和' var 变量'，不能同名；
@@ -12,7 +13,7 @@
   })();
 
   (function() {
-    let foo: string = "foo";
+    const foo: string = "foo";
 
     /*
         // TS2451: Cannot redeclare block-scoped variable 'foo'.
@@ -34,6 +35,7 @@
         var init: string = "foo";
     */
 
+    // eslint-disable-next-line no-redeclare
     var init: boolean = true;
   })();
 })();

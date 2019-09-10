@@ -13,6 +13,7 @@ console.log("\n-------------------------------------------------- 01");
  * 从 value 的角度来说，两个 namespace 合并之后，它们中的成员会合并到同一个 namespace 之下
  */
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 namespace N01 {
   export interface I01 {
     x: number;
@@ -22,6 +23,7 @@ namespace N01 {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-namespace,no-redeclare
 namespace N01 {
   export interface I01 {
     y: number;

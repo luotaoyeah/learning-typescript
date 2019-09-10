@@ -11,7 +11,6 @@ console.log("\n-------------------------------------------------- 01");
    * 如果是 unknown 类型的变量, 可以不需要初始化, 直接赋值给其他变量
    */
 
-  // tslint:disable-next-line:prefer-const
   let x: unknown;
   const y: any = x;
 
@@ -33,7 +32,6 @@ console.log("\n-------------------------------------------------- 01");
    * 如果是其他类型的变量, 必须先进行初始化, 之后才能赋值给其他变量
    */
 
-  // tslint:disable-next-line:prefer-const
   let x: number;
   // @ts-ignore TS2454: Variable 'x' is used before being assigned.
   const y: any = x;

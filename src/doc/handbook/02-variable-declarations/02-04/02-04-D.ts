@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 /*
  * Object destructuring
  */
@@ -22,7 +23,8 @@
   console.log("\n-------------------------------------------------- 02");
   const person: any = { x: 1, y: 2, z: 3 };
 
-  let x, y;
+  let x;
+  let y;
 
   /* 需要整个用小括号包裹起来，否则会将 { 解析为代码块的开始 */
   ({ x, y } = person);

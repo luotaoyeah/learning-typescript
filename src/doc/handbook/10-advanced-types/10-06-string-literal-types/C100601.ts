@@ -10,7 +10,7 @@ console.log("\n-------------------------------------------------- 01");
    * 表示对象的值只能是这个 string literal
    */
 
-  let str01: "foo" = "foo";
+  const str01: "foo" = "foo";
   console.log(str01); // foo
   /*
     str01 = "bar"; // TS2322: Type '"bar"' is not assignable to type '"foo"'.

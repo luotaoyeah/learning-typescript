@@ -1,3 +1,4 @@
+/* eslint-disable no-var,no-redeclare */
 /*
  * Scoping rules
  */
@@ -26,7 +27,7 @@
    * 由于存在变量提升，fn01() 和 fn02() 是等价的；
    */
   function fn02(init: boolean = false) {
-    var x;
+    let x;
     if (init) {
       x = 9;
     }
