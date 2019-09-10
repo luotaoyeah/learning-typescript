@@ -5,11 +5,7 @@
  *     Only Equality Operators Are Allowed With Unknown
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * 对于 unknown 类型, 只能使用 equality operators(==/!=/===/!==),

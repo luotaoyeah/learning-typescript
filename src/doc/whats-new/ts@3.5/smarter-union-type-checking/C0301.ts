@@ -4,11 +4,7 @@
  * Smarter Union Type Checking
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * 在 ts@3.5 之前, S 不能赋值给 T,

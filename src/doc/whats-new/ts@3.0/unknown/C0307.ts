@@ -5,11 +5,7 @@
  *     typeof, instanceof, And User Defined Type Predicates
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * 可以对 unknown 类型使用 instanceof/typeof/user defined type predicate

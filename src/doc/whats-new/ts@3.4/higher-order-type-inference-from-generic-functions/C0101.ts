@@ -34,10 +34,7 @@ console.log("\n-------------------------------------------------- 01");
   /*
    * 下面的 fn03() 的类型可以被正确地推断出来：(person: IPerson) => number
    */
-  const fn03 = compose(
-    fn01,
-    fn02
-  );
+  const fn03 = compose(fn01, fn02);
 
   console.assert(fn03({ name: "foo", age: 99 }).toFixed(2) === "3.00");
 }
@@ -73,10 +70,7 @@ console.log("\n-------------------------------------------------- 02");
   /*
    * 下面的 fn03 的类型现在也可以被正确地推断出来：<T>(t: T) => IBox<Array<T>>
    */
-  const fn03 = compose(
-    makeArray,
-    makeBox
-  );
+  const fn03 = compose(makeArray, makeBox);
 
   console.assert(fn03("foo").value[0].toUpperCase() === "FOO");
 }

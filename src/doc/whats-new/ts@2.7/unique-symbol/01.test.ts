@@ -31,5 +31,7 @@ describe("src/doc/whats-new/ts@2.7/unique-symbol/01.ts", () => {
     const s02 = Symbol();
     const s03 = Symbol.for("s01");
     const s04: typeof s01 = s01;
+
+    console.assert(typeof s04 === "symbol");
   });
 });

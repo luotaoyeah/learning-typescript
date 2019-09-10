@@ -10,11 +10,7 @@
  *     2. 任何类型都可以赋值给 unknown 类型
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   const x: unknown = 3;
 
@@ -34,9 +30,7 @@ console.log(
   const b: object = x; // TS2322: Type 'unknown' is not assignable to type 'object'.
 }
 
-console.log(
-  chalk.green("\n-------------------------------------------------- 02")
-);
+console.log("\n-------------------------------------------------- 02");
 {
   /*
    * 任何类型都可以赋值给 unknown 类型

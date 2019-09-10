@@ -4,11 +4,7 @@
  * Support Number And Symbol Named Properties With Keyof And Mapped Types
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /* TODO */
 }

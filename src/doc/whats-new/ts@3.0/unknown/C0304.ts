@@ -5,11 +5,7 @@
  *     keyof
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * keyof unknown 结果为 never
@@ -18,9 +14,7 @@ console.log(
   type T = keyof unknown;
 }
 
-console.log(
-  chalk.green("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * keyof any 结果为 string | number | symbol

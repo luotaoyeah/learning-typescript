@@ -1,1 +1,1 @@
-import "./doc/whats-new/ts@3.0/03-unknown/C0309.ts";
+import "./doc/whats-new/ts@3.0/unknown/C0309.ts";

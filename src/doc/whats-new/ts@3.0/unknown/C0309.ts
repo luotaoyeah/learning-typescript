@@ -5,11 +5,7 @@
  *     sumary
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * unknown 和 any 的区别是什么 ?什么时候使用 unknown ?

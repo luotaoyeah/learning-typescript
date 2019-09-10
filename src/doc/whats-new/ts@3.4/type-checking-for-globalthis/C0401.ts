@@ -2,11 +2,7 @@
  * Type-Checking for globalThis
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * ts@3.4 支持对 globalThis 进行类型检查

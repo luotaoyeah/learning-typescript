@@ -4,11 +4,7 @@
  * Higher Order Type Inference From Generic Constructors
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /* TODO */
 }

@@ -5,11 +5,7 @@
  *     Intersection Type
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * unknown 类型在 intersection type 中没有作用, 即:

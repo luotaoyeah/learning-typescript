@@ -5,11 +5,7 @@
  *     No Property Accesses, Element Accesses Or Function Calls
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    *
@@ -20,6 +16,7 @@ console.log(
   // @ts-ignore TS2571: Object is of type 'unknown'.
   console.log(x.name);
   // @ts-ignore TS2571: Object is of type 'unknown'.
+  // tslint:disable-next-line:no-string-literal
   console.log(x["name"]);
   // @ts-ignore TS2571: Object is of type 'unknown'.
   console.log(x());

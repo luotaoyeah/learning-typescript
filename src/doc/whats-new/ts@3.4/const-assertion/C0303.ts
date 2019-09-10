@@ -3,11 +3,7 @@
  *     Caveat: const assertion can only be applied to literal
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * const assertion 只能用在 literal 后面

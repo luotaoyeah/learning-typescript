@@ -3,11 +3,7 @@
  *     what problem is const assertion trying to solve ?
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * 如果我们使用 const 声明一个 immutable string literal，并且没有显式地标注类型，
@@ -36,9 +32,7 @@ console.log(
   let z: "foo" = "foo";
 }
 
-console.log(
-  chalk.yellow("\n-------------------------------------------------- 02")
-);
+console.log("\n-------------------------------------------------- 02");
 {
   /*
    * 这种自动的 type widening 有时候会成为一个问题
@@ -51,7 +45,10 @@ console.log(
      * 如下，虽然使用了 const 来声明变量，但是对象的属性依然是 mutable 的，
      * 因此，其中的 kind 属性的类型被自动扩展为 string，从而导致编译报错
      */
-    const result = [{ kind: "foo", foo: 0 }, { kind: "bar", bar: 0 }];
+    const result = [
+      { kind: "foo", foo: 0 },
+      { kind: "bar", bar: 0 }
+    ];
 
     // @ts-ignore: TS2322
     return result;

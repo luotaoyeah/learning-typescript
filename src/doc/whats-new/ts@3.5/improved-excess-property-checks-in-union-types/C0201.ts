@@ -4,11 +4,7 @@
  * Improved Excess Property Checks In Union Types
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * ts@3.5 中, 对 union type 中多余的属性进行了类型检测,

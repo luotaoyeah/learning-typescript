@@ -2,11 +2,7 @@
  * const assertions
  */
 
-import chalk from "chalk";
-
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * const assertion 的语法形式：
@@ -26,9 +22,7 @@ console.log(
   const y = "foo" as const;
 }
 
-console.log(
-  chalk.yellow("\n-------------------------------------------------- 02")
-);
+console.log("\n-------------------------------------------------- 02");
 {
   /*
    * const assertion 的实际效果：

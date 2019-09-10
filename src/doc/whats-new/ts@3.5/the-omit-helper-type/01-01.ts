@@ -3,7 +3,6 @@
  *
  * The Omit Helper Type
  */
-import chalk from "chalk";
 
 interface IPerson {
   name: string;
@@ -11,9 +10,7 @@ interface IPerson {
   location: string;
 }
 
-console.log(
-  chalk.red("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * 当我们想从某个 object 中排除某些 property 时, 如何定义这个结果类型?
@@ -28,9 +25,7 @@ console.log(
   console.log(person);
 }
 
-console.log(
-  chalk.green("\n-------------------------------------------------- 01")
-);
+console.log("\n-------------------------------------------------- 01");
 {
   /*
    * 对上面的步骤进行简化
