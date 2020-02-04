@@ -2,7 +2,7 @@ describe('src/doc/whats-new/ts@2.7/definite-assignment-assertions/01.ts', () => 
   it('should work 01', () => {
     /*
      * 如果某个变量/字段确实已经被赋值了(比如使用依赖注入), 但是 typescript 无法检测出来,
-     * 此时可以在定义该变量/字段时使用 ! 后缀显式标注, 让 typescript 不再报错
+     * 此时可以在定义该变量/字段的时候使用 ! 后缀显式标注, 让 typescript 不再报错
      */
 
     let x!: number;
