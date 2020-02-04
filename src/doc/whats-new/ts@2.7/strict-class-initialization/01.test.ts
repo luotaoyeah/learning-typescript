@@ -19,8 +19,8 @@ describe('src/doc/whats-new/ts@2.7/strict-class-initialization/01.ts', () => {
     }
 
     const c01 = new C01();
-    console.assert(c01.x === 0);
-    console.assert(c01.y === 0);
-    console.assert(c01.z === undefined);
+    expect(c01.x).toEqual(0);
+    expect(c01.y).toEqual(0);
+    expect(c01.z).toEqual(undefined);
   });
 });

@@ -12,12 +12,11 @@ describe('src/doc/whats-new/ts@2.7/unique-symbol/01.ts', () => {
    */
   it('should work 01', () => {
     let s01: symbol = Symbol('FOO');
-    console.assert(typeof s01 === 'symbol');
+    expect(typeof s01).toEqual('symbol');
     s01 = Symbol('BAR');
-    console.assert(typeof s01 === 'symbol');
-
+    expect(typeof s01).toEqual('symbol');
     const s02: unique symbol = Symbol('FOO');
-    console.assert(typeof s02 === 'symbol');
+    expect(typeof s02).toEqual('symbol');
   });
 
   it('should work 02', () => {
@@ -43,6 +42,6 @@ describe('src/doc/whats-new/ts@2.7/unique-symbol/01.ts', () => {
     const s03 = Symbol.for('s01');
     const s04: typeof s01 = s01;
 
-    console.assert(typeof s04 === 'symbol');
+    expect(typeof s04).toEqual('symbol');
   });
 });
