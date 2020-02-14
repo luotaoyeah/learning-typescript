@@ -4,7 +4,7 @@ jobs:
   build-learning-typescript:
     working_directory: ~/learning-typescript
     docker:
-      - image: circleci/node:12-browsers
+      - image: circleci/node:14.14-browsers
     steps:
       - checkout
       - restore_cache:
@@ -13,15 +13,15 @@ jobs:
       - save_cache:
           key: learning-typescript-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
-            - "node_modules"
+            - 'node_modules'
       - run:
           name: build
-          command: npm run build
+          command: npm run build:prod
 
   test-learning-typescript:
     working_directory: ~/learning-typescript
     docker:
-      - image: circleci/node:12-browsers
+      - image: circleci/node:14.14-browsers
     steps:
       - checkout
       - restore_cache:
@@ -30,10 +30,10 @@ jobs:
       - save_cache:
           key: learning-typescript-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
-            - "node_modules"
+            - 'node_modules'
       - run:
-          name: unit test
-          command: npm run test
+          name: test:unit
+          command: npm run test:unit
       - run:
           name: codecov
           command: npm run codecov

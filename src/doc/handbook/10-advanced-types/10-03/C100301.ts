@@ -3,7 +3,7 @@
  *     Type Guards and Differentiating Types
  */
 
-console.log("\n-------------------------------------------------- 01");
+console.log('\n-------------------------------------------------- 01');
 {
   /*
    * 当一个对象的类型是 union type 时，如何在 runtime 确定它的具体类型呢?
@@ -26,6 +26,7 @@ console.log("\n-------------------------------------------------- 01");
     /*
      * 在这里，需要使用类型断言（type assertion）
      */
+    // @ts-ignore
     if ((obj as IFoo).y) {
       (obj as IFoo).y();
     } else {
@@ -36,14 +37,14 @@ console.log("\n-------------------------------------------------- 01");
   fn01({
     x() {},
     y() {
-      console.log("y");
-    }
+      console.log('y');
+    },
   }); // y
 
   fn01({
     x() {},
     z() {
-      console.log("z");
-    }
+      console.log('z');
+    },
   }); // z
 }

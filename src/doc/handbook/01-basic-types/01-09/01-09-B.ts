@@ -4,8 +4,9 @@
  * 当 --strictNullChecks: true 时，void 类型的变量只能被赋值为 undefined；
  * 否则，可以被赋值为 undefined 或者 null；
  */
-console.log("\n-------------------------------------------------- 01");
+console.log('\n-------------------------------------------------- 01');
 
+// @ts-ignore
 const foo: void;
 
 /*
