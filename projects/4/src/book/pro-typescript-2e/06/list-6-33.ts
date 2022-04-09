@@ -5,10 +5,10 @@
 console.log("----------");
 
 navigator.geolocation.getCurrentPosition(
-  (position: Position) => {
+  (position: any) => {
     console.log(position);
   },
-  (error: PositionError) => {
+  (error: any) => {
     console.log(error);
   }
 );

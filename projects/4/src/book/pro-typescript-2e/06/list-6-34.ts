@@ -5,10 +5,10 @@
 console.log("----------");
 
 const watch = navigator.geolocation.watchPosition(
-  (position: Position) => {
+  (position: any) => {
     console.log(position);
   },
-  (error: PositionError) => {
+  (error: any) => {
     console.log(error);
   }
 );

@@ -1,23 +1,11 @@
 {
-    "compilerOptions": {
-        "allowSyntheticDefaultImports": true,
-        "declaration": false,
-        "emitDecoratorMetadata": true,
-        "esModuleInterop": true,
-        "experimentalDecorators": true,
-        "forceConsistentCasingInFileNames": true,
-        "lib": ["ESNext", "DOM", "DOM.Iterable"],
-        "module": "ESNext",
-        "moduleResolution": "Node",
-        "noImplicitReturns": true,
-        "sourceMap": true,
-        "strict": true,
-        "strictFunctionTypes": false,
-        "strictPropertyInitialization": false,
-        "suppressImplicitAnyIndexErrors": true,
-        "target": "ESNext",
-        "types": ["@types/jest"]
-    },
-    "exclude": [],
-    "include": ["./src/**/*"]
+    "files": [],
+    "references": [
+        {
+            "path": "./src/book/pro-typescript-2e/tsconfig.json"
+        },
+        {
+            "path": "./src/doc/tsconfig.json"
+        }
+    ]
 }

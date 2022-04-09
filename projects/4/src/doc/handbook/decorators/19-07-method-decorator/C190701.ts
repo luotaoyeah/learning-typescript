@@ -36,12 +36,12 @@ class Person {
 
 console.log(
   Reflect.getOwnPropertyDescriptor(
-    Reflect.getPrototypeOf(new Person()),
+    Reflect.getPrototypeOf(new Person())!,
     "sleep"
   )!.enumerable
 ); // true
 console.log(
-  Reflect.getOwnPropertyDescriptor(Reflect.getPrototypeOf(new Person()), "run")!
+  Reflect.getOwnPropertyDescriptor(Reflect.getPrototypeOf(new Person())!, "run")!
     .enumerable
 ); // false
 

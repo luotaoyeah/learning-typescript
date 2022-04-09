@@ -37,7 +37,7 @@
 
   try {
     throw new Error("error");
-  } catch (err) {
+  } catch (err: any) {
     console.log(err.message);
   }
 

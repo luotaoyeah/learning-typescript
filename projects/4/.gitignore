@@ -7,3 +7,5 @@ out/
 built/
 pro-typescript-2nd-edition-code.iml
 /coverage/
+
+tsconfig.tsbuildinfo
